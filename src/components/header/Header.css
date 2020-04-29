@@ -1,0 +1,43 @@
+.icon {
+    border-bottom: solid 3px #000;
+}
+
+.icon-left {
+    font-weight: normal;
+}
+
+.icon-right {
+    font-weight: bolder;
+}
+
+.right-menu-icon > button {
+    margin-bottom: 1em;
+    border: none;
+}
+
+.right-menu-icon > div {
+    width: 67.5em;
+    border: none;
+}
+
+.right-menu-icon > div > .dropdown-divider {
+    border-top: 3px solid #000;
+}
+
+.right-menu-icon > div > a {
+    color: #000;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.right-menu-icon > div > a > a {
+    color: #000;
+    font-size: 1em;
+    font-family: -apple-system;
+    font-weight: bolder;
+}
+
+.right-menu-icon > div > a > a:hover {
+    color: #000;
+    text-decoration: none;
+}
