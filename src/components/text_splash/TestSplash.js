@@ -12,8 +12,8 @@ function TestSplash() {
             </Row>
             <Row>
                 <Col>
-                    <h2 className="textContent">An <h2 className="high-light-font">open source</h2>, standards-based software platform for <h2
-                        className="high-light-font">iot</h2> devices, including smartwatch, TVs and automotive infotainment platforms.
+                    <h2 className="textContent">An <h2 className="high-light-font">Open Source</h2>, standards-based software platform for <h2
+                        className="high-light-font">IOT</h2> devices, including smartwatch, TVs and automotive infotainment platforms.
                     </h2>
                 </Col>
             </Row>
