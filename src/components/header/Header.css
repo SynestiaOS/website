@@ -1,5 +1,11 @@
 .icon {
-    border-bottom: solid 3px #000;
+    /*border-bottom: solid 3px #000;*/
+}
+
+
+.logo-img{
+    width: 2em;
+    height: 2em;
 }
 
 .icon-left {

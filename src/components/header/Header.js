@@ -9,6 +9,8 @@ import Container from "react-bootstrap/Container";
 import DropdownButton from "react-bootstrap/DropdownButton";
 import Dropdown from "react-bootstrap/Dropdown";
 import {BrowserRouter as Router, Link} from "react-router-dom";
+import Image from "react-bootstrap/Image";
+import Logo from "../../static/images/logo.png"
 
 function Header() {
     return (
@@ -17,6 +19,7 @@ function Header() {
                 <Col>
                     <Router>
                         <Navbar bg="#fff" variant="light">
+                            <Image  src={Logo} className="logo-img"  rounded/>
                             <Navbar.Brand className="icon" href="#home"><span className="icon-left">Synestia</span><span
                                 className="icon-right">OS</span></Navbar.Brand>
                             <Nav className="mr-auto">
