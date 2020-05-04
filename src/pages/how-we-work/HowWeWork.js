@@ -25,7 +25,7 @@ class HowWeWork extends Component {
 
                         <ul>
                             <li><h4>1. 架构师将技术分解成卡之后放在TODO中。</h4></li>
-                            <li><h4>2. 自己建卡的话放到BACKLOG中，待架构师根据当前的状态对其进行评估，如果可以开发就将该卡挪到TODO中。</h4></li>
+                            <li><h4>2. 自己建卡的话放到BACKLOG中，待架构师根据当前的状态对其进行评估，如果可以开发则架构师就将该卡挪到TODO中。</h4></li>
                         </ul>
                     </Container>
 
