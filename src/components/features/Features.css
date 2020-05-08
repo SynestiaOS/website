@@ -1,0 +1,33 @@
+h1, h2, h3 {
+    display: inline-block;
+}
+
+.Card-Title {
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: bolder;
+}
+
+.Card-Content {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.Features {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.Card {
+    border: solid 3px #000;
+    border-radius: 5px;
+    padding: 1em;
+    min-height: 18em;
+}
+
+.Card:hover {
+    border-radius: 5px;
+    padding: 1em;
+    background: #000;
+    color:#fff;
+}
