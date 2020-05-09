@@ -25,6 +25,7 @@ function Header() {
                         <Nav className="mr-auto">
                             <Nav.Link href="#home">Blog</Nav.Link>
                             <Nav.Link href="#features">Event</Nav.Link>
+                            <Nav.Link href="https://templeos.org/">R.I.P Terry A. Davis</Nav.Link>
                         </Nav>
                         <Form inline>
                             <DropdownButton variant="outline-dark"
