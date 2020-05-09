@@ -1,0 +1,63 @@
+h1, h2, h3 {
+    display: inline-block;
+}
+
+.Card-Title {
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: bolder;
+}
+
+.Card-Content {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.Events {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.Left-Card {
+    border-radius: 5px;
+    padding: 1em;
+    color: #fff;
+    height: 25em;
+    background-size: 100% auto;
+    background: #000 url("https://agilutions.com/wp-content/uploads/2018/04/team-coding-768x512.jpg") center;
+    text-align: match-parent;
+}
+
+.Left-Card:hover {
+    background-size: 120% auto;
+    -webkit-transition: background-size .2s linear;
+    transition: background-size .2s linear;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("https://agilutions.com/wp-content/uploads/2018/04/team-coding-768x512.jpg") no-repeat center;
+}
+
+.Right-Card {
+    border-radius: 5px;
+    color: #fff;
+    padding: 1em;
+    height: 12em;
+    background-size: 100% auto;
+    background: #000 url("https://agilutions.com/wp-content/uploads/2018/04/team-coding-768x512.jpg") center;
+}
+
+.Right-Card:hover {
+    border-radius: 5px;
+    color: #fff;
+    padding: 1em;
+    height: 12em;
+    background-size: 100% auto;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url("https://agilutions.com/wp-content/uploads/2018/04/team-coding-768x512.jpg") no-repeat center;
+}
+
+.Right-Bottom-Card {
+    padding-top: 0.5em;
+}
+
+.Right-Top-Card {
+    padding-bottom: 0.5em;
+}
+

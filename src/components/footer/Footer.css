@@ -5,11 +5,10 @@
 }
 
 .footerText {
-    font-weight: bolder;
+    font-weight: lighter;
 }
 
 .footerText > a {
-    font-weight: bolder;
     color: #000;
     text-decoration: none;
 }
