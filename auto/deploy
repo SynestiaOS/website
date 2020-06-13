@@ -3,4 +3,4 @@ cd $(dirname $0)/..
 
 ./auto/build
 
-aws s3 sync ./build s3://www.synestiaos.org --profile securityAdmin
+aws s3 sync ./build s3://www.synestiaos.org --profile securityFederatedAdmin

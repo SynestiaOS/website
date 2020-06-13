@@ -4,9 +4,9 @@
 
 We use terraform to create a s3 bucket to host `www.synestiaos.org` website.
 
-Run once to set the credential of securityAdmin
+Run once to set the credential of securityFederatedAdmin
 ```
-aws configure --profile securityAdmin 
+aws configure --profile securityFederatedAdmin 
 ```
 
 ```
