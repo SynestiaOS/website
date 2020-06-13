@@ -9,7 +9,7 @@ import HowWeWork from "./pages/how-we-work/HowWeWork";
 
 function App() {
     return (
-        <div className="App">
+        <Container className="App">
             <Header/>
 
             <Switch>
@@ -24,7 +24,7 @@ function App() {
             <Container>
                 <Footer/>
             </Container>
-        </div>
+        </Container>
     );
 }
 

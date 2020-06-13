@@ -1,3 +1,8 @@
+.Header{
+    background: #0e0e0e;
+    color:#fff;
+    border-bottom: dashed 1px #fff;
+}
 .icon {
     /*border-bottom: solid 3px #000;*/
 }
@@ -31,19 +36,19 @@
 }
 
 .right-menu-icon > div > a {
-    color: #000;
+    color: #fff;
     font-size: 3em;
     font-weight: bolder;
 }
 
 .right-menu-icon > div > a > a {
-    color: #000;
+    color: #fff;
     font-size: 1em;
     font-family: -apple-system;
     font-weight: bolder;
 }
 
 .right-menu-icon > div > a > a:hover {
-    color: #000;
+    color: #fff;
     text-decoration: none;
 }

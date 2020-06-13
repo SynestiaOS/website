@@ -6,11 +6,13 @@ h1, h2, h3 {
     font-size: 2em;
     line-height: 1em;
     font-weight: bolder;
+    color: #eee;
 }
 
 .Card-Content {
     font-size: 1.2em;
     font-weight: bolder;
+    color: #eee;
 }
 
 .Features {
@@ -22,12 +24,12 @@ h1, h2, h3 {
     border: solid 3px #000;
     border-radius: 5px;
     padding: 1em;
-    min-height: 18em;
+    min-height: 19em;
 }
 
 .Card:hover {
     border-radius: 5px;
     padding: 1em;
     background: #000;
-    color:#fff;
+    color:#eee;
 }
