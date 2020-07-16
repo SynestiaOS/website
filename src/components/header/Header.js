@@ -12,12 +12,13 @@ function Header() {
             <Row style={{padding: 0, paddingTop: '1em'}}>
                 <Col style={{padding: 0, height: '4em'}}>
                     <Navbar bg="#fff" variant="light" style={{textAlign: 'left', padding: 0}}>
-                        <Nav style={{textAlign: 'left'}}>
+                        <Nav style={{width: '100%'}}>
                             <Nav.Link href="#home" style={{color: '#fff', background: '#000', fontWeight: 'bold'}}>ZionLab</Nav.Link>
                             <Nav.Link href="#home"
-                                      style={{color: '#fff', background: '#000', fontWeight: 'bold', marginLeft: '0.2em'}}>SynestiaOS</Nav.Link>
-                            {/*<Nav.Link href="#home" style={{color: '#000', fontWeight: 'bold'}}>BLOG</Nav.Link>*/}
-                            {/*<Nav.Link href="#features" style={{color: '#000', fontWeight: 'bold'}}>DOCS</Nav.Link>*/}
+                                      style={{color: '#fff', background: '#000', fontWeight: 'normal', marginLeft: '0.2em'}}>SynestiaOS</Nav.Link>
+                            <Nav.Link href="https://github.com/SynestiaOS"
+                                      style={{color: '#000', fontWeight: 'bold', right: 0, position: 'absolute'}}>Blog</Nav.Link>
+                            <Nav.Link href="https://github.com/SynestiaOS" style={{color: '#000', fontWeight: 'bold',right: '3em', position: 'absolute'}}>Docs</Nav.Link>
                         </Nav>
                     </Navbar>x
                 </Col>

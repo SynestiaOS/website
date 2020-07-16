@@ -36,7 +36,7 @@ class Home extends Component {
                 </Row>
             </Row>
 
-            <Row style={{textAlign: 'left', paddingTop: '1em'}}>
+            <Row style={{textAlign: 'left'}}>
                 <Col style={{background: '#000', padding: '1em', marginTop: '1em'}}>
                     <h5 style={{background: '#fff', padding: '0.3em', fontWeight: 'bold', display: 'inline-block'}}>Create With Synestia</h5>
                     <h2 style={{color: '#fff'}}>Synestia Develop Resources</h2>
@@ -106,7 +106,7 @@ class Home extends Component {
                         padding: '0.1em'
                     }}>SynestiaOS</span>
 
-                    <h6 style={{color: '#000', marginTop: '2em'}}>OOur mission is to keep the operating system open to innovators, creators, and
+                    <h6 style={{color: '#000', marginTop: '2em'}}>Our mission is to keep the operating system open to innovators, creators, and
                         builders for the IoT. SynestiaOS is set to change the future of the IoT device platform. The ability for anyone to access and
                         enjoy IoT experiences is critical. This is why ZionLab set out to bring SynestiaOS to IoT devices.</h6>
                 </Col>

@@ -4,11 +4,12 @@ import Home from "./pages/home/Home";
 import Container from "react-bootstrap/Container";
 import Footer from "./components/footer/Footer";
 import {Route, Switch,} from "react-router-dom";
+import Header from "./components/header/Header";
 
 function App() {
     return (
         <Container className="App">
-            {/*<Header/>*/}
+            <Header/>
 
             <Switch>
                 <Route exact path="/" component={Home}/>
