@@ -1,16 +1,10 @@
-.Header{
-    background: #0e0e0e;
-    color:#fff;
-    border-bottom: dashed 1px #fff;
+.Header {
+    background: #fff;
+    color: #fff;
 }
+
 .icon {
     /*border-bottom: solid 3px #000;*/
-}
-
-
-.logo-img{
-    width: 2em;
-    height: 2em;
 }
 
 .icon-left {

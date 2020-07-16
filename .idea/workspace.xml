@@ -2,12 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecb05922-317c-4230-8e1f-08cf1aa4ee2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/events/Events.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/events/Events.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/events/Events.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/events/Events.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/events/Events.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/events/Events.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/features/Features.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/features/Features.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/features/Features.test.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text_splash/TestSplash.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text_splash/TestSplash.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text_splash/TestSplash.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/how-we-work/HowWeWork.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/how-we-work/HowWeWork.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/how-we-work/HowWeWork.test.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +122,12 @@
       <workItem from="1588509247449" duration="1577000" />
       <workItem from="1588595997227" duration="3379000" />
       <workItem from="1588908591178" duration="1517000" />
-      <workItem from="1589024918596" duration="2893000" />
+      <workItem from="1589024918596" duration="2928000" />
+      <workItem from="1589045424274" duration="1335000" />
+      <workItem from="1589852908908" duration="3358000" />
+      <workItem from="1592031804921" duration="2326000" />
+      <workItem from="1592113717282" duration="425000" />
+      <workItem from="1594867815597" duration="6949000" />
     </task>
     <servers />
   </component>

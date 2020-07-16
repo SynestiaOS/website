@@ -1,6 +1,5 @@
-*{
-    font-family: -apple-system;
-}
 .App{
-    background: #0e0e0e;
+    background: #fff;
+    padding: 0;
+    margin: 0;
 }

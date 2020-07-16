@@ -1,6 +1,5 @@
 .Footer {
-    margin-top:2em;
-    border-top: dashed 1px #fff;
-    padding: 1em;
-    text-align: center;
+    background: #000;
+    padding-top: 4em;
+    padding-bottom: 2em;
 }
