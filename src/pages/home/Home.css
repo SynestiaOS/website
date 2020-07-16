@@ -4,8 +4,9 @@
 }
 
 .logo-img {
-    width: 8em;
-    height: 8em;
+    width: 4em;
+    height: 4em;
+    background: #000;
 }
 
 .ribbon {

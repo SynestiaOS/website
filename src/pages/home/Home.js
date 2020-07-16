@@ -12,12 +12,12 @@ import IOT from '../../static/images/iot.png';
 class Home extends Component {
     render() {
         return (<Container className="Home">
-            {/*<Row style={{height: '15em', textAlign: 'center', paddingTop: '2em'}}>*/}
-            {/*    <Col style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: "auto", paddingBottom: 'auto'}}>*/}
-            {/*        <Image src={Logo} className="logo-img"/>*/}
-            {/*        <h1 style={{color: '#000', fontWeight: 'lighter'}}>Open Source Operating System</h1>*/}
-            {/*    </Col>*/}
-            {/*</Row>*/}
+            <Row style={{height: '15em', textAlign: 'center', paddingTop: '3em'}}>
+                <Col style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: "auto", paddingBottom: 'auto'}}>
+                    <Image src={Logo} className="logo-img"/>
+                    <h1 style={{color: '#000', fontWeight: 'normal', marginTop: '0.5em'}}>Open Source Operating System</h1>
+                </Col>
+            </Row>
             <Row style={{
                 backgroundImage: "linear-gradient(180deg,#381863 0,#000 80%)",
                 boxShadow: "inset 0 100px 200px rgba(0,0,0,.5)",
@@ -25,10 +25,10 @@ class Home extends Component {
                 overflow: 'hidden',
             }}>
                 <div className={"ribbon"}>NEW</div>
-                <Row style={{paddingTop: "3em", textAlign: 'center', marginLeft: '-6em'}}>
-                    <Col md={12} style={{textAlign: 'center', marginLeft: 'auto', marginRight: 'auto'}}>
-                        <Image src={Logo} className="logo-img"/>
-                    </Col>
+                <Row style={{paddingTop: "8em", textAlign: 'center', marginLeft: 0}}>
+                    {/*<Col md={12} style={{textAlign: 'center', marginLeft: 'auto', marginRight: 'auto'}}>*/}
+                    {/*    /!*<Image src={Logo} className="logo-img"/>*!/*/}
+                    {/*</Col>*/}
                     <Col md={12} style={{textAlign: 'center', marginLeft: 'auto', marginRight: 'auto'}}>
                         <h1 style={{color: '#fff', fontWeight: 'light'}}>SynestiaOS</h1>
                         <h4 style={{color: '#fff'}}>A new operating system for IOT devices</h4>
