@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import Logo from "../../static/images/logo_re.png";
+import Logo from "../../static/images/ll.png";
 import {Button, Form} from "react-bootstrap";
 
 import IOT from '../../static/images/iot.png';
@@ -25,7 +25,7 @@ class Home extends Component {
                 overflow: 'hidden',
             }}>
                 <div className={"ribbon"}>NEW</div>
-                <Row style={{paddingTop: "3em", textAlign: 'center', marginLeft: '-8em'}}>
+                <Row style={{paddingTop: "3em", textAlign: 'center', marginLeft: '-6em'}}>
                     <Col md={12} style={{textAlign: 'center', marginLeft: 'auto', marginRight: 'auto'}}>
                         <Image src={Logo} className="logo-img"/>
                     </Col>
