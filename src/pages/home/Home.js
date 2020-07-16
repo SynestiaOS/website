@@ -5,15 +5,15 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Logo from "../../static/images/ll.png";
+import LL from "../../static/images/lg.jpg";
 import {Button, Form} from "react-bootstrap";
-
 import IOT from '../../static/images/iot.png';
 
 class Home extends Component {
     render() {
         return (<Container className="Home">
-            <Row style={{height: '15em', textAlign: 'center', paddingTop: '3em'}}>
-                <Col style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: "auto", paddingBottom: 'auto'}}>
+            <Row style={{height: '16em', textAlign: 'center', paddingTop: '4em'}}>
+                <Col style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: "auto", paddingBottom: 'auto', marginBottom: 0, padding: 0}}>
                     <Image src={Logo} className="logo-img"/>
                     <h1 style={{color: '#000', fontWeight: 'normal', marginTop: '0.5em'}}>Open Source Operating System</h1>
                 </Col>
@@ -25,11 +25,11 @@ class Home extends Component {
                 overflow: 'hidden',
             }}>
                 <div className={"ribbon"}>NEW</div>
-                <Row style={{paddingTop: "8em", textAlign: 'center', marginLeft: 0}}>
-                    {/*<Col md={12} style={{textAlign: 'center', marginLeft: 'auto', marginRight: 'auto'}}>*/}
-                    {/*    /!*<Image src={Logo} className="logo-img"/>*!/*/}
-                    {/*</Col>*/}
-                    <Col md={12} style={{textAlign: 'center', marginLeft: 'auto', marginRight: 'auto'}}>
+                <Row style={{paddingTop: "4em", textAlign: 'center', marginLeft: '-2em'}}>
+                    <Col md={12} style={{textAlign: 'center', marginLeft: 'auto', marginRight: 'auto', marginBottom: 0, padding: 0}}>
+                        <Image src={LL} className="logo-lg" rounded/>
+                    </Col>
+                    <Col md={12} style={{textAlign: 'center', marginLeft: 'auto', marginRight: 'auto', marginTop: 0, padding: 0}}>
                         <h1 style={{color: '#fff', fontWeight: 'light'}}>SynestiaOS</h1>
                         <h4 style={{color: '#fff'}}>A new operating system for IOT devices</h4>
                     </Col>
@@ -69,10 +69,10 @@ class Home extends Component {
             </Row>
 
             <Row style={{background: 'rgb(36, 34, 130)', padding: '3em', textAlign: 'left'}}>
-                <Col style={{paddingLeft: '2em'}}>
+                <Col md={6} style={{paddingLeft: '2em'}}>
                     <Image style={{width: '100%', marginTop: '2em'}} src={IOT}/>
                 </Col>
-                <Col style={{paddingLeft: '2em'}}>
+                <Col md={6} style={{paddingLeft: '2em'}}>
                     <h1 style={{color: '#fff'}}>What's Next?</h1>
                     <h6 style={{color: '#fff'}}>Get the Zion Labs newsletter for updates on our latest tech and product innovations.</h6>
 

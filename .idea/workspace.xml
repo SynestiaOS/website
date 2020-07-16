@@ -2,59 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecb05922-317c-4230-8e1f-08cf1aa4ee2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/otf/ZillaSlab-Bold.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/otf/ZillaSlab-BoldItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/otf/ZillaSlab-Italic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/otf/ZillaSlab-Light.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/otf/ZillaSlab-LightItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/otf/ZillaSlab-Medium.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/otf/ZillaSlab-MediumItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/otf/ZillaSlab-Regular.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/otf/ZillaSlab-SemiBold.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/otf/ZillaSlab-SemiBoldItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/otf/ZillaSlabHighlight-Bold.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/otf/ZillaSlabHighlight-Regular.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/ttf/ZillaSlab-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/ttf/ZillaSlab-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/ttf/ZillaSlab-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/ttf/ZillaSlab-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/ttf/ZillaSlab-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/ttf/ZillaSlab-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/ttf/ZillaSlab-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/ttf/ZillaSlab-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/ttf/ZillaSlab-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/ttf/ZillaSlab-SemiBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/ttf/ZillaSlabHighlight-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/ttf/ZillaSlabHighlight-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff/ZillaSlab-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff/ZillaSlab-BoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff/ZillaSlab-Italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff/ZillaSlab-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff/ZillaSlab-LightItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff/ZillaSlab-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff/ZillaSlab-MediumItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff/ZillaSlab-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff/ZillaSlab-SemiBold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff/ZillaSlab-SemiBoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff/ZillaSlabHighlight-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff/ZillaSlabHighlight-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff2/ZillaSlab-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff2/ZillaSlab-BoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff2/ZillaSlab-Italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff2/ZillaSlab-Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff2/ZillaSlab-LightItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff2/ZillaSlab-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff2/ZillaSlab-MediumItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff2/ZillaSlab-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff2/ZillaSlab-SemiBold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff2/ZillaSlab-SemiBoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff2/ZillaSlabHighlight-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/zilla-slab/woff2/ZillaSlabHighlight-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/static/images/lg.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io" beforeDir="false" afterPath="$PROJECT_DIR$/synestiaos.github.io" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +31,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/static/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -90,15 +42,15 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/static/images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/static/images" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/components/footer" />
       <recent name="$PROJECT_DIR$/src/pages/home" />
-      <recent name="$PROJECT_DIR$/src/components/header" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/static/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -161,7 +113,7 @@
       <workItem from="1589852908908" duration="3358000" />
       <workItem from="1592031804921" duration="2326000" />
       <workItem from="1592113717282" duration="425000" />
-      <workItem from="1594867815597" duration="11240000" />
+      <workItem from="1594867815597" duration="12573000" />
     </task>
     <servers />
   </component>

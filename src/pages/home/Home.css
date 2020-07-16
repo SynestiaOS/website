@@ -9,12 +9,16 @@
     background: #000;
 }
 
+.logo-lg{
+    width: 8em;
+    height: 8em;
+}
+
 .ribbon {
     font-size: 23.104px;
     font-size: 1.444rem;
     font-weight: 700;
     width: 320px;
-    font-family: Zilla Slab, Open Sans, Helvetica Neue, Helvetica, Arial, "sans-serif";
     background: #f7296d;
     position: relative;
     text-align: center;
