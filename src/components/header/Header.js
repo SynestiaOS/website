@@ -13,9 +13,9 @@ function Header() {
                 <Col style={{padding: 0, margin: 0}}>
                     <Navbar bg="#fff" variant="light" style={{textAlign: 'left', padding: 0}}>
                         <Nav style={{width: '100%'}}>
-                            <Nav.Link href="#home" style={{color: '#fff', background: '#000', fontWeight: 'bold'}}>ZionLab</Nav.Link>
+                            <Nav.Link href="#home" style={{color: '#fff', background: '#000', fontWeight: 'bolder'}}>ZionLab</Nav.Link>
                             <Nav.Link href="#home"
-                                      style={{color: '#fff', background: '#000', fontWeight: 'normal', marginLeft: '0.2em'}}>SynestiaOS</Nav.Link>
+                                      style={{color: '#fff', background: '#000', fontWeight: 'lighter', marginLeft: '0.2em'}}>SynestiaOS</Nav.Link>
                             <Nav.Link href="https://github.com/SynestiaOS"
                                       style={{color: '#000', fontWeight: 'bold', right: 0, position: 'absolute'}}>Blog</Nav.Link>
                             <Nav.Link href="https://github.com/SynestiaOS"

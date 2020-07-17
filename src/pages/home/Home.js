@@ -30,8 +30,10 @@ class Home extends Component {
                         <Image src={LL} className="logo-lg" rounded/>
                     </Col>
                     <Col md={12} style={{textAlign: 'center', marginLeft: 'auto', marginRight: 'auto', marginTop: 0, padding: 0}}>
-                        <h1 style={{color: '#fff', fontWeight: 'light'}}>SynestiaOS</h1>
+                        <h1 style={{color: '#fff', fontWeight: 'bold',fontSize:'5em'}}>Synestia&nbsp;&nbsp;<span style={{fontWeight:'lighter'}}>OS</span></h1>
                         <h4 style={{color: '#fff'}}>A new operating system for IOT devices</h4>
+                        <a href={"https://github.com/SynestiaOS/SynestiaOS"}
+                           style={{fontWeight: 'normal', marginTop: '2em', marginLeft: 'auto', marginRight: 'auto'}}>Learn More</a>
                     </Col>
                 </Row>
             </Row>
@@ -70,16 +72,16 @@ class Home extends Component {
 
             <Row style={{background: 'rgb(36, 34, 130)', padding: '3em', textAlign: 'left'}}>
                 <Col md={6} style={{paddingLeft: '2em'}}>
-                    <Image style={{width: '100%', marginTop: '2em'}} src={IOT}/>
+                    <Image style={{width: '100%', marginTop: '3em'}} src={IOT}/>
                 </Col>
                 <Col md={6} style={{paddingLeft: '2em'}}>
                     <h1 style={{color: '#fff'}}>What's Next?</h1>
                     <h6 style={{color: '#fff'}}>Get the Zion Labs newsletter for updates on our latest tech and product innovations.</h6>
 
-                    <Form style={{marginTop: '1em'}}>
+                    <Form style={{paddingTop: '1em',paddingBottom:'1em'}}>
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label style={{color: '#fff', fontWeight: 'normal'}}>Your Email Address</Form.Label>
-                            <Form.Control type="email" placeholder="Enter email" style={{borderRadius: 0}}/>
+                            <Form.Control type="email" placeholder="Enter email" style={{borderRadius: 0,border:'none',height:'3em'}}/>
                             <Form.Text className="text-muted">
                                 We'll never share your email with anyone else.
                             </Form.Text>
@@ -88,7 +90,7 @@ class Home extends Component {
                             <Form.Check type="checkbox" style={{color: '#fff', fontWeight: 'normal'}}
                                         label="I'm okay with ZionLab handling my info as explained in this"/>
                         </Form.Group>
-                        <Button variant="primary" size="lg" style={{height: '1.8em', lineHeight: '1em', background: '#006fff'}} block>
+                        <Button variant="primary" size="lg" style={{height: '1.8em', lineHeight: '1em', background: '#006fff',borderRadius:'2px'}} block>
                             Subscribe
                         </Button>
                     </Form>
@@ -106,9 +108,7 @@ class Home extends Component {
                         padding: '0.1em'
                     }}>SynestiaOS</span>
 
-                    <h6 style={{color: '#000', marginTop: '2em'}}>Our mission is to keep the operating system open to innovators, creators, and
-                        builders for the IoT. SynestiaOS is set to change the future of the IoT device platform. The ability for anyone to access and
-                        enjoy IoT experiences is critical. This is why ZionLab set out to bring SynestiaOS to IoT devices.</h6>
+                    <h6 style={{color: '#000', marginTop: '2em'}}>Our mission is to keep the operating system open to innovators, creators, and builders for the IoT. SynestiaOS is set to change the future of the IoT device platform. The ability for anyone to access and enjoy IoT experiences is critical. This is why ZionLab builds the  SynestiaOS and make it open-source.</h6>
                 </Col>
                 <Col style={{
                     paddingLeft: '2em',
