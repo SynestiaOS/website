@@ -5,6 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
+import {Link} from "react-router-dom";
 
 function Header() {
     return (
@@ -14,12 +15,12 @@ function Header() {
                     <Navbar bg="#fff" variant="light" style={{textAlign: 'left', padding: 0}}>
                         <Nav style={{width: '100%'}}>
                             <Nav.Link href="#home" style={{color: '#fff', background: '#000', fontWeight: 'bolder'}}>ZionLab</Nav.Link>
-                            <Nav.Link href="#home"
-                                      style={{color: '#fff', background: '#000', fontWeight: 'lighter', marginLeft: '0.2em'}}>SynestiaOS</Nav.Link>
+                            <Link to={"/home"}><Nav.Link href="#home"
+                                                         style={{color: '#fff', background: '#000', fontWeight: 'lighter', marginLeft: '0.2em'}}>SynestiaOS</Nav.Link></Link>
                             <Nav.Link href="https://github.com/SynestiaOS"
                                       style={{color: '#000', fontWeight: 'bold', right: 0, position: 'absolute'}}>Blog</Nav.Link>
-                            <Nav.Link href="https://github.com/SynestiaOS"
-                                      style={{color: '#000', fontWeight: 'bold', right: '3em', position: 'absolute'}}>Docs</Nav.Link>
+                            <Link to={"/docs"}><Nav.Link href="https://github.com/SynestiaOS"
+                                      style={{color: '#000', fontWeight: 'bold', right: '3em', position: 'absolute'}}>Docs</Nav.Link></Link>
                         </Nav>
                     </Navbar>
                 </Col>

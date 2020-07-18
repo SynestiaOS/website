@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import Footer from "./components/footer/Footer";
 import {Route, Switch,} from "react-router-dom";
 import Header from "./components/header/Header";
+import Docs from "./pages/docs/Docs";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Switch>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/home" component={Home}/>
+                <Route exact path="/docs" component={Docs}/>
             </Switch>
 
             <Footer/>
