@@ -21,6 +21,8 @@ function Footer() {
                     <h4 style={{color: '#fff'}}>Additional Links</h4>
                     <a style={{color: '#fff', fontWeight: 'lighter', margin: 0, padding: 0, display: 'block'}}
                        href={"https://github.com/SynestiaOS"}>Github</a>
+                    <a style={{color: '#fff', fontWeight: 'lighter', margin: 0, padding: 0, display: 'block'}}
+                       href={"https://templeos.org/"}>RIP Terry A. Davis</a>
                 </Col>
                 <Col>
                     <h4 style={{color: '#fff'}}>ZionLab</h4>

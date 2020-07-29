@@ -17,6 +17,8 @@ function Header() {
                             <Nav.Link href="#home" style={{color: '#fff', background: '#000', fontWeight: 'bolder'}}>ZionLab</Nav.Link>
                             <Link to={"/home"}><Nav.Link href="#home"
                                                          style={{color: '#fff', background: '#000', fontWeight: 'lighter', marginLeft: '0.2em'}}>SynestiaOS</Nav.Link></Link>
+                            <Nav.Link href="/sponsor"
+                                      style={{color: '#000', fontWeight: 'bold', right: '7em', position: 'absolute'}}>Sponsor</Nav.Link>
                             <Nav.Link href="https://github.com/SynestiaOS"
                                       style={{color: '#000', fontWeight: 'bold', right: 0, position: 'absolute'}}>Blog</Nav.Link>
                             <Link to={"/docs"}><Nav.Link href="https://github.com/SynestiaOS"
