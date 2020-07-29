@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecb05922-317c-4230-8e1f-08cf1aa4ee2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/blogs/Blog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/blogs/Blog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/blogs/Blog.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/WechatIMG5497.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io" beforeDir="false" afterPath="$PROJECT_DIR$/synestiaos.github.io" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blogs/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blogs/Blog.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,6 +66,7 @@
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Tests (web)" type="JavaScriptTestRunnerKarma">
       <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <karma-package-dir value="" />
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
@@ -128,7 +118,7 @@
       <workItem from="1595315614154" duration="829000" />
       <workItem from="1595870686990" duration="423000" />
       <workItem from="1596001034955" duration="3232000" />
-      <workItem from="1596035717627" duration="1397000" />
+      <workItem from="1596035717627" duration="1753000" />
     </task>
     <servers />
   </component>

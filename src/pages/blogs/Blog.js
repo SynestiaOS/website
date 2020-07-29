@@ -26,8 +26,9 @@ class Blog extends Component {
                 <Col md={4} style={{padding: '2em'}}>
                     <Image style={{width:'100%'}} src={SnapShotScreen} />
                 </Col>
-                <Col md={8} style={{paddingTop: '4em'}}>
+                <Col md={8} style={{paddingTop: '3em'}}>
                     <h3>We released the first development version 0.1.1</h3>
+                    <p><strong>Core Team</strong>&nbsp;&nbsp;&nbsp;&nbsp; Wed, 29 Jul 2020 23:46:41 GMT</p>
                     <Container>
                         <Row>
                             <p>This version supports Raspberry Pi 2, which implements basic data structures such as virtual memory management, multi-thread management, heap memory management, and linked lists. We also did basic unit testing and developed a simple 2D/3D graphics library. Basic GUI library, and system calls.</p>
