@@ -27,10 +27,10 @@ class Sponsor extends Component {
                     <p>We need some open source hardware to test the function and performance of our operating system in different scenarios.</p>
                     <p>The following is the hardware platform we currently need.</p>
                     <Container>
-                        <Row><a href={"https://www.pine64.org/pinebook-pro/"}>pinebook-pro</a></Row>
-                        <Row><a href={"https://www.pine64.org/pinetab/"}>pinetab</a></Row>
-                        <Row><a href={"https://www.pine64.org/pinephone/"}>pinephone</a></Row>
-                        <Row><a href={"https://www.pine64.org/pinetime/"}>pinetime</a></Row>
+                        <Row><a href={"https://www.pine64.org/pinebook-pro/"}>pinebook-pro(1)</a></Row>
+                        <Row><a href={"https://www.pine64.org/pinetab/"}>pinetab(1)</a></Row>
+                        <Row><a href={"https://www.pine64.org/pinephone/"}>pinephone(1)</a></Row>
+                        <Row><a href={"https://www.pine64.org/pinetime/"}>pinetime(3)</a></Row>
                     </Container>
                     <p></p>
                     <p>If you are willing to help us, please contact us:</p>
@@ -43,7 +43,7 @@ class Sponsor extends Component {
                     <h3>Sponsors</h3>
                     <p>Thank the following sponsors for their support to the team, thank you very much.</p>
                     <Container>
-                        <Row><a href={"https://blog.torchz.net/"}>帆叔</a></Row>
+                        <Row><a href={"https://blog.torchz.net/"}>Fan·Jiang</a></Row>
                     </Container>
                 </Col>
             </Row>

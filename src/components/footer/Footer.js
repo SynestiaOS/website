@@ -8,7 +8,7 @@ function Footer() {
     return (
         <Container className="Footer">
             <Row>
-                <Col style={{borderRight: 'solid 1px #fff', paddingRight: '1em',textAlign: 'right'}}>
+                <Col md={4} style={{borderRight: 'solid 1px #fff', paddingRight: '1em',textAlign: 'center'}}>
                     <span style={{color: '#fff', fontWeight: 'bold', fontSize: '2em'}}>ZionLab</span>
                     <span style={{
                         color: '#fff',
@@ -17,19 +17,25 @@ function Footer() {
                         fontSize: '2em'
                     }}>SynestiaOS</span>
                 </Col>
-                <Col>
+                <Col md={1}></Col>
+                <Col md={3}>
                     <h4 style={{color: '#fff'}}>Additional Links</h4>
                     <a style={{color: '#fff', fontWeight: 'lighter', margin: 0, padding: 0, display: 'block'}}
                        href={"https://github.com/SynestiaOS"}>Github</a>
                     <a style={{color: '#fff', fontWeight: 'lighter', margin: 0, padding: 0, display: 'block'}}
                        href={"https://templeos.org/"}>RIP Terry A. Davis</a>
                 </Col>
-                <Col>
+                <Col md={2}>
                     <h4 style={{color: '#fff'}}>ZionLab</h4>
                     <a style={{color: '#fff', fontWeight: 'lighter', margin: 0, padding: 0, display: 'block'}}
                        href={"https://github.com/SynestiaOS"}>About</a>
                     <a style={{color: '#fff', fontWeight: 'lighter', margin: 0, padding: 0, display: 'block'}} href={"https://github.com/SynestiaOS"}>Contact
                         Us</a>
+                </Col>
+                <Col md={2}>
+                    <h4 style={{color: '#fff'}}>Foundation</h4>
+                    <a style={{color: '#fff', fontWeight: 'lighter', margin: 0, padding: 0, display: 'block'}}
+                       href={"/sponsor"}>Sponsor</a>
                     <a style={{color: '#fff', fontWeight: 'lighter', margin: 0, padding: 0, display: 'block'}}
                        href={"https://patreon.com/SynestiaOS"}>Donate</a>
                 </Col>

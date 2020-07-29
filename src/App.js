@@ -7,6 +7,7 @@ import {Route, Switch,} from "react-router-dom";
 import Header from "./components/header/Header";
 import Docs from "./pages/docs/Docs";
 import Sponsor from "./pages/sponsor/Sponsor";
+import Blog from "./pages/blogs/Blog";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <Route exact path="/home" component={Home}/>
                 <Route exact path="/sponsor" component={Sponsor}/>
                 <Route exact path="/docs" component={Docs}/>
+                <Route exact path="/blog" component={Blog}/>
             </Switch>
 
             <Footer/>
