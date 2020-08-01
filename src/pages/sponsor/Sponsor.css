@@ -8,3 +8,8 @@
     height: 4em;
     background: #000;
 }
+
+.modal-90w {
+    width: 70%;
+    border-radius: 0;
+}
