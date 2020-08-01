@@ -5,7 +5,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Logo from "../../static/images/ll.png";
-import LL from "../../static/images/lg.jpg";
 import {Button, Form} from "react-bootstrap";
 import IOT from '../../static/images/iot.png';
 import {Link} from "react-router-dom";
@@ -27,8 +26,8 @@ class Home extends Component {
             }}>
                 <div className={"ribbon"}>NEW</div>
                 <Row style={{paddingTop: "4em", textAlign: 'center', marginLeft: '-2em'}}>
-                    <Col md={12} style={{textAlign: 'center', marginLeft: 'auto', marginRight: 'auto', marginBottom: 0, padding: 0}}>
-                        <Image src={LL} className="logo-lg" rounded/>
+                    <Col md={12} style={{textAlign: 'center', marginLeft: 'auto', marginRight: 'auto', padding: 0}}>
+                        <Image src={Logo} className="logo-lg" rounded/>
                     </Col>
                     <Col md={12} style={{textAlign: 'center', marginLeft: 'auto', marginRight: 'auto', marginTop: 0, padding: 0}}>
                         <h1 style={{color: '#fff', fontWeight: 'bold', fontSize: '5em'}}>Synestia&nbsp;&nbsp;<span
@@ -41,27 +40,52 @@ class Home extends Component {
             </Row>
 
             <Row style={{textAlign: 'left'}}>
-                <Col style={{background: '#000', padding: '1em', marginTop: '1em'}}>
-                    <h5 style={{background: '#fff', padding: '0.3em', fontWeight: 'bold', display: 'inline-block'}}>Create With Synestia</h5>
-                    <h2 style={{color: '#fff'}}>Synestia Develop Resources</h2>
-                    <h6 style={{color: '#fff'}}>Build your own iot device with Synestia</h6>
-                    <a href={"https://github.com/SynestiaOS/SynestiaOS"} style={{fontWeight: 'normal', marginTop: '2em'}}>Learn More</a>
+                <Col md={5} style={{height: '30em', padding: 0,}}>
+                    <Container style={{
+                        background: "url(https://dynamic.thoughtworks.com/landing_pages/content_collection1-5e60d07874090fbbf3d363f2e10755da.jpeg)",
+                        padding: '1em',
+                        marginTop: '1em',
+                        height: '15em'
+                    }}>
+                        <Container style={{background: "hsla(250 ,10% ,30%,.3)",height:'13em'}}>
+                            <h5 style={{background: '#fff', padding: '0.3em', fontWeight: 'bold', display: 'inline-block'}}>Create With Synestia</h5>
+                            <h2 style={{color: '#fff'}}>Synestia Develop Resources</h2>
+                            <h6 style={{color: '#fff'}}>Build your own iot device with Synestia</h6>
+                            <a href={"https://github.com/SynestiaOS/SynestiaOS"} style={{color:'#fff',fontWeight: 'normal', marginTop: '2em'}}>Learn More</a>
+                        </Container>
+                    </Container>
+
+                    <Container style={{
+                        background: "url(https://dynamic.thoughtworks.com/landing_pages/content_collection1-5e60d07874090fbbf3d363f2e10755da.jpeg)",
+                        padding: '1em',
+                        marginTop: '1em',
+                        height: '15em'
+                    }}>
+                        <Container style={{background: "hsla(250 ,10% ,30%,.3)",height:'13em'}}>
+                            <h5 style={{background: '#fff', padding: '0.3em', fontWeight: 'bold', display: 'inline-block'}}>Request Issues</h5>
+                            <h2 style={{color: '#fff'}}>Communicate with develop team</h2>
+                            <h6 style={{color: '#fff'}}>Request new feature you want us to add</h6>
+                            <a href={"https://github.com/SynestiaOS/SynestiaOS/issues/new/choose"} style={{color:'#fff',fontWeight: 'normal', marginTop: '2em'}}>Learn
+                                More</a>
+                        </Container>
+                    </Container>
                 </Col>
 
-                <Col style={{background: '#000', padding: '1em', marginTop: '1em', marginLeft: '1em'}}>
-                    <h5 style={{background: '#fff', padding: '0.3em', fontWeight: 'bold', display: 'inline-block'}}>Request Issues</h5>
-                    <h2 style={{color: '#fff'}}>Communicate with develop team</h2>
-                    <h6 style={{color: '#fff'}}>Request new feature you want us to add</h6>
-                    <a href={"https://github.com/SynestiaOS/SynestiaOS/issues/new/choose"} style={{fontWeight: 'normal', marginTop: '2em'}}>Learn
-                        More</a>
-                </Col>
-
-                <Col style={{background: '#000', padding: '1em', marginTop: '1em', marginLeft: '1em'}}>
-                    <h5 style={{background: '#fff', padding: '0.3em', fontWeight: 'bold', display: 'inline-block'}}>Report Bugs</h5>
-                    <h2 style={{color: '#fff'}}>Work with Synestia team</h2>
-                    <h6 style={{color: '#fff'}}>Report the bug you found to make Synestia Better</h6>
-                    <a href={"https://github.com/SynestiaOS/SynestiaOS/issues/new/choose"} style={{fontWeight: 'normal', marginTop: '2em'}}>Learn
-                        More</a>
+                <Col md={7} style={{padding: 0, paddingLeft: '1em'}}>
+                    <Container style={{
+                        background: "url(https://dynamic.thoughtworks.com/landing_pages/content_collection1-5e60d07874090fbbf3d363f2e10755da.jpeg)",
+                        padding: '1em',
+                        marginTop: '1em',
+                        height: '31em'
+                    }}>
+                        <Container style={{background: "hsla(250 ,10% ,30%,.3)",height:'29em'}}>
+                            <h5 style={{background: '#fff', padding: '0.3em', fontWeight: 'bold', display: 'inline-block'}}>Report Bugs</h5>
+                            <h2 style={{color: '#fff'}}>Work with Synestia team</h2>
+                            <h6 style={{color: '#fff'}}>Report the bug you found to make Synestia Better</h6>
+                            <a href={"https://github.com/SynestiaOS/SynestiaOS/issues/new/choose"} style={{color:'#fff',fontWeight: 'normal', marginTop: '2em'}}>Learn
+                                More</a>
+                        </Container>
+                    </Container>
                 </Col>
             </Row>
             <Row style={{padding: '4em', textAlign: 'center'}}>
@@ -99,18 +123,18 @@ class Home extends Component {
                     </Form>
                 </Col>
             </Row>
-            <Row style={{padding: 0, background: '#000', textAlign: 'left',paddingTop:'4em',paddingBottom:'4em',color:'#fff'}}>
+            <Row style={{padding: 0, background: '#000', textAlign: 'left', paddingTop: '4em', paddingBottom: '4em', color: '#fff'}}>
                 <Col md={12} style={{padding: 0, textAlign: 'center'}}>
                     <img className="mb4"
                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDYiIGhlaWdodD0iNDIiIHZpZXdCb3g9IjAgMCA0NiA0MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+SWNvbjwvdGl0bGU+PGcgZmlsbD0iIzlDOUNGRiIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTEuMTQ0IDI2LjQ5OGMyLjEzMyAyLjEgNS4wMTggMy4yNzQgOC4wOTIgMy4yNzQgMy4wNzUgMCA1Ljg5OC0xLjE3MyA4LjA5My0zLjI3NGwyLjYzMi0yLjU5M2MuNTAzLS40OTUuNTAzLTEuMjM2IDAtMS43My0uNTAzLS40OTYtMS4yNTUtLjQ5Ni0xLjc1NyAwbC0yLjY5NiAyLjUzYy0xLjY5MyAxLjY2Ny0zLjg4OCAyLjU5My02LjI3NCAyLjU5My0yLjM4NSAwLTQuNjQyLS45MjYtNi4yNzItMi41OTJMNS43NSAxNy42NjRDMi4zIDE0LjI2NyAyLjMgOC43MDggNS43NSA1LjI1YzMuNDUtMy4zOTcgOS4wOTUtMy4zOTcgMTIuNjA3IDBsMi4zMiAyLjI4NGMuNTAzLjQ5NSAxLjI1NS40OTUgMS43NTggMCAuNTAzLS40OTUuNTAzLTEuMjM2IDAtMS43M2wtMi4zMi0yLjI4NUMxNS42NjMtLjg2NyA4LjQ1LS44NjcgMy45OTUgMy41MmMtNC40NTIgNC4zODQtNC40NTIgMTEuNDg3IDAgMTUuODcybDcuMTUgNy4xMDZ6Ii8+PHBhdGggZD0iTTE2LjAzOCAxOC4xNmMtLjUwMy40OTUtLjUwMyAxLjIzNSAwIDEuNzMuNTAzLjQ5NiAxLjI1NS40OTYgMS43NTcgMGwyLjY5Ni0yLjU5NmMxLjY5My0xLjY2NiAzLjg4OC0yLjU5MiA2LjI3NC0yLjU5MiAyLjM4NSAwIDQuNjQyLjkyNiA2LjI3MiAyLjU5Mmw3LjIxNCA3LjEwM2MzLjQ1IDMuMzk3IDMuNDUgOC45NTYgMCAxMi40MTQtMy40NSAzLjM5OC05LjA5NSAzLjM5OC0xMi42MDcgMGwtMi4zMi0yLjI4M2MtLjUwMy0uNDk1LTEuMjU1LS40OTUtMS43NTggMC0uNTAzLjQ5NS0uNTAzIDEuMjM2IDAgMS43M2wyLjMyIDIuMjg1YzIuMTk1IDIuMTYyIDUuMTQyIDMuMjc0IDguMDkyIDMuMjc0IDIuOTQ3IDAgNS44MzYtMS4xMTIgOC4wOTMtMy4yNzQgNC40NTMtNC4zODQgNC40NTMtMTEuNDg3IDAtMTUuODczTDM0Ljg1NiAxNS41Yy0yLjEzMy0yLjEtNS4wMTgtMy4yNzQtOC4wOTItMy4yNzQtMy4wNzUgMC01Ljg5OCAxLjE3My04LjA5MyAzLjI3NEwxNi4wNCAxOC4xNnoiLz48L2c+PC9zdmc+"
                          alt="additional link"/>
                 </Col>
-                <Col md={12} style={{padding: 0, textAlign: 'center',marginTop:'2em'}}>
+                <Col md={12} style={{padding: 0, textAlign: 'center', marginTop: '2em'}}>
                     <h1>Tutorials & Resources</h1>
                 </Col>
-                <Col md={12} style={{padding: 0, textAlign: 'center',marginTop:'2em'}}>
+                <Col md={12} style={{padding: 0, textAlign: 'center', marginTop: '2em'}}>
                     <Row>
-                        <Col md={6} style={{borderRight:'solid 1px #fff'}}>
+                        <Col md={6} style={{borderRight: 'solid 1px #fff'}}>
                             <h4>Kernel, Application develop tutorials</h4>
                             <Link to={"https://github.com/SynestiaOS"}>github.com</Link>
                         </Col>
