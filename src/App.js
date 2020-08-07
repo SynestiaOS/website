@@ -8,6 +8,7 @@ import Header from "./components/header/Header";
 import Docs from "./pages/docs/Docs";
 import Sponsor from "./pages/sponsor/Sponsor";
 import Blog from "./pages/blogs/Blog";
+import Faq from "./pages/faq/Faq";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <Route exact path="/sponsor" component={Sponsor}/>
                 <Route exact path="/docs" component={Docs}/>
                 <Route exact path="/blog" component={Blog}/>
+                <Route exact path="/faq" component={Faq}/>
             </Switch>
 
             <Footer/>

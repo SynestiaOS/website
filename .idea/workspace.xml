@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecb05922-317c-4230-8e1f-08cf1aa4ee2b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/faq/Faq.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/faq/Faq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/faq/Faq.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/docs/Docs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/docs/Docs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,15 +46,15 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/static/images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/static/images" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/components/footer" />
       <recent name="$PROJECT_DIR$/src/pages/home" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/static/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -121,7 +127,8 @@
       <workItem from="1596035717627" duration="2005000" />
       <workItem from="1596212360274" duration="1023000" />
       <workItem from="1596265513582" duration="2114000" />
-      <workItem from="1596276910909" duration="1711000" />
+      <workItem from="1596276910909" duration="2068000" />
+      <workItem from="1596818973883" duration="2047000" />
     </task>
     <servers />
   </component>

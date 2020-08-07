@@ -5,120 +5,16 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Logo from "../../static/images/ll.png";
-
-const markdown = require("markdown").markdown;
+import {Link} from "react-router-dom";
 
 class Docs extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            currentMarkDown: '# Prepare Environment\n' +
-                '## Clion\n' +
-                '[Clion](https://www.jetbrains.com/clion) is recommend to used as our development environment, and use docker to build the kernel.\n' +
-                'under this **Docker** dir, run following command to setup dev environment\n' +
-                '\n' +
-                '```\n' +
-                'docker-compose up -d dev-prebuilt\n' +
-                '```\n' +
-                '\n' +
-                'within the docker container, we setup the ssh environment, and we can connect to the container through ssh.\n' +
-                '\n' +
-                '```\n' +
-                'docker-compose exec dev-prebuilt /bin/bash\n' +
-                '#> cd Build\n' +
-                '#> cmake .. && make\n' +
-                '```\n' +
-                '\n' +
-                'within Clion, Settings->Build,Execution,Deployment->Toolchain, click add a remote host, \n' +
-                'and input the credentials, user: root, password: password. and it\'s done.\n' +
-                '\n' +
-                '## for linux:\n' +
-                '``` bash\n' +
-                'sudo bash Scripts/SetupLinux.sh\n' +
-                '```\n' +
-                '## for windows:\n' +
-                '\n' +
-                '## for docker:\n' +
-                'under this project dir, run following command to setup dev environment\n' +
-                '\n' +
-                '```\n' +
-                'docker-compose up -d dev-prebuilt\n' +
-                '```\n' +
-                '\n' +
-                '# code formatting\n' +
-                'under this project dir, run following command to format the code \n' +
-                '\n' +
-                '```\n' +
-                'docker-compose run dev-prebuilt bash run-clang-foramt.sh\n' +
-                '``` \n' +
-                '# Build, Run and Debug\n' +
-                'within the docker container, under the Build dir, run following command to build kernel\n' +
-                '\n' +
-                '```\n' +
-                'cmake .. && make VERBOSE=1\n' +
-                '```\n' +
-                '\n' +
-                'if you are using mac, specify the cross compile toolchain in CMake/ToolchainMacArm.cmake, \n' +
-                'and specify the toolchain file location\n' +
-                '\n' +
-                '```\n' +
-                'cmake -DCMAKE_TOOLCHAIN_FILE=${PATH_TO_THIS_PROJECT}/SynestiaOS/CMake/ToolchainMacArm.cmake .. && make VERBOSE=1\n' +
-                '```\n' +
-                '\n' +
-                'To run kernel, you can find the kernel image under Build/\n' +
-                '\n' +
-                '```\n' +
-                'qemu-system-arm -M raspi2 -kernel bin/Kernel.img -nographic -serial mon:stdio      #for raspi2 and arm32\n' +
-                'qemu-system-aarch64 -M raspi3 -kernel bin/Kernel.img -nographic -serial mon:stdio  #for raspi3 and arm64\n' +
-                '```\n' +
-                '\n' +
-                'To run kernel unit tests, you can find the kernel unit tests image under Build/\n' +
-                '\n' +
-                '```\n' +
-                'qemu-system-arm -M raspi2 -kernel bin/KernelUnitTests.img -nographic -serial mon:stdio      #for raspi2 and arm32\n' +
-                'qemu-system-aarch64 -M raspi3 -kernel bin/KernelUnitTests.img -nographic -serial mon:stdio  #for raspi3 and arm64\n' +
-                '```\n' +
-                '\n' +
-                'To clean workspace:\n' +
-                '\n' +
-                '``` \n' +
-                'make clean\n' +
-                '```\n' +
-                '\n' +
-                'To debug kernel, arm32 for instance:\n' +
-                'openup terminal 1:\n' +
-                '\n' +
-                '```\n' +
-                'qemu-system-arm -M raspi2 -kernel Kernel.img -s -S -nographic\n' +
-                '```\n' +
-                '\n' +
-                'openup terminal 2:\n' +
-                '\n' +
-                '```\n' +
-                'gdb-multiarch Kernel.img\n' +
-                '(gdb) target remote :1234\n' +
-                '(gdb) display/i $pc\n' +
-                '(gdb) break _start\n' +
-                '(gdb) c\n' +
-                '(gdb) si\n' +
-                '```\n' +
-                '\n' +
-                '# Project Management\n' +
-                '[JIRA](https://synestiaos.atlassian.net/)\n'
-        };
+        this.state = {};
     }
 
     render() {
-        let tree = markdown.toHTMLTree(this.state.currentMarkDown);
-
-        let ul = [];
-        for (let line in tree) {
-            if ('h1' === tree[line][0]) {
-                ul.push(<li style={{fontWeight:'bold'}} onClick={this.renderMarkdownDoc.bind(this, "")}>{tree[line][1]}</li>);
-            }
-        }
-
         return (<Container className="Home">
             <Row style={{height: '16em', textAlign: 'center', paddingTop: '4em'}}>
                 <Col style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: "auto", paddingBottom: 'auto', marginBottom: 0, padding: 0}}>
@@ -126,13 +22,65 @@ class Docs extends Component {
                     <h1 style={{color: '#000', fontWeight: 'normal', marginTop: '0.5em'}}>Documents for developer</h1>
                 </Col>
             </Row>
-            <Row style={{background: '#fff', padding: 0}}>
-                <Col md={3} style={{padding: '2em'}}>
-                    {ul}
+            <Row style={{background: '#fff', padding: 0, paddingBottom: '3em', paddingTop: '2em'}}>
+
+                <Col md={3} style={{textAlign: 'center'}}>
+                    <Link to={"/faq"} style={{color:'#000'}}>
+                    <img className="thumb-image loaded"
+                         style={{opacity: 1, left: "-0.122757px", top: "0px", width: "171.246px", height: "171px", position: "relative"}}
+                         alt="FAQ"
+                         src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058073124-4D2Z0954TU4D5RRUFD3M/ke17ZwdGBToddI8pDm48kB-9GYlrABRnirIA2a_AHjd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmym1-sL9rIZ5HM_UOviYKV5Y2qJzdEvp_sP3Xxvvbwy-tuOF86sOfVnv8Ab2kfh8S/faq_logo.PNG?format=500w"/>
+                    <h4>FAQ</h4>
+                    </Link>
                 </Col>
-                <Col md={9} style={{paddingTop: '2em'}}>
-                    <Container dangerouslySetInnerHTML={{__html: markdown.toHTML(this.state.currentMarkDown)}}>
-                    </Container>
+                <Col md={3} style={{textAlign: 'center'}}>
+                    <img className="thumb-image loaded"
+                         style={{opacity: 1, left: "-0.122757px", top: "0px", width: "171.246px", height: "171px", position: "relative"}}
+                         alt="Forum"
+                         src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058123638-H4VTXMHVGK47D4A2VC54/ke17ZwdGBToddI8pDm48kEoK7p2cuopIbMpnY-qU4Xt7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmPCjdaixatBq74HpDU8-1BG_BTZdSbG6SN-2894KVoY0GT6uSxH2T086BFBPl3LIm/forum_logo.PNG?format=500w"/>
+                    <h4>Forum</h4>
+                </Col>
+                <Col md={3} style={{textAlign: 'center'}}>
+                    <Link to={"https://github.com/SynestiaOS/SynestiaOS"} style={{color:'#000'}}>
+                        <img className="thumb-image loaded"
+                             style={{opacity: 1, left: "-0.122757px", top: "0px", width: "171.246px", height: "171px", position: "relative"}}
+                             alt="Repos"
+                             src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058073900-WVGTGL3L31VB4GOKJMLJ/ke17ZwdGBToddI8pDm48kIaRRqZIZigB-m6pyLCfme17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmoSbrsZANSlg2c7ntKg0xqn6tNu6SCqFhEN4mC7jqvrVUtmHEoE1LyVcxA9GiIFsw/git_logo.PNG?format=500w"/>
+                        <h4>Repos</h4>
+                    </Link>
+                </Col>
+                <Col md={3} style={{textAlign: 'center'}}>
+                    <img className="thumb-image loaded"
+                         style={{opacity: 1, left: "-0.122757px", top: "0px", width: "171.246px", height: "171px", position: "relative"}}
+                         alt="Videos"
+                         src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058072361-6BAZK6WOQVHDLIXQGNC2/ke17ZwdGBToddI8pDm48kNQeTggaIOlRX9bkwROWejF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTm60PLM3IYeVzy64Wg-koOodVAmjpaHAZD3JztAEJlWhjZAp-1gBeDTnWFwhpl6he_/video_logo.PNG?format=500w"/>
+                    <h4>Videos</h4>
+                </Col>
+                <Col md={3} style={{textAlign: 'center'}}>
+                    <Link to={"https://github.com/SynestiaOS/Documentation"} style={{color:'#000'}}>
+                    <img className="thumb-image loaded"
+                         style={{opacity: 1, left: "-0.122757px", top: "0px", width: "171.246px", height: "171px", position: "relative"}}
+                         alt="Docs"
+                         src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058073215-RO2ROZ4YCCQWMV91CD75/ke17ZwdGBToddI8pDm48kNTz3eyGtDo4QTeoVbk60fl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTm77b3aMoxlc0duZREiKix3qw0PFOrX67-8pWa41WR2KUYBcYeBpnicIz0xxzN7tvP/documentation_logo.PNG?format=500w"/>
+                    <h4>Docs</h4>
+                    </Link>
+                </Col>
+                <Col md={3} style={{textAlign: 'center'}}>
+                    <img className="thumb-image loaded"
+                         style={{opacity: 1, left: "-0.122757px", top: "0px", width: "171.246px", height: "171px", position: "relative"}}
+                         alt="Tool Share"
+                         src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058072818-ZD37NLAOA1IQ9WBXGHGR/ke17ZwdGBToddI8pDm48kLPrH-eUyRPeXq6cbt4AjsB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmC_XKz7woDqXWNVYlmJ2TM2NtZ2hEJVENtG9pTzc1jPFNws-e4TuyPzAKCUrCdvn2/wrench_logo.PNG?format=500w"/>
+                    <h4>Tool Share</h4>
+                </Col>
+
+                <Col md={3} style={{textAlign: 'center'}}>
+                    <Link to={"/blog"} style={{color:'#000'}}>
+                    <img className="thumb-image loaded"
+                         style={{opacity: 1, left: "-0.122757px", top: "0px", width: "211.246px", height: "171px", position: "relative"}}
+                         alt="News"
+                         src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1591804137817-S577GCV49HJ20K7B6A2P/ke17ZwdGBToddI8pDm48kJgA4Aiv2RIeIWWUvLYvbEp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTm8WBMyhSE1e2N-_2ueoaGrcUsjq1CQVxeKzuT0oiquQ2hKep5iLcGpbnjjieWKJkh/twitter7.PNG?format=500w"/>
+                    <h4>News</h4>
+                    </Link>
                 </Col>
             </Row>
         </Container>);

@@ -16,6 +16,7 @@ function Footer() {
                         marginLeft: '0.2em',
                         fontSize: '2em'
                     }}>SynestiaOS</span>
+                    <p style={{color:"#999"}}>© 2020 SynestiaOS. All Rights Reserved</p>
                 </Col>
                 <Col md={1}></Col>
                 <Col md={3}>

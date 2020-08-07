@@ -136,11 +136,11 @@ class Home extends Component {
                     <Row>
                         <Col md={6} style={{borderRight: 'solid 1px #fff'}}>
                             <h4>Kernel, Application develop tutorials</h4>
-                            <Link to={"https://github.com/SynestiaOS"}>github.com</Link>
+                            <Link to={"/docs"}>Go</Link>
                         </Col>
                         <Col md={6}>
                             <h4>Board,Hardware and devices support</h4>
-                            <Link to={"https://github.com/SynestiaOS"}>github.com</Link>
+                            <Link to={"/docs"}>Go</Link>
                         </Col>
                     </Row>
                 </Col>
