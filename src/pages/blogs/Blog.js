@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import Logo from "../../static/images/ll.png";
+import LogoRe from "../../static/images/logo_re.png";
 import SnapShotScreen from "../../static/images/WechatIMG5497.jpeg";
 
 class Blog extends Component {
@@ -15,9 +15,9 @@ class Blog extends Component {
 
     render() {
         return (<Container className="Sponsor">
-            <Row style={{height: '16em', textAlign: 'center', paddingTop: '4em'}}>
+            <Row style={{height: '16em', textAlign: 'center', paddingTop: '2em'}}>
                 <Col style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: "auto", paddingBottom: 'auto', marginBottom: 0, padding: 0}}>
-                    <Image src={Logo} className="logo-img"/>
+                    <Image src={LogoRe} className="logo-img"/>
                     <h1 style={{color: '#000', fontWeight: 'normal', marginTop: '0.5em'}}>Blog</h1>
                     <p style={{color: '#000', fontWeight: 'normal', marginTop: '0.5em'}}>Our blog and status updates</p>
                 </Col>

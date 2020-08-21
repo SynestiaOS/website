@@ -4,7 +4,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import Logo from "../../static/images/ll.png";
+import LogoRe from "../../static/images/logo_re.png";
+import Logo from "../../static/images/logo.png";
 import {Button, Form} from "react-bootstrap";
 import IOT from '../../static/images/iot.png';
 import {Link} from "react-router-dom";
@@ -12,9 +13,9 @@ import {Link} from "react-router-dom";
 class Home extends Component {
     render() {
         return (<Container className="Home">
-            <Row style={{height: '16em', textAlign: 'center', paddingTop: '4em'}}>
+            <Row style={{height: '16em', textAlign: 'center', paddingTop: '2em'}}>
                 <Col style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: "auto", paddingBottom: 'auto', marginBottom: 0, padding: 0}}>
-                    <Image src={Logo} className="logo-img"/>
+                    <Image src={LogoRe} className="logo-img"/>
                     <h1 style={{color: '#000', fontWeight: 'normal', marginTop: '0.5em'}}>Open Source Operating System</h1>
                 </Col>
             </Row>
@@ -25,7 +26,7 @@ class Home extends Component {
                 overflow: 'hidden',
             }}>
                 <div className={"ribbon"}>NEW</div>
-                <Row style={{paddingTop: "4em", textAlign: 'center', marginLeft: '-2em'}}>
+                <Row style={{paddingTop: "0em", textAlign: 'center', marginLeft: '-5em'}}>
                     <Col md={12} style={{textAlign: 'center', marginLeft: 'auto', marginRight: 'auto', padding: 0}}>
                         <Image src={Logo} className="logo-lg" rounded/>
                     </Col>

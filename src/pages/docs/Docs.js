@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import Logo from "../../static/images/ll.png";
+import LogoRe from "../../static/images/logo_re.png";
 import {Link} from "react-router-dom";
 
 class Docs extends Component {
@@ -16,9 +16,9 @@ class Docs extends Component {
 
     render() {
         return (<Container className="Home">
-            <Row style={{height: '16em', textAlign: 'center', paddingTop: '4em'}}>
+            <Row style={{height: '16em', textAlign: 'center', paddingTop: '2em'}}>
                 <Col style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: "auto", paddingBottom: 'auto', marginBottom: 0, padding: 0}}>
-                    <Image src={Logo} className="logo-img"/>
+                    <Image src={LogoRe} className="logo-img"/>
                     <h1 style={{color: '#000', fontWeight: 'normal', marginTop: '0.5em'}}>Documents for developer</h1>
                 </Col>
             </Row>
@@ -41,13 +41,13 @@ class Docs extends Component {
                     <h4>Forum</h4>
                 </Col>
                 <Col md={3} style={{textAlign: 'center'}}>
-                    <Link to={"https://github.com/SynestiaOS/SynestiaOS"} style={{color:'#000'}}>
+                    <a href={"https://github.com/SynestiaOS/SynestiaOS"} style={{color:'#000'}}>
                         <img className="thumb-image loaded"
                              style={{opacity: 1, left: "-0.122757px", top: "0px", width: "171.246px", height: "171px", position: "relative"}}
                              alt="Repos"
                              src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058073900-WVGTGL3L31VB4GOKJMLJ/ke17ZwdGBToddI8pDm48kIaRRqZIZigB-m6pyLCfme17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmoSbrsZANSlg2c7ntKg0xqn6tNu6SCqFhEN4mC7jqvrVUtmHEoE1LyVcxA9GiIFsw/git_logo.PNG?format=500w"/>
                         <h4>Repos</h4>
-                    </Link>
+                    </a>
                 </Col>
                 <Col md={3} style={{textAlign: 'center'}}>
                     <img className="thumb-image loaded"
@@ -57,13 +57,13 @@ class Docs extends Component {
                     <h4>Videos</h4>
                 </Col>
                 <Col md={3} style={{textAlign: 'center'}}>
-                    <Link to={"https://github.com/SynestiaOS/Documentation"} style={{color:'#000'}}>
+                    <a href={"https://github.com/SynestiaOS/Documentation"} style={{color:'#000'}}>
                     <img className="thumb-image loaded"
                          style={{opacity: 1, left: "-0.122757px", top: "0px", width: "171.246px", height: "171px", position: "relative"}}
                          alt="Docs"
                          src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058073215-RO2ROZ4YCCQWMV91CD75/ke17ZwdGBToddI8pDm48kNTz3eyGtDo4QTeoVbk60fl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTm77b3aMoxlc0duZREiKix3qw0PFOrX67-8pWa41WR2KUYBcYeBpnicIz0xxzN7tvP/documentation_logo.PNG?format=500w"/>
                     <h4>Docs</h4>
-                    </Link>
+                    </a>
                 </Col>
                 <Col md={3} style={{textAlign: 'center'}}>
                     <img className="thumb-image loaded"

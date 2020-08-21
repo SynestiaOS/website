@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import Logo from "../../static/images/ll.png";
+import LogoRe from "../../static/images/logo_re.png";
 import {Button, Modal} from "react-bootstrap";
 
 import WePay from "../../static/images/wepay.png"
@@ -69,9 +69,9 @@ class Sponsor extends Component {
 
     render() {
         return (<Container className="Sponsor">
-            <Row style={{height: '16em', textAlign: 'center', paddingTop: '4em'}}>
+            <Row style={{height: '16em', textAlign: 'center', paddingTop: '2em'}}>
                 <Col style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: "auto", paddingBottom: 'auto', marginBottom: 0, padding: 0}}>
-                    <Image src={Logo} className="logo-img"/>
+                    <Image src={LogoRe} className="logo-img"/>
                     <h1 style={{color: '#000', fontWeight: 'normal', marginTop: '0.5em'}}>Sponsors</h1>
                     <p style={{color: '#000', fontWeight: 'normal', marginTop: '0.5em'}}>Help us do better</p>
                 </Col>
