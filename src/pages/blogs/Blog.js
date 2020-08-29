@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import LogoRe from "../../static/images/logo_re.png";
-import SnapShotScreen from "../../static/images/WechatIMG5497.jpeg";
+import {blogsData} from './blogsData';
 
 class Blog extends Component {
 
@@ -22,21 +22,23 @@ class Blog extends Component {
                     <p style={{color: '#000', fontWeight: 'normal', marginTop: '0.5em'}}>Our blog and status updates</p>
                 </Col>
             </Row>
-            <Row style={{background: '#fff', padding: 0}}>
-                <Col md={4} style={{padding: '2em'}}>
-                    <Image style={{width:'100%'}} src={SnapShotScreen} />
-                </Col>
-                <Col md={8} style={{paddingTop: '3em'}}>
-                    <h3>We released the first development version 0.1.1</h3>
-                    <p><strong>Core Team</strong>&nbsp;&nbsp;&nbsp;&nbsp; Wed, 29 Jul 2020 23:46:41 GMT</p>
-                    <Container>
-                        <Row>
-                            <p>This version supports Raspberry Pi 2, which implements basic data structures such as virtual memory management, multi-thread management, heap memory management, and linked lists. We also did basic unit testing and developed a simple 2D/3D graphics library. Basic GUI library, and system calls.</p>
-                        </Row>
-                    </Container>
-                    <a href={"https://github.com/SynestiaOS/SynestiaOS/releases/tag/kernel"}>GO >></a>
-                </Col>
-            </Row>
+            {blogsData.map((item,index)=>{
+                return  <Row style={{background: '#fff', padding: 0}}>
+                    <Col md={4} style={{padding: '2em'}}>
+                        <Image style={{width:'100%'}} src={item.image} />
+                    </Col>
+                    <Col md={8} style={{paddingTop: '3em'}}>
+                        <h3>{item.title}</h3>
+                        <p><strong>{item.author}</strong>&nbsp;&nbsp;&nbsp;&nbsp; {item.time}</p>
+                        <Container>
+                            <Row>
+                                <p>{item.content}</p>
+                            </Row>
+                        </Container>
+                        <a href={item.url}>GO >></a>
+                    </Col>
+                </Row>
+            })}
         </Container>);
     };
 
