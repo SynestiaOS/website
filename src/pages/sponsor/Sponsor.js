@@ -9,6 +9,7 @@ import {Button, Modal} from "react-bootstrap";
 
 import WePay from "../../static/images/wepay.png"
 import AliPay from "../../static/images/alipay.png"
+import {sponsorsData} from "./sponsorsData";
 
 function DonateModalWithGrid(props) {
     return (
@@ -108,7 +109,13 @@ class Sponsor extends Component {
                     <h3>Sponsors</h3>
                     <p>Thank the following sponsors for their support to the team, thank you very much.</p>
                     <Container>
-                        <Row><a href={"https://blog.torchz.net/"}>Fan·Jiang</a></Row>
+                        <Row>
+                            {
+                                sponsorsData.map((item,index)=>{
+                                  return   <a href={item.url} style={{paddingRight:'1em'}}>{item.name}</a>
+                                })
+                            }
+                        </Row>
                     </Container>
                 </Col>
             </Row>
