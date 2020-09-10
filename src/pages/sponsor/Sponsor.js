@@ -112,7 +112,7 @@ class Sponsor extends Component {
                         <Row>
                             {
                                 sponsorsData.map((item,index)=>{
-                                  return   <a href={item.url} style={{paddingRight:'1em'}}>{item.name}</a>
+                                    return this.renderSponsor(item);
                                 })
                             }
                         </Row>
@@ -122,6 +122,36 @@ class Sponsor extends Component {
             <DonateModalWithGrid show={this.state.modalShow} onHide={() => this.setModalShow(false)}/>
         </Container>);
     };
+
+    renderSponsor(item) {
+        let linearGradient;
+        switch (item.level) {
+            case 1:
+                linearGradient = "linear-gradient(to right, rgb(229,199,173), rgb(182,152,124))";
+                break;
+            case 2:
+                linearGradient = "linear-gradient(to right, rgb(239,205,109), rgb(215,159,61))";
+                break;
+            case 3:
+                linearGradient = "linear-gradient(to right, rgb(228,226,227), rgb(195,193,196))";
+                break;
+            case 4:
+                linearGradient = "linear-gradient(to right, rgb(166,219,246), rgb(77,164,216))";
+                break;
+            default:
+                linearGradient = "linear-gradient(to right, rgb(166,219,246), rgb(77,164,216))";
+                break;
+
+        }
+        return <a href={item.url} style={{paddingRight: '1em', color: '#333'}}>
+            <p style={{
+                padding: "0.3em",
+                borderRadius: "2px",
+                backgroundImage: linearGradient
+            }}>{item.name}</p>
+        </a>;
+
+    }
 
     setModalShow(visible) {
         this.setState({
