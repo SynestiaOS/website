@@ -56,6 +56,41 @@ class Faq extends Component {
                         </Row>
                     </Container>
                 </Col>
+                <Col md={12} style={{paddingTop: '1em', paddingBottom: '1em'}}>
+                    <h1>What is your sponsor level?</h1>
+                    <Container style={{marginTop: '1em'}}>
+                        <Row>
+                            <Col md={3}>
+                                <p style={{
+                                    padding: "1em",
+                                    borderRadius: "2px",
+                                    backgroundImage: "linear-gradient(to right, rgb(229,199,173), rgb(182,152,124))",
+                                }}>Platinum Sponsor</p>
+                            </Col>
+                            <Col md={3}>
+                                <p style={{
+                                    padding: "1em",
+                                    borderRadius: "2px",
+                                    backgroundImage:  "linear-gradient(to right, rgb(239,205,109), rgb(215,159,61))",
+                                }}>Gold Sponsor</p>
+                            </Col>
+                            <Col md={3}>
+                                <p style={{
+                                    padding: "1em",
+                                    borderRadius: "2px",
+                                    backgroundImage: "linear-gradient(to right, rgb(228,226,227), rgb(195,193,196))",
+                                }}>Silver Sponsor</p>
+                            </Col>
+                            <Col md={3}>
+                                <p style={{
+                                    padding: "1em",
+                                    borderRadius: "2px",
+                                    backgroundImage: "linear-gradient(to right, rgb(166,219,246), rgb(77,164,216))",
+                                }}>Normal Sponsor</p>
+                            </Col>
+                        </Row>
+                    </Container>
+                </Col>
             </Row>
         </Container>);
     };
