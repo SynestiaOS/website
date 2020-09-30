@@ -9,6 +9,7 @@ import Docs from "./pages/docs/Docs";
 import Sponsor from "./pages/sponsor/Sponsor";
 import Blog from "./pages/blogs/Blog";
 import Faq from "./pages/faq/Faq";
+import CopyRight from "./components/copyright/CopyRight";
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
             </Switch>
 
             <Footer/>
+            <CopyRight/>
         </Container>
     );
 }

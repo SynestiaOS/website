@@ -37,9 +37,6 @@ function Footer() {
                        href={"https://github.com/SynestiaOS"}>Github</a>
                 </Col>
             </Row>
-            <Row style={{marginTop:'1em',borderTop: "1px solid #DDD",padding:'0.5em',color:'#999'}}>
-                <span>SynestiaOS  · All Rights Reserved ©2020</span>
-            </Row>
         </Container>
     );
 }
