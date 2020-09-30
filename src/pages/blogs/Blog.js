@@ -39,7 +39,16 @@ class Blog extends Component {
                             <Col md={6} style={{paddingTop: '2em', paddingLeft: '0'}}>
                                 <h3>{item.title}</h3>
                                 <p>{item.time}</p>
-                                <a href={item.url}>GO ></a>
+                                <a href={item.url}
+                                   style={{fontWeight: 'normal', marginTop: '2em', marginLeft: 'auto', marginRight: 'auto'}}>
+                                    <button style={{
+                                        color: '#fff',
+                                        background: '#000',
+                                        border: 'none',
+                                        borderRadius: '100em',
+                                    }}>Learn More
+                                    </button>
+                                </a>
                             </Col>
                         </Row>
                     </Col>

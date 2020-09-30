@@ -6,6 +6,7 @@ function CopyRight() {
     return (
         <Container className="CopyRight">
             <span>SynestiaOS  · All Rights Reserved ©2020</span>
+            <span style={{float:"right"}}>current version: Lyra</span>
         </Container>
     );
 }

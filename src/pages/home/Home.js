@@ -24,6 +24,76 @@ class Home extends Component {
                     </a>
                 </Col>
             </Row>
+
+            <Row style={{background: '#f5f5f6', paddingTop: '1em'}}>
+                <Col md={4}>
+                    <h2>Kernel ></h2>
+                    <Row style={{background: '#fff', padding: '2em', borderRight: 'solid 1px #eee'}}>
+                        <Col md={3}>Thread</Col>
+                        <Col md={3}>VMM</Col>
+                        <Col md={3}>Mutex</Col>
+                        <Col md={3}>Semaphore</Col>
+                        <Col md={3}>SysCall</Col>
+                        <Col md={6}>...</Col>
+                        <Col md={12} style={{marginTop: '1em'}}>
+                            <a href={"https://github.com/SynestiaOS/SynestiaOS"}
+                               style={{fontWeight: 'normal', marginTop: '2em', marginLeft: 'auto', marginRight: 'auto'}}>
+                                <button style={{
+                                    color: '#fff',
+                                    background: '#000',
+                                    border: 'none',
+                                    borderRadius: '100em',
+                                }}>Learn More
+                                </button>
+                            </a>
+                        </Col>
+                    </Row>
+                </Col>
+                <Col md={4}>
+                    <h2>Component ></h2>
+                    <Row style={{background: '#fff', padding: '2em', borderRight: 'solid 1px #eee'}}>
+                        <Col md={3}>libC</Col>
+                        <Col md={3}>libMath</Col>
+                        <Col md={3}>libGFX</Col>
+                        <Col md={3}>libGUI</Col>
+                        <Col md={3}>libELF</Col>
+                        <Col md={6}>...</Col>
+                        <Col md={12} style={{marginTop: '1em'}}>
+                            <a href={"https://github.com/SynestiaOS/SynestiaOS"}
+                               style={{fontWeight: 'normal', marginTop: '2em', marginLeft: 'auto', marginRight: 'auto'}}>
+                                <button style={{
+                                    color: '#fff',
+                                    background: '#000',
+                                    border: 'none',
+                                    borderRadius: '100em',
+                                }}>Learn More
+                                </button>
+                            </a>
+                        </Col>
+                    </Row>
+                </Col>
+                <Col md={4}>
+                    <h2>Device ></h2>
+                    <Row style={{background: '#fff', padding: '2em'}}>
+                        <Col md={6}>RaspberryPi-2</Col>
+                        <Col md={6}>RaspberryPi-3</Col>
+                        <Col md={6}>RaspberryPi-4</Col>
+                        <Col md={6}>...</Col>
+                        <Col md={12} style={{marginTop: '1em'}}>
+                            <a href={"https://github.com/SynestiaOS/SynestiaOS"}
+                               style={{fontWeight: 'normal', marginTop: '2em', marginLeft: 'auto', marginRight: 'auto'}}>
+                                <button style={{
+                                    color: '#fff',
+                                    background: '#000',
+                                    border: 'none',
+                                    borderRadius: '100em',
+                                }}>Learn More
+                                </button>
+                            </a>
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
         </Container>);
     };
 }
