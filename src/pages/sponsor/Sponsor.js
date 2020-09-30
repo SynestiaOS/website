@@ -4,7 +4,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import LogoRe from "../../static/images/logo_re.png";
 import {Button, Modal} from "react-bootstrap";
 
 import WePay from "../../static/images/wepay.png"
@@ -26,11 +25,11 @@ function DonateModalWithGrid(props) {
                     <Row>
                         <Col xs={6} md={4}>
                             <h5>WeChatPay</h5>
-                            <Image style={{width:'100%'}} src={WePay}/>
+                            <Image style={{width: '100%'}} src={WePay}/>
                         </Col>
                         <Col xs={6} md={4}>
                             <h5>AliPay</h5>
-                            <Image style={{width:'100%'}} src={AliPay}/>
+                            <Image style={{width: '100%'}} src={AliPay}/>
                         </Col>
                         <Col xs={6} md={4}>
                             <h5>Others</h5>
@@ -45,12 +44,7 @@ function DonateModalWithGrid(props) {
                     color: '#fff',
                     background: '#000',
                     border: 'none',
-                    borderRadius: '0',
-                    fontWeight: 'lighter',
-                    margin: 0,
-                    padding: 0,
-                    paddingLeft: '0.2em',
-                    paddingRight: '0.2em'
+                    borderRadius: '100em'
                 }} onClick={props.onHide}>Close</Button>
             </Modal.Footer>
         </Modal>
@@ -70,53 +64,53 @@ class Sponsor extends Component {
 
     render() {
         return (<Container className="Sponsor">
-            <Row style={{height: '16em', textAlign: 'center', paddingTop: '2em'}}>
-                <Col style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: "auto", paddingBottom: 'auto', marginBottom: 0, padding: 0}}>
-                    <Image src={LogoRe} className="logo-img"/>
-                    <h1 style={{color: '#000', fontWeight: 'normal', marginTop: '0.5em'}}>Sponsors</h1>
-                    <p style={{color: '#000', fontWeight: 'normal', marginTop: '0.5em'}}>Help us do better</p>
+            <Row style={{textAlign: 'left', padding: '2em'}}>
+                <Col>
+                    <h1>Sponsors</h1>
+                    <h4>Help us do better</h4>
                 </Col>
             </Row>
-            <Row style={{background: '#fff', padding: 0}}>
-                <Col md={6} style={{padding: '2em'}}>
-                    <h3>What We Need?</h3>
-                    <p>We need some open source hardware to test the function and performance of our operating system in different scenarios.</p>
-                    <p>The following is the hardware platform we currently need.</p>
-                    <Container>
-                        <Row><a href={"https://www.pine64.org/pinebook-pro/"}>pinebook-pro(1)</a></Row>
-                        <Row><a href={"https://www.pine64.org/pinetab/"}>pinetab(1)</a></Row>
-                        <Row><a href={"https://www.pine64.org/pinephone/"}>pinephone(1)</a></Row>
-                        <Row><a href={"https://www.pine64.org/pinetime/"}>pinetime(3)</a></Row>
-                    </Container>
-                    <p></p>
-                    <p>If you are willing to help us, please contact us:</p>
-                    <a href={"mailto:nerosoft@outlook.com"}>nerosoft@outlook.com</a>
-                    <p>or <Button style={{
-                        color: '#fff',
-                        background: '#000',
-                        border: 'none',
-                        borderRadius: '0',
-                        fontWeight: 'lighter',
-                        margin: 0,
-                        padding: 0,
-                        paddingLeft: '0.2em',
-                        paddingRight: '0.2em'
-                    }}
-                                  onClick={() => this.setModalShow(true)}>Donate</Button></p>
+            <Row style={{background: '#f5f5f6', padding: 0}}>
+                <Col md={6} style={{paddingTop: '1em', paddingRight: '1em'}}>
+                    <h3 style={{padding: 0, marginTop: '0.5em'}}>What We Need ></h3>
+                    <Row style={{background: '#fff', padding: '2em'}}>
+                        <p>We need some open source hardware to test the function and performance of our operating system in different scenarios.</p>
+                        <p>The following is the hardware platform we currently need.</p>
+                        <Container>
+                            <Row><a href={"https://www.pine64.org/pinebook-pro/"}>pinebook-pro(1)</a></Row>
+                            <Row><a href={"https://www.pine64.org/pinetab/"}>pinetab(1)</a></Row>
+                            <Row><a href={"https://www.pine64.org/pinephone/"}>pinephone(1)</a></Row>
+                            <Row><a href={"https://www.pine64.org/pinetime/"}>pinetime(3)</a></Row>
+                        </Container>
 
+                    </Row>
+                    <Row style={{background: '#fff', padding: 0, paddingLeft: '2em'}}>
+                        <p>If you are willing to help us, please contact us:</p>
+                    </Row>
+                    <Row style={{background: '#fff', padding: 0, paddingLeft: '2em'}}>
+                        <p><a href={"mailto:nerosoft@outlook.com"}>nerosoft@outlook.com</a></p>
+                    </Row>
                 </Col>
-                <Col md={6} style={{paddingTop: '2em'}}>
-                    <h3>Sponsors</h3>
-                    <p>Thank the following sponsors for their support to the team, thank you very much.</p>
-                    <Container>
-                        <Row>
-                            {
-                                sponsorsData.map((item,index)=>{
-                                    return this.renderSponsor(item);
-                                })
-                            }
-                        </Row>
-                    </Container>
+                <Col md={6} style={{paddingTop: '1em', paddingLeft: '1em'}}>
+                    <h3 style={{padding: 0, marginTop: '0.5em'}}>Our Sponsors ></h3>
+                    <Row style={{background: '#fff', padding: '2em'}}>
+                        <p>Thank the following sponsors for their support to the team, thank you very much.</p>
+                        <Container>
+                            <Row>
+                                {
+                                    sponsorsData.map((item, index) => {
+                                        return this.renderSponsor(item);
+                                    })
+                                }
+                            </Row>
+                        </Container>
+                        <p style={{marginTop: '1em'}}><Button style={{
+                            color: '#fff',
+                            background: '#000',
+                            border: 'none',
+                            borderRadius: '100em',
+                        }} onClick={() => this.setModalShow(true)}>Be Our Sponsor</Button></p>
+                    </Row>
                 </Col>
             </Row>
             <DonateModalWithGrid show={this.state.modalShow} onHide={() => this.setModalShow(false)}/>

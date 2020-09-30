@@ -4,7 +4,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import LogoRe from "../../static/images/logo_re.png";
 import {blogsData} from './blogsData';
 
 class Blog extends Component {
@@ -15,30 +14,37 @@ class Blog extends Component {
 
     render() {
         return (<Container className="Sponsor">
-            <Row style={{height: '16em', textAlign: 'center', paddingTop: '2em'}}>
-                <Col style={{marginLeft: 'auto', marginRight: 'auto', paddingTop: "auto", paddingBottom: 'auto', marginBottom: 0, padding: 0}}>
-                    <Image src={LogoRe} className="logo-img"/>
-                    <h1 style={{color: '#000', fontWeight: 'normal', marginTop: '0.5em'}}>Blog</h1>
-                    <p style={{color: '#000', fontWeight: 'normal', marginTop: '0.5em'}}>Our blog and status updates</p>
+            <Row style={{textAlign: 'left', padding: '2em'}}>
+                <Col>
+                    <h1>Blog</h1>
+                    <h4>Our blog and status updates</h4>
                 </Col>
             </Row>
-            {blogsData.map((item,index)=>{
-                return  <Row style={{background: '#fff', padding: 0}}>
-                    <Col md={4} style={{padding: '2em'}}>
-                        <Image style={{width:'100%'}} src={item.image} />
+
+            <Row style={{background: '#f5f5f6', padding: 0}}>
+                <Col md={12} style={{marginTop: "1em"}}>
+                    <h1>Our Posts > </h1>
+                </Col>
+                {blogsData.map((item, index) => {
+                    let borderR = 'solid 1px #eee';
+                    if (index % 2 !== 0) {
+                        borderR = 'none';
+                    }
+
+                    return <Col md={6} style={{background: '#fff', padding: 0, borderRight: borderR}}>
+                        <Row>
+                            <Col md={6} style={{padding: '1em'}}>
+                                <Image style={{width: '100%'}} src={item.image}/>
+                            </Col>
+                            <Col md={6} style={{paddingTop: '2em', paddingLeft: '0'}}>
+                                <h3>{item.title}</h3>
+                                <p>{item.time}</p>
+                                <a href={item.url}>GO ></a>
+                            </Col>
+                        </Row>
                     </Col>
-                    <Col md={8} style={{paddingTop: '3em'}}>
-                        <h3>{item.title}</h3>
-                        <p><strong>{item.author}</strong>&nbsp;&nbsp;&nbsp;&nbsp; {item.time}</p>
-                        <Container>
-                            <Row>
-                                <p>{item.content}</p>
-                            </Row>
-                        </Container>
-                        <a href={item.url}>GO >></a>
-                    </Col>
-                </Row>
-            })}
+                })}
+            </Row>
         </Container>);
     };
 
