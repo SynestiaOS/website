@@ -19,6 +19,10 @@ function Footer() {
                     <h5 style={{marginBottom:'0.5em'}}>Develop</h5>
                     <a style={{ color:'#888', fontWeight: 'lighter', margin: 0, padding: 0, display: 'block'}}
                        href={"/docs"}>Docs</a>
+                    <a style={{ color:'#888', fontWeight: 'lighter', margin: 0, padding: 0, display: 'block'}}
+                       href={"/blog"}>News</a>
+                    <a style={{ color:'#888', fontWeight: 'lighter', margin: 0, padding: 0, display: 'block'}}
+                       href={"/faq"}>FAQ</a>
                 </Col>
                 <Col md={3}>
                     <h5 style={{marginBottom:'0.5em'}}>Support</h5>
