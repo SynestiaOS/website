@@ -32,26 +32,29 @@ class BlogDetail extends Component {
                 <Col md={12} style={{marginTop: "1em"}}>
                     <h1>Detail > </h1>
                 </Col>
-                <Col md={12} style={{background: '#fff', padding: '0',paddingLeft:'2em'}}>
+                <Col md={12} style={{background: '#fff', padding: '0', paddingLeft: '2em'}}>
                     <Row>
                         <Col md={8} style={{padding: '2em', borderRight: 'solid 1px #eee'}}>
                             <h3>{detail.content}</h3>
                             <Image style={{width: '100%', padding: 0, margin: 0}} src={detail.image}/>
-                            <a href={detail.url}
-                               style={{fontWeight: 'normal', marginTop: '2em', marginLeft: 'auto', marginRight: 'auto'}}>
-                                <button style={{
-                                    color: '#fff',
-                                    background: '#000',
-                                    border: 'none',
-                                    borderRadius: '100em',
-                                }}>Learn More</button>
-                            </a>
                         </Col>
                         <Col md={4} style={{padding: '2em', textAlign: 'left'}}>
                             <h4>Author:</h4>
                             <h5>{detail.author}</h5>
                             <h4>Time:</h4>
                             <h5>{detail.time}</h5>
+                            <Row style={{textAlign: 'left', marginLeft: '0em'}}>
+                                <a href={detail.url}
+                                   style={{fontWeight: 'normal', marginTop: '1em'}}>
+                                    <button style={{
+                                        color: '#fff',
+                                        background: '#000',
+                                        border: 'none',
+                                        borderRadius: '100em',
+                                    }}>Learn More
+                                    </button>
+                                </a>
+                            </Row>
                         </Col>
                     </Row>
                 </Col>
