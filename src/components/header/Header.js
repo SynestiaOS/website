@@ -27,7 +27,7 @@ function Header() {
                 <Navbar bg="#fff" variant="light" style={{textAlign: 'left', padding: 0}}>
                     <Image src={LogoRe} className="logo-img"/>
                     <Nav.Link href="/home"
-                              style={{color: '#000'}}>SynestiaOS</Nav.Link>
+                              style={{color: '#000',fontSize:'1.5em'}}>SynestiaOS</Nav.Link>
                     <Nav.Link href="/sponsor"
                               style={{color: '#000'}}>Sponsor</Nav.Link>
                     <Nav.Link href="/blog"

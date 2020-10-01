@@ -25,7 +25,7 @@ class Home extends Component {
                 </Col>
             </Row>
 
-            <Row style={{background: '#f5f5f6', paddingTop: '1em'}}>
+            <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
                 <Col md={4}>
                     <h2>Kernel ></h2>
                     <Row style={{background: '#fff', padding: '2em', borderRight: 'solid 1px #eee'}}>
