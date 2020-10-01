@@ -16,7 +16,7 @@ class Docs extends Component {
         return (<Container className="Docs">
             <Row style={{textAlign: 'left', padding: '2em'}}>
                 <Col>
-                    <h1>Documents for developer</h1>
+                    <h1>Developer Center</h1>
                     <h4>Join the SynestiaOS ecosystem and build a new era of Internet of Everything with us!</h4>
                 </Col>
             </Row>
@@ -51,15 +51,16 @@ class Docs extends Component {
                     borderRight: 'solid 1px #eee',
                     borderBottom: 'solid 1px #eee'
                 }}>
-                    <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
-                        <img style={{width: "8em", height: "8em"}}
-                             alt="Forum"
-                             src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058123638-H4VTXMHVGK47D4A2VC54/ke17ZwdGBToddI8pDm48kEoK7p2cuopIbMpnY-qU4Xt7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmPCjdaixatBq74HpDU8-1BG_BTZdSbG6SN-2894KVoY0GT6uSxH2T086BFBPl3LIm/forum_logo.PNG?format=500w"/>
-                    </Col>
-                    <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
-                        <h4>Forum</h4>
-                        <p>(building)</p>
-                    </Col>
+                    <Link to={"/forum"} style={{color: '#000'}}>
+                        <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
+                            <img style={{width: "8em", height: "8em"}}
+                                 alt="Forum"
+                                 src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058123638-H4VTXMHVGK47D4A2VC54/ke17ZwdGBToddI8pDm48kEoK7p2cuopIbMpnY-qU4Xt7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmPCjdaixatBq74HpDU8-1BG_BTZdSbG6SN-2894KVoY0GT6uSxH2T086BFBPl3LIm/forum_logo.PNG?format=500w"/>
+                        </Col>
+                        <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
+                            <h4>Forum</h4>
+                        </Col>
+                    </Link>
                 </Col>
                 <Col md={3} style={{
                     textAlign: 'center',

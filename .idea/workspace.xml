@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecb05922-317c-4230-8e1f-08cf1aa4ee2b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/forum-detail/ForumDetail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/forum-detail/ForumDetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/forum-detail/ForumDetail.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/forum/Forum.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/forum/Forum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/forum/Forum.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/forum/forumData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog-detail/BlogDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog-detail/BlogDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blogs/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blogs/Blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/docs/Docs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/docs/Docs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io" beforeDir="false" afterPath="$PROJECT_DIR$/synestiaos.github.io" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,10 +56,10 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/pages/forum" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/static/images" />
       <recent name="$PROJECT_DIR$/src/components/footer" />
-      <recent name="$PROJECT_DIR$/src/pages/home" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -129,7 +140,7 @@
       <workItem from="1598949233171" duration="465000" />
       <workItem from="1599748639257" duration="1767000" />
       <workItem from="1601466489897" duration="85000" />
-      <workItem from="1601466595417" duration="16576000" />
+      <workItem from="1601466595417" duration="25220000" />
     </task>
     <servers />
   </component>

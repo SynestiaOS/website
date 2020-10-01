@@ -11,6 +11,8 @@ import Blog from "./pages/blogs/Blog";
 import Faq from "./pages/faq/Faq";
 import CopyRight from "./components/copyright/CopyRight";
 import BlogDetail from "./pages/blog-detail/BlogDetail";
+import Forum from "./pages/forum/Forum";
+import ForumDetail from "./pages/forum-detail/ForumDetail";
 
 function App() {
     return (
@@ -25,6 +27,8 @@ function App() {
                 <Route exact path="/blog" component={Blog}/>
                 <Route exact path="/blog-detail/:id" component={BlogDetail}/>
                 <Route exact path="/faq" component={Faq}/>
+                <Route exact path="/forum" component={Forum}/>
+                <Route exact path="/forum-detail/:type/:id" component={ForumDetail}/>
             </Switch>
 
             <Footer/>

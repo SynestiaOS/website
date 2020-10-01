@@ -12,7 +12,7 @@ function Header() {
     return (
         <Container className="Header">
             <Row style={{padding: 0, height: '2em', background: "rgb(245,245,245)"}}>
-                <Dropdown style={{flex: 1,textAlign: "right"}}>
+                <Dropdown style={{flex: 1, textAlign: "right"}}>
                     <Dropdown.Toggle variant="none" id="dropdown-basic">
                         English
                     </Dropdown.Toggle>
@@ -23,17 +23,19 @@ function Header() {
                     </Dropdown.Menu>
                 </Dropdown>
             </Row>
-            <Row style={{padding: 0,borderBottom: "1px solid #e8e8e8",backgroundColor:" #fff",color:"#000", display: "flex"}}>
+            <Row style={{padding: 0, borderBottom: "1px solid #e8e8e8", backgroundColor: " #fff", color: "#000", display: "flex"}}>
                 <Navbar bg="#fff" variant="light" style={{textAlign: 'left', padding: 0}}>
                     <Image src={LogoRe} className="logo-img"/>
                     <Nav.Link href="/home"
-                              style={{color: '#000',fontSize:'1.5em'}}>SynestiaOS</Nav.Link>
+                              style={{color: '#000', fontSize: '1.5em'}}>SynestiaOS</Nav.Link>
+                    <Nav.Link href="/docs"
+                              style={{color: '#000'}}>Developer</Nav.Link>
+                    <Nav.Link href="/forum"
+                              style={{color: '#000'}}>Community</Nav.Link>
+                    <Nav.Link href="/blog"
+                              style={{color: '#000'}}>News & Events</Nav.Link>
                     <Nav.Link href="/sponsor"
                               style={{color: '#000'}}>Sponsor</Nav.Link>
-                    <Nav.Link href="/blog"
-                              style={{color: '#000'}}>Blog</Nav.Link>
-                    <Nav.Link href="/docs"
-                              style={{color: '#000'}}>Docs</Nav.Link>
                 </Navbar>
             </Row>
         </Container>

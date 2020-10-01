@@ -17,8 +17,8 @@ class Blog extends Component {
         return (<Container className="Sponsor">
             <Row style={{textAlign: 'left', padding: '2em'}}>
                 <Col>
-                    <h1>Blog</h1>
-                    <h4>Our blog and status updates</h4>
+                    <h1>News & Events</h1>
+                    <h4>Our new and status updates</h4>
                 </Col>
             </Row>
 
@@ -40,8 +40,8 @@ class Blog extends Component {
                             <Col md={6} style={{paddingTop: '2em', paddingLeft: '0'}}>
                                 <h3>{item.title}</h3>
                                 <p>{item.time}</p>
-                                <Link to={'/blog-detail/'+index}
-                                   style={{fontWeight: 'normal', marginTop: '2em', marginLeft: 'auto', marginRight: 'auto'}}>
+                                <Link to={'/blog-detail/' + index}
+                                      style={{fontWeight: 'normal', marginTop: '2em', marginLeft: 'auto', marginRight: 'auto'}}>
                                     <button style={{
                                         color: '#fff',
                                         background: '#000',
