@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import {blogsData} from './blogsData';
+import {Link} from "react-router-dom";
 
 class Blog extends Component {
 
@@ -39,7 +40,7 @@ class Blog extends Component {
                             <Col md={6} style={{paddingTop: '2em', paddingLeft: '0'}}>
                                 <h3>{item.title}</h3>
                                 <p>{item.time}</p>
-                                <a href={item.url}
+                                <Link to={'/blog-detail/'+index}
                                    style={{fontWeight: 'normal', marginTop: '2em', marginLeft: 'auto', marginRight: 'auto'}}>
                                     <button style={{
                                         color: '#fff',
@@ -48,7 +49,7 @@ class Blog extends Component {
                                         borderRadius: '100em',
                                     }}>Learn More
                                     </button>
-                                </a>
+                                </Link>
                             </Col>
                         </Row>
                     </Col>

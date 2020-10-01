@@ -10,6 +10,7 @@ import Sponsor from "./pages/sponsor/Sponsor";
 import Blog from "./pages/blogs/Blog";
 import Faq from "./pages/faq/Faq";
 import CopyRight from "./components/copyright/CopyRight";
+import BlogDetail from "./pages/blog-detail/BlogDetail";
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
                 <Route exact path="/sponsor" component={Sponsor}/>
                 <Route exact path="/docs" component={Docs}/>
                 <Route exact path="/blog" component={Blog}/>
+                <Route exact path="/blog-detail/:id" component={BlogDetail}/>
                 <Route exact path="/faq" component={Faq}/>
             </Switch>
 
