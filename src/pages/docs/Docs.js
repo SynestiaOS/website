@@ -58,6 +58,7 @@ class Docs extends Component {
                     </Col>
                     <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
                         <h4>Forum</h4>
+                        <p>(building)</p>
                     </Col>
                 </Col>
                 <Col md={3} style={{
@@ -87,6 +88,7 @@ class Docs extends Component {
                     </Col>
                     <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
                         <h4>Videos</h4>
+                        <p>(building)</p>
                     </Col>
                 </Col>
                 <Col md={3} style={{textAlign: 'center', background: '#fff', height: '15em', paddingTop: '2em', borderRight: 'solid 1px #eee'}}>
@@ -111,6 +113,7 @@ class Docs extends Component {
                     </Col>
                     <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
                         <h4>Tool Share</h4>
+                        <p>(building)</p>
                     </Col>
                 </Col>
                 <Col md={3} style={{textAlign: 'center', background: '#fff', height: '15em', paddingTop: '2em', borderRight: 'solid 1px #eee'}}>
@@ -122,7 +125,7 @@ class Docs extends Component {
                                  src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1591804137817-S577GCV49HJ20K7B6A2P/ke17ZwdGBToddI8pDm48kJgA4Aiv2RIeIWWUvLYvbEp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTm8WBMyhSE1e2N-_2ueoaGrcUsjq1CQVxeKzuT0oiquQ2hKep5iLcGpbnjjieWKJkh/twitter7.PNG?format=500w"/>
                         </Col>
                         <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
-                            <h4>News</h4>
+                            <h4>News & Event</h4>
                         </Col>
                     </Link>
                 </Col>

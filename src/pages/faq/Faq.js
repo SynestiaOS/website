@@ -12,14 +12,14 @@ class Faq extends Component {
     }
 
     render() {
-        return (<Container className="Sponsor">
+        return (<Container className="Faq">
             <Row style={{textAlign: 'left', padding: '2em'}}>
                 <Col>
                     <h1>FAQ</h1>
                     <h4>Something you want to know</h4>
                 </Col>
             </Row>
-            <Row style={{background: '#f5f5f6', padding: 0, paddingTop: '2em', paddingBottom: '2em'}}>
+            <Row style={{background: '#f5f5f6', padding: 0, paddingTop: '2em', paddingBottom: '0em'}}>
                 <h1>What is this project ></h1>
                 <Col md={12} style={{padding: '2em', background: '#fff'}}>
                     <Container style={{marginTop: '1em'}}>
@@ -65,8 +65,7 @@ class Faq extends Component {
                                     background: '#000',
                                     border: 'none',
                                     borderRadius: '100em',
-                                }}>Learn More
-                                </button>
+                                }}>Learn More</button>
                             </Link>
                         </Col>
                         <Col md={3} style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
@@ -81,8 +80,7 @@ class Faq extends Component {
                                     background: '#000',
                                     border: 'none',
                                     borderRadius: '100em',
-                                }}>Learn More
-                                </button>
+                                }}>Learn More</button>
                             </Link>
                         </Col>
                         <Col md={3} style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
@@ -97,8 +95,7 @@ class Faq extends Component {
                                     background: '#000',
                                     border: 'none',
                                     borderRadius: '100em',
-                                }}>Learn More
-                                </button>
+                                }}>Learn More</button>
                             </Link>
                         </Col>
                         <Col md={3} style={{background: '#fff', padding: '1em'}}>
@@ -113,8 +110,7 @@ class Faq extends Component {
                                     background: '#000',
                                     border: 'none',
                                     borderRadius: '100em',
-                                }}>Learn More
-                                </button>
+                                }}>Learn More</button>
                             </Link>
                         </Col>
                     </Row>
