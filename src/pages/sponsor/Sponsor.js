@@ -64,18 +64,21 @@ class Sponsor extends Component {
 
 
     render() {
-        const popup = function (item) {
+        const popup = function (item, gradient) {
             return (
-                <Popover style={{borderRadius: '0'}} id="popover-basic">
-                    <Popover.Title as="h3">{item.name}</Popover.Title>
+                <Popover style={{borderRadius: '3px'}} id="popover-basic">
+                    <Popover.Title as="h3" style={{
+                        borderRadius: '0',
+                        borderTopLeftRadius: '2px',
+                        borderTopRightRadius: '2px',
+                        background: gradient
+                    }}>{item.name}</Popover.Title>
                     <Popover.Content style={{padding: 0}}>
                         <Row style={{margin: 0, padding: 0}}>
-
                             <Col md={4} style={{margin: 0, padding: 0}}>
                                 {item.img ? <Image style={{width: '6em', height: '6em', padding: '0.5em'}} src={item.img}/> :
                                     <Image style={{width: '6em', height: '6em', padding: '0.5em'}} src={LogoRe}/>}
                             </Col>
-
                             <Col md={8} style={{padding: '1em', paddingLeft: '2em', paddingRight: '1.5em'}}>
                                 {item.desc ? <Row style={{fontSize: '0.8em'}}>{item.desc}</Row> :
                                     <Row style={{fontSize: '0.8em'}}>Thanks for {item.name}</Row>}
@@ -122,8 +125,27 @@ class Sponsor extends Component {
                             <Row>
                                 {
                                     sponsorsData.map((item, index) => {
-                                        return <OverlayTrigger trigger="click" placement="right" overlay={popup(item)}>
-                                            {this.renderSponsor(item)}
+                                        let linearGradient;
+                                        switch (item.level) {
+                                            case 1:
+                                                linearGradient = "linear-gradient(to right, rgb(229,199,173), rgb(182,152,124))";
+                                                break;
+                                            case 2:
+                                                linearGradient = "linear-gradient(to right, rgb(239,205,109), rgb(215,159,61))";
+                                                break;
+                                            case 3:
+                                                linearGradient = "linear-gradient(to right, rgb(228,226,227), rgb(195,193,196))";
+                                                break;
+                                            case 4:
+                                                linearGradient = "linear-gradient(to right, rgb(166,219,246), rgb(77,164,216))";
+                                                break;
+                                            default:
+                                                linearGradient = "linear-gradient(to right, rgb(166,219,246), rgb(77,164,216))";
+                                                break;
+
+                                        }
+                                        return <OverlayTrigger trigger="click" placement="right" overlay={popup(item, linearGradient)}>
+                                            {this.renderSponsor(item, linearGradient)}
                                         </OverlayTrigger>
                                     })
                                 }
@@ -144,26 +166,7 @@ class Sponsor extends Component {
         </Container>);
     };
 
-    renderSponsor(item) {
-        let linearGradient;
-        switch (item.level) {
-            case 1:
-                linearGradient = "linear-gradient(to right, rgb(229,199,173), rgb(182,152,124))";
-                break;
-            case 2:
-                linearGradient = "linear-gradient(to right, rgb(239,205,109), rgb(215,159,61))";
-                break;
-            case 3:
-                linearGradient = "linear-gradient(to right, rgb(228,226,227), rgb(195,193,196))";
-                break;
-            case 4:
-                linearGradient = "linear-gradient(to right, rgb(166,219,246), rgb(77,164,216))";
-                break;
-            default:
-                linearGradient = "linear-gradient(to right, rgb(166,219,246), rgb(77,164,216))";
-                break;
-
-        }
+    renderSponsor(item, linearGradient) {
         return <p style={{
             padding: "0.3em",
             marginRight: '1em',
