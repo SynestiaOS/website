@@ -98,6 +98,53 @@ class Home extends Component {
 
             <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
                 <Col md={3}>
+                    <h2>GitHub ></h2>
+                    <Row style={{background: '#fff', padding: '2em', borderRight: 'solid 1px #eee'}}>
+                        <Col md={12} style={{textAlign: 'center'}}>
+                            <h1 style={{fontWeight: 'bold'}}>945</h1>
+                        </Col>
+                        <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
+                            <h4>Commits</h4>
+                        </Col>
+                    </Row>
+                </Col>
+                <Col md={3}>
+                    <h2>&nbsp;</h2>
+                    <Row style={{background: '#fff', padding: '2em', borderRight: 'solid 1px #eee'}}>
+                        <Col md={12} style={{textAlign: 'center'}}>
+                            <h1 style={{fontWeight: 'bold'}}>6</h1>
+                        </Col>
+                        <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
+                            <h4>Contributors</h4>
+                        </Col>
+                    </Row>
+                </Col>
+                <Col md={3}>
+                    <h2>&nbsp;</h2>
+                    <Row style={{background: '#fff', padding: '2em', borderRight: 'solid 1px #eee'}}>
+                        <Col md={12} style={{textAlign: 'center'}}>
+                            <h1 style={{fontWeight: 'bold'}}>9</h1>
+                        </Col>
+                        <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
+                            <h4>Forks</h4>
+                        </Col>
+                    </Row>
+                </Col>
+                <Col md={3}>
+                    <h2>&nbsp;</h2>
+                    <Row style={{background: '#fff', padding: '2em'}}>
+                        <Col md={12} style={{textAlign: 'center'}}>
+                            <h1 style={{fontWeight: 'bold'}}>50</h1>
+                        </Col>
+                        <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
+                            <h4>Stars</h4>
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
+
+            <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
+                <Col md={3}>
                     <h2>Corporate ></h2>
                     <Row style={{background: '#fff', padding: '2em', borderRight: 'solid 1px #eee'}}>
                         <Col md={12} style={{textAlign: 'center'}}>
