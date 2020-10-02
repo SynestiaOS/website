@@ -101,7 +101,7 @@ class Home extends Component {
                     <h2>Corporate ></h2>
                     <Row style={{background: '#fff', padding: '2em', borderRight: 'solid 1px #eee'}}>
                         <Col md={12} style={{textAlign: 'center'}}>
-                            <Image style={{width: '5em', height: '5em'}}
+                            <Image style={{width: '5em', height: '5em', filter: 'grayscale(100%)'}}
                                    src={'https://avatars0.githubusercontent.com/u/66101949?s=200&v=4'}/>
 
                         </Col>
@@ -112,9 +112,9 @@ class Home extends Component {
                 </Col>
                 <Col md={3}>
                     <h2>&nbsp;</h2>
-                    <Row style={{background: '#fff', padding: '2em', borderRight: 'solid 1px #eee'}}>
+                    <Row style={{background: '#fff', padding: '2em'}}>
                         <Col md={12} style={{textAlign: 'center'}}>
-                            <Image style={{width: '5em', height: '5em', padding: '0.5em'}}
+                            <Image style={{width: '5em', height: '5em', padding: '0.5em', filter: 'grayscale(100%)'}}
                                    src={'https://raw.githubusercontent.com/CenoOS/CenoOS-IOT/master/docs/docs/img/logo.png'}/>
 
                         </Col>
