@@ -3,9 +3,40 @@
   <component name="ChangeListManager">
     <list default="true" id="ecb05922-317c-4230-8e1f-08cf1aa4ee2b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/sponsor/sponsorsData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sponsor/sponsorsData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/synestiaos.github.io" beforeDir="false" afterPath="$PROJECT_DIR$/synestiaos.github.io" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/200.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/blog-detail/0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/blog-detail/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/docs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/forum-detail/hot/0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/forum-detail/hot/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/forum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/precache-manifest.e1fe8b4eb5efdd25bec343a1c5c0c0fc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/sponsor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/css/2.4819d237.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/css/2.4819d237.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/css/main.520a5c16.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/css/main.520a5c16.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/2.f4f4cace.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/2.f4f4cace.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/2.f4f4cace.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/main.8d7173e9.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/main.8d7173e9.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/runtime-main.e8297b11.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/runtime-main.e8297b11.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/media/ZillaSlab-Regular.53cbc7a5.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/media/alipay.07cd3605.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/media/wepay.90df0414.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +162,7 @@
       <workItem from="1598949233171" duration="465000" />
       <workItem from="1599748639257" duration="1767000" />
       <workItem from="1601466489897" duration="85000" />
-      <workItem from="1601466595417" duration="29657000" />
+      <workItem from="1601466595417" duration="29950000" />
     </task>
     <servers />
   </component>

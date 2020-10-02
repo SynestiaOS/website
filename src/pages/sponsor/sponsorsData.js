@@ -9,7 +9,7 @@ export const sponsorsData = [
     },
     {
         name: 'Luke Yang',
-        url: '#',
+        url: 'https://security.thoughtworks.cn',
         type: 'personal',
         level: 2,
         img: '',
@@ -17,7 +17,7 @@ export const sponsorsData = [
     },
     {
         name: 'Zj Wang',
-        url: '#',
+        url: 'https://security.thoughtworks.cn',
         type: 'personal',
         level: 3,
         img: '',
@@ -33,7 +33,7 @@ export const sponsorsData = [
     },
     {
         name: 'Java Guide',
-        url: 'https://synestiaos.org/',
+        url: 'https://github.com/Snailclimb',
         type: 'personal',
         level: 1,
         img: 'https://mp.weixin.qq.com/mp/qrcode?scene=10000005&size=102&__biz=Mzg2OTA0Njk0OA==&mid=2247493070&idx=1&sn=5f86273274741d3e4a47756c779971df&send_time=',
