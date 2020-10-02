@@ -4,10 +4,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import {Button, Modal} from "react-bootstrap";
-
+import {Button, Modal, OverlayTrigger, Popover} from "react-bootstrap";
 import WePay from "../../static/images/wepay.png"
 import AliPay from "../../static/images/alipay.png"
+import LogoRe from "../../static/images/logo_re.png";
 import {sponsorsData} from "./sponsorsData";
 
 function DonateModalWithGrid(props) {
@@ -58,11 +58,34 @@ class Sponsor extends Component {
         super(props);
 
         this.state = {
-            modalShow: false
+            modalShow: false,
         }
     }
 
+
     render() {
+        const popup = function (item) {
+            return (
+                <Popover style={{borderRadius: '0'}} id="popover-basic">
+                    <Popover.Title as="h3">{item.name}</Popover.Title>
+                    <Popover.Content style={{padding: 0}}>
+                        <Row style={{margin: 0, padding: 0}}>
+
+                            <Col md={4} style={{margin: 0, padding: 0}}>
+                                {item.img ? <Image style={{width: '6em', height: '6em', padding: '0.5em'}} src={item.img}/> :
+                                    <Image style={{width: '6em', height: '6em', padding: '0.5em'}} src={LogoRe}/>}
+                            </Col>
+
+                            <Col md={8} style={{padding: '1em', paddingLeft: '2em', paddingRight: '1.5em'}}>
+                                {item.desc ? <Row style={{fontSize: '0.8em'}}>{item.desc}</Row> :
+                                    <Row style={{fontSize: '0.8em'}}>Thanks for {item.name}</Row>}
+                                <Row><a href={item.url}>Learn More</a></Row>
+                            </Col>
+                        </Row>
+                    </Popover.Content>
+                </Popover>
+            );
+        };
         return (<Container className="Sponsor">
             <Row style={{textAlign: 'left', padding: '2em'}}>
                 <Col>
@@ -99,11 +122,15 @@ class Sponsor extends Component {
                             <Row>
                                 {
                                     sponsorsData.map((item, index) => {
-                                        return this.renderSponsor(item);
+                                        return <OverlayTrigger trigger="click" placement="right" overlay={popup(item)}>
+                                            {this.renderSponsor(item)}
+                                        </OverlayTrigger>
                                     })
                                 }
+
                             </Row>
                         </Container>
+
                         <p style={{marginTop: '1em'}}><Button style={{
                             color: '#fff',
                             background: '#000',
@@ -137,13 +164,12 @@ class Sponsor extends Component {
                 break;
 
         }
-        return <a href={item.url} style={{paddingRight: '1em', color: '#333'}}>
-            <p style={{
-                padding: "0.3em",
-                borderRadius: "2px",
-                backgroundImage: linearGradient
-            }}>{item.name}</p>
-        </a>;
+        return <p style={{
+            padding: "0.3em",
+            marginRight: '1em',
+            borderRadius: "2px",
+            backgroundImage: linearGradient
+        }}>{item.name}</p>;
 
     }
 
