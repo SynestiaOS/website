@@ -34,11 +34,8 @@ class ForumDetail extends Component {
                 </Col>
                 <Col md={12} style={{background: '#fff', padding: '0'}}>
                     <Row style={{margin: 0, padding: 0}}>
-                        <Col md={12} style={{padding: 0}}>
+                        <Col md={9} style={{padding: 0, borderRight: 'solid 1px #eee'}}>
                             <Row style={{margin: 0, padding: 0}}>
-                                <Col md={12} style={{background: '#f5f5f6'}}>
-                                    <h1>Detail ></h1>
-                                </Col>
                                 <Col md={12} style={{paddingTop: '2em'}}>
                                     <Container><h3>{detail.title}</h3></Container>
                                     <Container>
@@ -56,9 +53,6 @@ class ForumDetail extends Component {
                                     </Container>
                                     <Container style={{marginTop: '2em'}}><p>{detail.content}</p></Container>
                                 </Col>
-                                <Col md={12} style={{background: '#f5f5f6', paddingTop: '1em'}}>
-                                    <h1>Comments ></h1>
-                                </Col>
                                 <Col md={12} style={{padding: 0}}>
                                     <Container style={{padding: 0}}>
                                         {detail.comments.length === 0 ?
@@ -66,7 +60,7 @@ class ForumDetail extends Component {
                                                 return <Row style={{padding: 0, margin: 0}}>
                                                     <Col md={1} style={{background: '#eee', textAlign: 'center', padding: '1em'}}><h1>{index + 1}</h1>
                                                     </Col>
-                                                    <Col md={11} style={{padding: '1em', borderBottom: index % 2 === 0 ? 'solid 1px #eee' : 'none'}}>
+                                                    <Col md={11} style={{padding: '1em', borderTop: 'solid 1px #eee'}}>
                                                         <Row style={{margin: 0}}>{comment.content}</Row>
                                                         <Row style={{margin: 0}}><strong>{comment.author}</strong>&nbsp;&nbsp;&nbsp;&nbsp;
                                                             <span>{comment.time}</span></Row>
@@ -76,6 +70,17 @@ class ForumDetail extends Component {
                                     </Container>
                                 </Col>
                             </Row>
+                        </Col>
+                        <Col md={3} style={{padding: 0, textAlign: 'center', paddingTop: '2em'}}>
+                            <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
+                                <img style={{width: "8em", height: "8em"}}
+                                     alt="Forum"
+                                     src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058123638-H4VTXMHVGK47D4A2VC54/ke17ZwdGBToddI8pDm48kEoK7p2cuopIbMpnY-qU4Xt7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmPCjdaixatBq74HpDU8-1BG_BTZdSbG6SN-2894KVoY0GT6uSxH2T086BFBPl3LIm/forum_logo.PNG?format=500w"/>
+                            </Col>
+                            <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
+                                <h4>Forum</h4>
+                                <p>(building)</p>
+                            </Col>
                         </Col>
                     </Row>
                 </Col>
