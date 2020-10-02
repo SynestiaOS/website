@@ -109,7 +109,7 @@ class Sponsor extends Component {
                             background: '#000',
                             border: 'none',
                             borderRadius: '100em',
-                        }} onClick={() => this.setModalShow(true)}>Be Our Sponsor</Button></p>
+                        }} onClick={() => this.setModalShow(true)}>Be Our Personal Sponsor</Button></p>
                     </Row>
                 </Col>
             </Row>

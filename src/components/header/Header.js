@@ -23,7 +23,7 @@ function Header() {
                     </Dropdown.Menu>
                 </Dropdown>
             </Row>
-            <Row style={{padding: 0, borderBottom: "1px solid #e8e8e8", backgroundColor: " #fff", color: "#000", display: "flex"}}>
+            <Row style={{padding: 0, borderBottom: "1px solid #eee", backgroundColor: " #fff", color: "#000", display: "flex"}}>
                 <Navbar bg="#fff" variant="light" style={{textAlign: 'left', padding: 0}}>
                     <Image src={LogoRe} className="logo-img"/>
                     <Nav.Link href="/home"
