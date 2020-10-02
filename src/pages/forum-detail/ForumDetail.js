@@ -56,7 +56,7 @@ class ForumDetail extends Component {
                                 <Col md={12} style={{padding: 0}}>
                                     <Container style={{padding: 0}}>
                                         {detail.comments.length === 0 ?
-                                            <Container style={{padding: '1em'}}>Empty</Container> : detail.comments.map((comment, index) => {
+                                            <Container style={{padding: '1em',borderTop:'solid 1px #eee'}}>Empty</Container> : detail.comments.map((comment, index) => {
                                                 return <Row style={{padding: 0, margin: 0}}>
                                                     <Col md={1} style={{background: '#eee', textAlign: 'center', padding: '1em'}}><h1>{index + 1}</h1>
                                                     </Col>
