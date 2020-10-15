@@ -28,7 +28,7 @@ function Header() {
                     <Image src={LogoRe} className="logo-img"/>
                     <Nav.Link href="/home"
                               style={{color: '#000', fontSize: '1.5em'}}>SynestiaOS</Nav.Link>
-                    <Nav.Link href="/docs"
+                    <Nav.Link href="/developer"
                               style={{color: '#000'}}>Developer</Nav.Link>
                     <Nav.Link href="/forum"
                               style={{color: '#000'}}>Community</Nav.Link>

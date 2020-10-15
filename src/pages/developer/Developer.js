@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import './Docs.css';
+import './Developer.css';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {Link} from "react-router-dom";
 
-class Docs extends Component {
+class Developer extends Component {
 
     constructor(props) {
         super(props);
@@ -13,7 +13,7 @@ class Docs extends Component {
     }
 
     render() {
-        return (<Container className="Docs">
+        return (<Container className="Developer">
             <Row style={{textAlign: 'left', padding: '2em'}}>
                 <Col>
                     <h1>Developer Center</h1>
@@ -82,6 +82,7 @@ class Docs extends Component {
                     </a>
                 </Col>
                 <Col md={3} style={{textAlign: 'center', background: '#fff', height: '15em', paddingTop: '2em', borderBottom: 'solid 1px #eee'}}>
+                    <Link to={"/videos"} style={{color: '#000'}}>
                     <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
                         <img style={{width: "8em", height: "8em"}}
                              alt="Videos"
@@ -89,8 +90,8 @@ class Docs extends Component {
                     </Col>
                     <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
                         <h4>Videos</h4>
-                        <p>(building)</p>
                     </Col>
+                    </Link>
                 </Col>
                 <Col md={3} style={{textAlign: 'center', background: '#fff', height: '15em', paddingTop: '2em', borderRight: 'solid 1px #eee'}}>
                     <a href={"https://github.com/SynestiaOS/Documentation"} style={{color: '#000'}}>
@@ -141,4 +142,4 @@ class Docs extends Component {
     }
 }
 
-export default Docs;
+export default Developer;
