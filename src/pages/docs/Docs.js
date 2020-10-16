@@ -62,7 +62,7 @@ class Docs extends Component {
                                 return <Row onClick={this.changeDoc.bind(this,index)} style={{paddingLeft:'2em'}}><h4>{item.chapter}</h4></Row>
                             })}
                         </Col>
-                        <Col md={9} style={{padding: '1em'}}>
+                        <Col md={9} style={{padding: '1em',paddingRight:'2em'}}>
                             <h1>&gt;&nbsp;{docsData[this.state.currentDocIndex].chapter}</h1>
                             <section dangerouslySetInnerHTML={{__html: markdown.toHTML(process.env.PUBLIC_URL + this.state.currentDoc)}}>
                             </section>
