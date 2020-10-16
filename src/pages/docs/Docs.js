@@ -27,7 +27,7 @@ class Docs extends Component {
     }
 
     async componentDidMount() {
-        const doc = await getDoc(process.env.PUBLIC_URL + docsData[0].path);
+        const doc = await getDoc( docsData[0].path);
         this.setState({
             currentDocIndex: 0,
             currentDoc: doc
@@ -35,7 +35,7 @@ class Docs extends Component {
     }
 
     async changeDoc(index) {
-        const doc = await getDoc(process.env.PUBLIC_URL + docsData[index].path);
+        const doc = await getDoc(docsData[index].path);
         this.setState({
             currentDocIndex: index,
             currentDoc: doc
