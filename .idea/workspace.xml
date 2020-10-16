@@ -2,9 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecb05922-317c-4230-8e1f-08cf1aa4ee2b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/imgs/Heap/heap1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/Heap/heap2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/Heap/heap3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/Heap/heapalloc1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/Heap/heapalloc2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/Heap/heapfree1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/Heap/heapfree2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/KQueue/dequeue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/KQueue/enqueue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/List/example.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/List/example2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/mem/PTE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/mem/pagetable.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/imgs/stack/stackalloc.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog-detail/BlogDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog-detail/BlogDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blogs/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blogs/Blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/developer/Developer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/developer/Developer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/docs/Docs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/docs/Docs.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/docs/Docs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/docs/Docs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io" beforeDir="false" afterPath="$PROJECT_DIR$/synestiaos.github.io" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/faq/Faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/faq/Faq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/forum-detail/ForumDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/forum-detail/ForumDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/videos/Videos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/videos/Videos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +157,7 @@
       <workItem from="1601650836410" duration="662000" />
       <workItem from="1602406274499" duration="30000" />
       <workItem from="1602736909547" duration="1503000" />
-      <workItem from="1602843537470" duration="4657000" />
+      <workItem from="1602843537470" duration="5659000" />
     </task>
     <servers />
   </component>

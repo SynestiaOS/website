@@ -181,12 +181,6 @@ class Sponsor extends Component {
             modalShow: visible
         });
     }
-
-    renderMarkdownDoc(markdown) {
-        this.setState({
-            currentMarkDown: markdown
-        })
-    }
 }
 
 export default Sponsor;

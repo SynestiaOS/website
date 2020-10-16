@@ -4,8 +4,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import 'video-react/dist/video-react.css';
-import {markdown} from 'markdown';
 import {docsData} from "./docsData";
+import ReactMarkdown from "react-markdown";
 
 
 async function getDoc(url) {
@@ -73,20 +73,17 @@ class Docs extends Component {
                                 <h1>{docsData[this.state.currentDocIndex].chapter}</h1>
                                 <a style={{flex: 1, textAlign: "right",marginTop:'1em'}} href={docsData[this.state.currentDocIndex].url}>detail</a>
                             </Row>
-                            <section style={{borderTop:'solid 1px #eee',paddingTop:'1em'}} dangerouslySetInnerHTML={{__html: markdown.toHTML(process.env.PUBLIC_URL + this.state.currentDoc)}}>
-                            </section>
+                            <ReactMarkdown
+                                className={"markdown"}
+                                source={this.state.currentDoc}
+                                escapeHtml={false}
+                            />
                         </Col>
                     </Row>
                 </Col>
             </Row>
         </Container>);
     };
-
-    renderMarkdownDoc(markdown) {
-        this.setState({
-            currentMarkDown: markdown
-        })
-    }
 }
 
 export default Docs;

@@ -61,12 +61,6 @@ class BlogDetail extends Component {
             </Row>
         </Container>);
     };
-
-    renderMarkdownDoc(markdown) {
-        this.setState({
-            currentMarkDown: markdown
-        })
-    }
 }
 
 export default BlogDetail;

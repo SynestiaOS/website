@@ -3,10 +3,7 @@ import './Videos.css';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
 import {videosData} from './videosData';
-import {Link} from "react-router-dom";
-import {Player} from 'video-react';
 import 'video-react/dist/video-react.css';
 
 class Videos extends Component {
@@ -35,7 +32,7 @@ class Videos extends Component {
                             <Col md={8} style={{paddingLeft: '1em'}}>
                                 <iframe width={'100%'} height={'400px'} src={item.url} frameBorder="0"
                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen></iframe>
+                                        allowFullScreen/>
                             </Col>
                             <Col md={4} style={{paddingTop: '2em', paddingLeft: '0'}}>
                                 <h3>{item.title}</h3>
@@ -47,12 +44,6 @@ class Videos extends Component {
             </Row>
         </Container>);
     };
-
-    renderMarkdownDoc(markdown) {
-        this.setState({
-            currentMarkDown: markdown
-        })
-    }
 }
 
 export default Videos;

@@ -118,12 +118,6 @@ class Faq extends Component {
             </Row>
         </Container>);
     };
-
-    renderMarkdownDoc(markdown) {
-        this.setState({
-            currentMarkDown: markdown
-        })
-    }
 }
 
 export default Faq;
