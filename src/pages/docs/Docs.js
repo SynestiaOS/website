@@ -56,7 +56,7 @@ class Docs extends Component {
                     <h1>Kernel Documents > </h1>
                 </Col>
                 <Col md={12} style={{padding: 0}}>
-                    <Row style={{paddingLeft: '1em'}}>
+                    <Row style={{paddingLeft: '1em',paddingRight:'1em'}}>
                         <Col md={3} style={{paddingLeft: '1em', borderRight: 'solid 1px #eee', background: '#eee'}}>
                             {docsData.map((item, index) => {
                                 return <Row onClick={this.changeDoc.bind(this, index)} style={{
@@ -69,7 +69,10 @@ class Docs extends Component {
                             })}
                         </Col>
                         <Col md={9} style={{padding: '1em', paddingRight: '2em', background: '#fff'}}>
-                            <h1>{docsData[this.state.currentDocIndex].chapter}</h1>
+                            <Row style={{padding:0,margin:0}}>
+                                <h1>{docsData[this.state.currentDocIndex].chapter}</h1>
+                                <a style={{flex: 1, textAlign: "right",marginTop:'1em'}} href={docsData[this.state.currentDocIndex].url}>detail</a>
+                            </Row>
                             <section style={{borderTop:'solid 1px #eee',paddingTop:'1em'}} dangerouslySetInnerHTML={{__html: markdown.toHTML(process.env.PUBLIC_URL + this.state.currentDoc)}}>
                             </section>
                         </Col>
