@@ -69,7 +69,7 @@ class Docs extends Component {
                                 }}>{item.chapter}</Row>
                             })}
                         </Col>
-                        <Col md={9} style={{padding: '1em', paddingRight: '2em', background: '#fff'}}>
+                        <Col md={9} style={{padding: '1em', background: '#fff'}}>
                             <Row style={{padding:0,margin:0}}>
                                 <h1>{docsData[this.state.currentDocIndex].chapter}</h1>
                                 <a style={{flex: 1, textAlign: "right",marginTop:'1em'}} href={docsData[this.state.currentDocIndex].url}>detail</a>

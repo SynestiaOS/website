@@ -1,7 +1,7 @@
 import React, {PureComponent} from "react";
 import PropTypes from "prop-types";
 import {PrismLight as SyntaxHighlighter} from "react-syntax-highlighter";
-import {prism} from "react-syntax-highlighter/dist/esm/styles/prism";
+import {pojoaque} from "react-syntax-highlighter/dist/esm/styles/prism";
 import {asm6502, bash, c, cpp, clike, cmake,nasm,wasm} from "react-syntax-highlighter/dist/esm/languages/prism";
 
 class CodeBlock extends PureComponent {
@@ -29,7 +29,7 @@ class CodeBlock extends PureComponent {
         const {language, value} = this.props;
         return (
             <figure className="highlight">
-                <SyntaxHighlighter language={language} style={prism}>
+                <SyntaxHighlighter language={language} style={pojoaque}>
                     {value}
                 </SyntaxHighlighter>
             </figure>
