@@ -94,7 +94,7 @@ class Developer extends Component {
                     </Link>
                 </Col>
                 <Col md={3} style={{textAlign: 'center', background: '#fff', height: '15em', paddingTop: '2em', borderRight: 'solid 1px #eee'}}>
-                    <a href={"https://github.com/SynestiaOS/Documentation"} style={{color: '#000'}}>
+                        <Link to={"/docs"} style={{color: '#000'}}>
                         <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
                             <img className="thumb-image loaded"
                                  style={{width: "8em", height: "8em"}}
@@ -104,7 +104,7 @@ class Developer extends Component {
                         <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
                             <h4>Docs</h4>
                         </Col>
-                    </a>
+                        </Link>
                 </Col>
                 <Col md={3} style={{textAlign: 'center', background: '#fff', height: '15em', paddingTop: '2em', borderRight: 'solid 1px #eee'}}>
                     <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
