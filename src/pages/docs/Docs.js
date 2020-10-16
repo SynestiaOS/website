@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import 'video-react/dist/video-react.css';
 import {docsData} from "./docsData";
 import ReactMarkdown from "react-markdown";
+import CodeBlock from "./CodeBlock";
 
 
 async function getDoc(url) {
@@ -77,6 +78,9 @@ class Docs extends Component {
                                 className={"markdown"}
                                 source={this.state.currentDoc}
                                 escapeHtml={false}
+                                renderers={{
+                                    code: CodeBlock,
+                                }}
                             />
                         </Col>
                     </Row>
