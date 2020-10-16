@@ -34,7 +34,7 @@ class Docs extends Component {
         });
     }
 
-    async changeDoc(index){
+    async changeDoc(index) {
         const doc = await getDoc(process.env.PUBLIC_URL + docsData[index].path);
         this.setState({
             currentDocIndex: index,
@@ -55,16 +55,22 @@ class Docs extends Component {
                 <Col md={12} style={{marginTop: "1em"}}>
                     <h1>Kernel Documents > </h1>
                 </Col>
-                <Col md={12} style={{background: '#fff', padding: 0}}>
-                    <Row>
-                        <Col md={3} style={{padding: '1em',borderRight:'solid 1px #eee'}}>
+                <Col md={12} style={{padding: 0}}>
+                    <Row style={{paddingLeft: '1em'}}>
+                        <Col md={3} style={{paddingLeft: '1em', borderRight: 'solid 1px #eee', background: '#eee'}}>
                             {docsData.map((item, index) => {
-                                return <Row onClick={this.changeDoc.bind(this,index)} style={{paddingLeft:'2em'}}><h4>{item.chapter}</h4></Row>
+                                return <Row onClick={this.changeDoc.bind(this, index)} style={{
+                                    paddingTop: '0.5em',
+                                    paddingBottom: '0.5em',
+                                    paddingLeft: '2em',
+                                    fontSize: '1.5em',
+                                    background: index === this.state.currentDocIndex ? '#fff' : '#eee'
+                                }}>{item.chapter}</Row>
                             })}
                         </Col>
-                        <Col md={9} style={{padding: '1em',paddingRight:'2em'}}>
-                            <h1>&gt;&nbsp;{docsData[this.state.currentDocIndex].chapter}</h1>
-                            <section dangerouslySetInnerHTML={{__html: markdown.toHTML(process.env.PUBLIC_URL + this.state.currentDoc)}}>
+                        <Col md={9} style={{padding: '1em', paddingRight: '2em', background: '#fff'}}>
+                            <h1>{docsData[this.state.currentDocIndex].chapter}</h1>
+                            <section style={{borderTop:'solid 1px #eee',paddingTop:'1em'}} dangerouslySetInnerHTML={{__html: markdown.toHTML(process.env.PUBLIC_URL + this.state.currentDoc)}}>
                             </section>
                         </Col>
                     </Row>
