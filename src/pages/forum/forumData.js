@@ -1,4 +1,7 @@
 export const forumData = {
+    issues:[
+
+    ],
     hot: [
         {
             type: 'qa',

@@ -48,9 +48,11 @@ class BlogDetail extends Component {
                                    style={{fontWeight: 'normal', marginTop: '1em'}}>
                                     <button style={{
                                         color: '#fff',
-                                        background: '#000',
+                                        background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
                                         border: 'none',
-                                        borderRadius: '100em',
+                                        width:'6em',
+                                        height:'2em',
+                                        borderRadius: '0',
                                     }}>Learn More
                                     </button>
                                 </a>

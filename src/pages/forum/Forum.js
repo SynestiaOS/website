@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import './Forum.css';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -7,14 +7,29 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import {forumData} from "./forumData";
 import {Link} from "react-router-dom";
+import Image from "react-bootstrap/Image";
 
 class Forum extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            selected: 'hot'
+            selected: 'issues',
+            issues: [],
         };
+    }
+
+    componentDidMount() {
+        fetch('https://api.github.com/repos/SynestiaOS/SynestiaOS/issues')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                this.setState(
+                    {
+                        issues: data
+                    }
+                );
+            });
     }
 
     render() {
@@ -47,45 +62,7 @@ class Forum extends Component {
                             </Navbar>
                         </Col>
                         <Col md={12} style={{borderTop: 'solid 1px #eee', background: '#fff'}}>
-                            {
-                                forumData[this.state.selected].length !== 0 ? forumData[this.state.selected].map((item, index) => {
-                                    return <Row
-                                        style={{padding: '1em', borderBottom: 'solid 1px #eee'}}>
-                                        <Col md={9}>
-                                            <Row><h5><strong>&lt;{item.type}/&gt;</strong>
-                                                <Link style={{color: '#000'}}
-                                                      to={'/forum-detail/' + this.state.selected + '/' + index}> {item.title}</Link>
-                                            </h5></Row>
-                                            <Row>
-                                                <span style={{fontWeight: 'bold'}}>{item.author}</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                <span>{item.time}</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                {
-                                                    item.tags.map((tag, tagIndex) => {
-                                                        return <span style={{
-                                                            background: '#eee',
-                                                            paddingLeft: '0.3em',
-                                                            paddingRight: '0.3em',
-                                                            marginLeft: '0.5em'
-                                                        }}>{tag}</span>
-                                                    })
-                                                }
-                                            </Row>
-                                        </Col>
-                                        <Col md={3}>
-                                            <Row>
-                                                <Col md={5} style={{textAlign: 'right'}}>
-                                                    <Row>view</Row>
-                                                    <Row style={{fontWeight: 'bold'}}>{item.view}</Row>
-                                                </Col>
-                                                <Col md={7} style={{textAlign: 'right'}}>
-                                                    <Row>comment</Row>
-                                                    <Row style={{fontWeight: 'bold'}}>{item.comments.length}</Row>
-                                                </Col>
-                                            </Row>
-                                        </Col>
-                                    </Row>
-                                }) : <Row style={{padding: '1em', fontWeight: 'bold'}}>Empty</Row>
-                            }
+                            {this.renderItem()}
                         </Col>
                     </Row>
                     <Row style={{padding: 0, background: '#fff'}}>
@@ -122,6 +99,94 @@ class Forum extends Component {
             </Row>
         </Container>);
     };
+
+    renderItem() {
+        if (this.state.selected !== 'issues') {
+            return <Fragment>
+                {
+                    forumData[this.state.selected].length !== 0 ? forumData[this.state.selected].map((item, index) => {
+                        return <Row
+                            style={{padding: '1em', borderBottom: 'solid 1px #eee'}}>
+                            <Col md={9}>
+                                <Row><h5><strong>&lt;{item.type}/&gt;</strong>
+                                    <Link style={{color: '#000'}}
+                                          to={'/forum-detail/' + this.state.selected + '/' + index}> {item.title}</Link>
+                                </h5></Row>
+                                <Row>
+                                    <span style={{fontWeight: 'bold'}}>{item.author}</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span>{item.time}</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    {
+                                        item.tags.map((tag, tagIndex) => {
+                                            return <span style={{
+                                                background: '#eee',
+                                                paddingLeft: '0.3em',
+                                                paddingRight: '0.3em',
+                                                marginLeft: '0.5em'
+                                            }}>{tag}</span>
+                                        })
+                                    }
+                                </Row>
+                            </Col>
+                            <Col md={3}>
+                                <Row>
+                                    <Col md={5} style={{textAlign: 'right'}}>
+                                        <Row>view</Row>
+                                        <Row style={{fontWeight: 'bold'}}>{item.view}</Row>
+                                    </Col>
+                                    <Col md={7} style={{textAlign: 'right'}}>
+                                        <Row>comment</Row>
+                                        <Row style={{fontWeight: 'bold'}}>{item.comments.length}</Row>
+                                    </Col>
+                                </Row>
+                            </Col>
+                        </Row>
+                    }) : <Row style={{padding: '1em', fontWeight: 'bold'}}>Empty</Row>
+                }
+            </Fragment>;
+        } else {
+            return <Fragment>
+                {
+                    this.state.issues.length !== 0 ? this.state.issues.map((item, index) => {
+                        return <Row
+                            style={{padding: '1em', borderBottom: 'solid 1px #eee'}}>
+                            <Col md={1} style={{padding:0}}>
+                                <Image style={{borderRadius: '2px'}} src={item.user.avatar_url}/>
+                            </Col>
+
+                            <Col md={10} style={{paddingLeft:'2em'}}>
+                                <Row><h5><strong>&lt;{item.state}/&gt;</strong>
+                                    <Link style={{color: '#000'}}
+                                          to={'/forum-detail/github/issue/' + item.number}> {item.title}</Link>
+                                </h5></Row>
+                                <Row>
+                                    <span style={{fontWeight: 'bold'}}>{item.user.login}</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span>{item.created_at}</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    {
+                                        item.labels.map((label, tagIndex) => {
+                                            return <span style={{
+                                                background: '#eee',
+                                                paddingLeft: '0.3em',
+                                                paddingRight: '0.3em',
+                                                marginLeft: '0.5em'
+                                            }}>{label.name}</span>
+                                        })
+                                    }
+                                </Row>
+                            </Col>
+                            <Col md={1}>
+                                <Row>
+                                    <Col md={12} style={{textAlign: 'right'}}>
+                                        <Row>comment</Row>
+                                        <Row style={{fontWeight: 'bold'}}>{item.comments}</Row>
+                                    </Col>
+                                </Row>
+                            </Col>
+                        </Row>
+                    }) : <Row style={{padding: '1em', fontWeight: 'bold'}}>Empty</Row>
+                }
+            </Fragment>;
+        }
+    }
 
     selectTag(tag) {
         this.setState(

@@ -35,17 +35,7 @@ class Faq extends Component {
                         <Row>
                             <h5 style={{lineHeight: '1.2em'}}>This is a completely free source code, you can use it to do anything, including
                                 modification, sale and earn profit or use it in some commercial products, without providing us with anything. If you
-                                can, you can buy us a cup of coffee
-                                &nbsp;
-                                <Link to={"/sponsor"}>
-                                    <button style={{
-                                        color: '#fff',
-                                        background: '#000',
-                                        border: 'none',
-                                        borderRadius: '100em',
-                                    }}>COFFEE
-                                    </button>
-                                </Link>
+                                can, you can buy us a cup of coffee.
                             </h5>
                         </Row>
                     </Container>
@@ -56,60 +46,68 @@ class Faq extends Component {
                         <Col md={3} style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
                             <p style={{
                                 padding: "1em",
-                                borderRadius: "2px",
+                                borderRadius: "0",
                                 backgroundImage: "linear-gradient(to right, rgb(229,199,173), rgb(182,152,124))",
                             }}>Platinum Sponsor</p>
                             <Link to={"/sponsor"}>
                                 <button style={{
                                     color: '#fff',
-                                    background: '#000',
+                                    background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
                                     border: 'none',
-                                    borderRadius: '100em',
+                                    width:'6em',
+                                    height:'2em',
+                                    borderRadius: '0',
                                 }}>Learn More</button>
                             </Link>
                         </Col>
                         <Col md={3} style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
                             <p style={{
                                 padding: "1em",
-                                borderRadius: "2px",
+                                borderRadius: "0",
                                 backgroundImage: "linear-gradient(to right, rgb(239,205,109), rgb(215,159,61))",
                             }}>Gold Sponsor</p>
                             <Link to={"/sponsor"}>
                                 <button style={{
                                     color: '#fff',
-                                    background: '#000',
+                                    background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
                                     border: 'none',
-                                    borderRadius: '100em',
+                                    width:'6em',
+                                    height:'2em',
+                                    borderRadius: '0',
                                 }}>Learn More</button>
                             </Link>
                         </Col>
                         <Col md={3} style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
                             <p style={{
                                 padding: "1em",
-                                borderRadius: "2px",
+                                borderRadius: "0",
                                 backgroundImage: "linear-gradient(to right, rgb(228,226,227), rgb(195,193,196))",
                             }}>Silver Sponsor</p>
                             <Link to={"/sponsor"}>
                                 <button style={{
                                     color: '#fff',
-                                    background: '#000',
+                                    background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
                                     border: 'none',
-                                    borderRadius: '100em',
+                                    width:'6em',
+                                    height:'2em',
+                                    borderRadius: '0',
                                 }}>Learn More</button>
                             </Link>
                         </Col>
                         <Col md={3} style={{background: '#fff', padding: '1em'}}>
                             <p style={{
                                 padding: "1em",
-                                borderRadius: "2px",
+                                borderRadius: "0",
                                 backgroundImage: "linear-gradient(to right, rgb(166,219,246), rgb(77,164,216))",
                             }}>Normal Sponsor</p>
                             <Link to={"/sponsor"}>
                                 <button style={{
                                     color: '#fff',
-                                    background: '#000',
+                                    background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
                                     border: 'none',
-                                    borderRadius: '100em',
+                                    width:'6em',
+                                    height:'2em',
+                                    borderRadius: '0',
                                 }}>Learn More</button>
                             </Link>
                         </Col>

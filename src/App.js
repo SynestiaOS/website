@@ -3,7 +3,7 @@ import './App.css';
 import Home from "./pages/home/Home";
 import Container from "react-bootstrap/Container";
 import Footer from "./components/footer/Footer";
-import {Link, Route, Switch,} from "react-router-dom";
+import {Route, Switch,} from "react-router-dom";
 import Header from "./components/header/Header";
 import Developer from "./pages/developer/Developer";
 import Sponsor from "./pages/sponsor/Sponsor";
@@ -15,6 +15,8 @@ import Forum from "./pages/forum/Forum";
 import ForumDetail from "./pages/forum-detail/ForumDetail";
 import Videos from "./pages/videos/Videos";
 import Docs from "./pages/docs/Docs";
+import GithubLogin from "./pages/github-login/GithubLogin";
+import GithubIssuesDetail from "./pages/issues-detail/GithubIssuesDetail";
 
 function App() {
     return (
@@ -32,7 +34,9 @@ function App() {
                 <Route exact path="/forum" component={Forum}/>
                 <Route exact path="/videos" component={Videos}/>
                 <Route exact path="/docs" component={Docs}/>
+                <Route exact path="/github/callback" component={GithubLogin}/>
                 <Route exact path="/forum-detail/:type/:id" component={ForumDetail}/>
+                <Route exact path="/forum-detail/github/issue/:id" component={GithubIssuesDetail}/>
             </Switch>
 
             <Footer/>

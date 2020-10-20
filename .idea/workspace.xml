@@ -2,10 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecb05922-317c-4230-8e1f-08cf1aa4ee2b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/github-login/GithubLogin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/github-login/GithubLogin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/github-login/GithubLogin.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/issues-detail/GithubIssuesDetail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/issues-detail/GithubIssuesDetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/issues-detail/GithubIssuesDetail.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/docs/CodeBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/docs/CodeBlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/docs/Docs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/docs/Docs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/docs/Docs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/docs/Docs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blog-detail/BlogDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog-detail/BlogDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/blogs/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blogs/Blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/faq/Faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/faq/Faq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/forum/Forum.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/forum/Forum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/forum/forumData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/forum/forumData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +54,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/docs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -53,8 +70,8 @@
       <recent name="$PROJECT_DIR$/src/static/images" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/pages/docs" />
       <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/pages/docs" />
       <recent name="$PROJECT_DIR$/src/pages/forum" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/static/images" />
@@ -142,7 +159,9 @@
       <workItem from="1601650836410" duration="662000" />
       <workItem from="1602406274499" duration="30000" />
       <workItem from="1602736909547" duration="1503000" />
-      <workItem from="1602843537470" duration="7580000" />
+      <workItem from="1602843537470" duration="10809000" />
+      <workItem from="1603192072463" duration="5812000" />
+      <workItem from="1603202561498" duration="6063000" />
     </task>
     <servers />
   </component>
