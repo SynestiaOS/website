@@ -143,7 +143,7 @@ class Sponsor extends Component {
                                                 break;
 
                                         }
-                                        return <OverlayTrigger trigger="click" placement="right" overlay={popup(item, linearGradient)}>
+                                        return <OverlayTrigger key={index} trigger="click" placement="right" overlay={popup(item, linearGradient)}>
                                             {this.renderSponsor(item, linearGradient)}
                                         </OverlayTrigger>
                                     })

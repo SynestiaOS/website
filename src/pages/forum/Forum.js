@@ -53,7 +53,7 @@ class Forum extends Component {
                                         if (this.state.selected === item) {
                                             background = '#fff';
                                         }
-                                        return <Nav.Link onClick={this.selectTag.bind(this, item)}
+                                        return <Nav.Link key={index} onClick={this.selectTag.bind(this, item)}
                                                          style={{color: '#000', background}}>{item}</Nav.Link>
                                     })
                                 }
@@ -105,7 +105,7 @@ class Forum extends Component {
             return <Fragment>
                 {
                     forumData[this.state.selected].length !== 0 ? forumData[this.state.selected].map((item, index) => {
-                        return <Row
+                        return <Row key={index}
                             style={{padding: '1em', borderBottom: 'solid 1px #eee'}}>
                             <Col md={9}>
                                 <Row><h5><strong>&lt;{item.type}/&gt;</strong>
@@ -117,7 +117,7 @@ class Forum extends Component {
                                     <span>{item.time}</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     {
                                         item.tags.map((tag, tagIndex) => {
-                                            return <span style={{
+                                            return <span key={tagIndex} style={{
                                                 background: '#eee',
                                                 paddingLeft: '0.3em',
                                                 paddingRight: '0.3em',
@@ -147,7 +147,7 @@ class Forum extends Component {
             return <Fragment>
                 {
                     this.state.issues.length !== 0 ? this.state.issues.map((item, index) => {
-                        return <Row
+                        return <Row key={index}
                             style={{padding: '1em', borderBottom: 'solid 1px #eee'}}>
                             <Col md={1} style={{padding:0}}>
                                 <Image style={{borderRadius: '2px'}} src={item.user.avatar_url}/>
@@ -163,7 +163,7 @@ class Forum extends Component {
                                     <span>{item.created_at}</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     {
                                         item.labels.map((label, tagIndex) => {
-                                            return <span style={{
+                                            return <span key={tagIndex} style={{
                                                 background: '#eee',
                                                 paddingLeft: '0.3em',
                                                 paddingRight: '0.3em',

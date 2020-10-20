@@ -63,7 +63,7 @@ class Header extends Component {
 
                     {
                         headers.map((item, index) => {
-                            return <Nav.Link href={item.url}
+                            return <Nav.Link key={index} href={item.url}
                                              onClick={this.selectHeaderMenu.bind(this, index)}
                                              style={{
                                                  color: '#000',

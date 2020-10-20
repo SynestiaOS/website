@@ -26,8 +26,7 @@ class Videos extends Component {
                     <h1>Dev Log > </h1>
                 </Col>
                 {videosData.map((item, index) => {
-
-                    return <Col md={12} style={{background: '#fff', padding: 0}}>
+                    return <Col md={12} key={index} style={{background: '#fff', padding: 0}}>
                         <Row>
                             <Col md={8} style={{paddingLeft: '1em'}}>
                                 <iframe width={'100%'} height={'400px'} src={item.url} frameBorder="0"

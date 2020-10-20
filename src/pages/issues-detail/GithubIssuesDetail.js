@@ -63,7 +63,7 @@ class GithubIssuesDetail extends Component {
                                     <Container>
                                         {
                                             this.state.detail.labels ? this.state.detail.labels.map((label, tagIndex) => {
-                                                return <span style={{
+                                                return <span key={tagIndex} style={{
                                                     background: '#eee',
                                                     paddingLeft: '0.3em',
                                                     paddingRight: '0.3em',
@@ -81,8 +81,11 @@ class GithubIssuesDetail extends Component {
                                 <Col md={12} style={{padding: 0}}>
                                     <Container style={{padding: 0}}>
                                         {!this.state.comments || this.state.comments.length === 0 ?
-                                            <Container style={{padding: '1em',borderTop:'solid 1px #eee'}}>Empty</Container> : this.state.comments.map((comment, index) => {
-                                                return <Row style={{padding: 0, margin: 0}}>
+                                            <Container style={{
+                                                padding: '1em',
+                                                borderTop: 'solid 1px #eee'
+                                            }}>Empty</Container> : this.state.comments.map((comment, index) => {
+                                                return <Row key={index} style={{padding: 0, margin: 0}}>
                                                     <Col md={1} style={{background: '#eee', textAlign: 'center', padding: '1em'}}><h1>{index + 1}</h1>
                                                     </Col>
                                                     <Col md={11} style={{padding: '1em', borderTop: 'solid 1px #eee'}}>
@@ -105,21 +108,35 @@ class GithubIssuesDetail extends Component {
                                 </Col>
                             </Row>
                         </Col>
-                        <Col md={3} style={{padding: 0, textAlign: 'center', paddingTop: '2em'}}>
-                            <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
-                                <img style={{width: "8em", height: "8em"}}
-                                     alt="Forum"
-                                     src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058123638-H4VTXMHVGK47D4A2VC54/ke17ZwdGBToddI8pDm48kEoK7p2cuopIbMpnY-qU4Xt7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmPCjdaixatBq74HpDU8-1BG_BTZdSbG6SN-2894KVoY0GT6uSxH2T086BFBPl3LIm/forum_logo.PNG?format=500w"/>
-                            </Col>
+                        <Col md={3} style={{padding: 0, paddingTop: '2em', textAlign: 'center'}}>
                             <Col md={12}>
+                                <img style={{width: "8em", height: "8em",borderRadius:'100em'}}
+                                     alt="Forum"
+                                     src={this.state.detail.user ? this.state.detail.user.avatar_url : "https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058123638-H4VTXMHVGK47D4A2VC54/ke17ZwdGBToddI8pDm48kEoK7p2cuopIbMpnY-qU4Xt7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmPCjdaixatBq74HpDU8-1BG_BTZdSbG6SN-2894KVoY0GT6uSxH2T086BFBPl3LIm/forum_logo.PNG?format=500w"}/>
+                            </Col>
+                            <Col md={12} style={{marginTop:'2em'}}>
                                 <button style={{
                                     color: '#fff',
                                     background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
                                     border: 'none',
-                                    width:'6em',
-                                    height:'2em',
-                                    borderRadius: '0',
-                                }}>Learn More</button>
+                                    width: '8em',
+                                    height: '2em',
+                                    borderRadius: '0'
+                                }}>
+                                    <a style={{color:'#fff'}} href={this.state.detail.user ? this.state.detail.user.html_url : '#'}>{this.state.detail.user ? this.state.detail.user.login : 'Loading'}</a>
+                                </button>
+                            </Col>
+                            <Col md={12} style={{marginTop:'1em'}}>
+                                <button style={{
+                                    color: '#fff',
+                                    background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
+                                    border: 'none',
+                                    width: '8em',
+                                    height: '2em',
+                                    borderRadius: '0'
+                                }}>
+                                    <a style={{color:'#fff'}} href={this.state.detail ? this.state.detail.url : '#'}>Go To Github</a>
+                                </button>
                             </Col>
                         </Col>
                     </Row>

@@ -41,7 +41,7 @@ class ForumDetail extends Component {
                                     <Container>
                                         {
                                             detail.tags.map((tag, tagIndex) => {
-                                                return <span style={{
+                                                return <span key={tagIndex} style={{
                                                     background: '#eee',
                                                     paddingLeft: '0.3em',
                                                     paddingRight: '0.3em',
@@ -57,7 +57,7 @@ class ForumDetail extends Component {
                                     <Container style={{padding: 0}}>
                                         {detail.comments.length === 0 ?
                                             <Container style={{padding: '1em',borderTop:'solid 1px #eee'}}>Empty</Container> : detail.comments.map((comment, index) => {
-                                                return <Row style={{padding: 0, margin: 0}}>
+                                                return <Row key={index} style={{padding: 0, margin: 0}}>
                                                     <Col md={1} style={{background: '#eee', textAlign: 'center', padding: '1em'}}><h1>{index + 1}</h1>
                                                     </Col>
                                                     <Col md={11} style={{padding: '1em', borderTop: 'solid 1px #eee'}}>

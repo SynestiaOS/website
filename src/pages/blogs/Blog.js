@@ -32,7 +32,7 @@ class Blog extends Component {
                         borderR = 'none';
                     }
 
-                    return <Col md={6} style={{background: '#fff', padding: 0, borderRight: borderR}}>
+                    return <Col key={index} md={6} style={{background: '#fff', padding: 0, borderRight: borderR}}>
                         <Row>
                             <Col md={6} style={{padding: '1em'}}>
                                 <Image style={{width: '100%'}} src={item.image}/>

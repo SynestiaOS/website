@@ -2,27 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecb05922-317c-4230-8e1f-08cf1aa4ee2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/github-login/GithubLogin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/github-login/GithubLogin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/github-login/GithubLogin.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/issues-detail/GithubIssuesDetail.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/issues-detail/GithubIssuesDetail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/issues-detail/GithubIssuesDetail.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog-detail/BlogDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog-detail/BlogDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/blogs/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blogs/Blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/faq/Faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/faq/Faq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/forum-detail/ForumDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/forum-detail/ForumDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/forum/Forum.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/forum/Forum.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/forum/forumData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/forum/forumData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/issues-detail/GithubIssuesDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/issues-detail/GithubIssuesDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/videos/Videos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/videos/Videos.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -162,6 +149,7 @@
       <workItem from="1602843537470" duration="10809000" />
       <workItem from="1603192072463" duration="5812000" />
       <workItem from="1603202561498" duration="6063000" />
+      <workItem from="1603211637118" duration="589000" />
     </task>
     <servers />
   </component>
