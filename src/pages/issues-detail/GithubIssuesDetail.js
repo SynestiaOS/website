@@ -71,11 +71,20 @@ class GithubIssuesDetail extends Component {
                                                 }}>{label.name}</span>
                                             }) : null
                                         }
-                                        <p>
-                                            <strong>{this.state.detail.user ? this.state.detail.user.login : 'loading'}</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <p><strong>{this.state.detail.user ? this.state.detail.user.login : 'loading'}</strong>&nbsp;&nbsp;&nbsp;&nbsp;
                                             <span>{this.state.detail.created_at ? this.state.detail.created_at : 'loading'}</span></p>
                                     </Container>
-                                    <Container style={{marginTop: '2em'}}><p>{this.state.detail.body ? this.state.detail.body : 'loading'}</p>
+                                    <Container style={{marginTop: '2em'}}><p>
+                                        {this.state.detail.body ?
+                                            <ReactMarkdown
+                                                className={"markdown"}
+                                                source={this.state.detail.body}
+                                                escapeHtml={false}
+                                                renderers={{
+                                                    code: CodeBlock,
+                                                }}
+                                            /> : 'loading'}
+                                    </p>
                                     </Container>
                                 </Col>
                                 <Col md={12} style={{padding: 0}}>
@@ -110,11 +119,11 @@ class GithubIssuesDetail extends Component {
                         </Col>
                         <Col md={3} style={{padding: 0, paddingTop: '2em', textAlign: 'center'}}>
                             <Col md={12}>
-                                <img style={{width: "8em", height: "8em",borderRadius:'100em'}}
+                                <img style={{width: "8em", height: "8em", borderRadius: '100em'}}
                                      alt="Forum"
                                      src={this.state.detail.user ? this.state.detail.user.avatar_url : "https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058123638-H4VTXMHVGK47D4A2VC54/ke17ZwdGBToddI8pDm48kEoK7p2cuopIbMpnY-qU4Xt7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmPCjdaixatBq74HpDU8-1BG_BTZdSbG6SN-2894KVoY0GT6uSxH2T086BFBPl3LIm/forum_logo.PNG?format=500w"}/>
                             </Col>
-                            <Col md={12} style={{marginTop:'2em'}}>
+                            <Col md={12} style={{marginTop: '2em'}}>
                                 <button style={{
                                     color: '#fff',
                                     background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
@@ -123,10 +132,11 @@ class GithubIssuesDetail extends Component {
                                     height: '2em',
                                     borderRadius: '3px'
                                 }}>
-                                    <a style={{color:'#fff'}} href={this.state.detail.user ? this.state.detail.user.html_url : '#'}>{this.state.detail.user ? this.state.detail.user.login : 'Loading'}</a>
+                                    <a style={{color: '#fff'}}
+                                       href={this.state.detail.user ? this.state.detail.user.html_url : '#'}>{this.state.detail.user ? this.state.detail.user.login : 'Loading'}</a>
                                 </button>
                             </Col>
-                            <Col md={12} style={{marginTop:'1em'}}>
+                            <Col md={12} style={{marginTop: '1em'}}>
                                 <button style={{
                                     color: '#fff',
                                     background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
@@ -135,7 +145,7 @@ class GithubIssuesDetail extends Component {
                                     height: '2em',
                                     borderRadius: '3px'
                                 }}>
-                                    <a style={{color:'#fff'}} href={this.state.detail ? this.state.detail.url : '#'}>Go To Github</a>
+                                    <a style={{color: '#fff'}} href={this.state.detail ? this.state.detail.url : '#'}>Go To Github</a>
                                 </button>
                             </Col>
                         </Col>
