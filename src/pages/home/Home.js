@@ -150,7 +150,7 @@ class Home extends Component {
                             height: '2em',
                             width: '6em',
                             border: 'none',
-                            borderRadius: '0',
+                            borderRadius: '3px',
                         }}>Learn More
                         </button>
                     </a>
@@ -202,34 +202,6 @@ class Home extends Component {
                 {this.renderKernel()}
                 {this.renderComponents()}
                 {this.renderDevices()}
-            </Row>
-            <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
-                <Col md={3}>
-                    <h2>Corporate ></h2>
-                    <Row style={{background: '#fff', padding: '2em', borderRight: 'solid 1px #eee'}}>
-                        <Col md={12} style={{textAlign: 'center'}}>
-                            <Image style={{width: '5em', height: '5em', filter: 'grayscale(100%)'}}
-                                   src={'https://avatars0.githubusercontent.com/u/66101949?s=200&v=4'}/>
-
-                        </Col>
-                        <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
-                            <a style={{color: '#000'}} href={'https://security.thoughtworks.cn'}><h3>Zion Lab</h3></a>
-                        </Col>
-                    </Row>
-                </Col>
-                <Col md={3}>
-                    <h2>&nbsp;</h2>
-                    <Row style={{background: '#fff', padding: '2em'}}>
-                        <Col md={12} style={{textAlign: 'center'}}>
-                            <Image style={{width: '5em', height: '5em', padding: '0.5em', filter: 'grayscale(100%)'}}
-                                   src={'https://raw.githubusercontent.com/CenoOS/CenoOS-IOT/master/docs/docs/img/logo.png'}/>
-
-                        </Col>
-                        <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
-                            <a style={{color: '#000'}} href={'https://www.cenocloud.com'}><h3>Ceno OS</h3></a>
-                        </Col>
-                    </Row>
-                </Col>
             </Row>
         </Container>);
     };

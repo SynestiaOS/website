@@ -48,7 +48,7 @@ class Blog extends Component {
                                         border: 'none',
                                         width:'6em',
                                         height:'2em',
-                                        borderRadius: '0',
+                                        borderRadius: '3px',
                                     }}>Learn More
                                     </button>
                                 </Link>
