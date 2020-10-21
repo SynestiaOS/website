@@ -36,8 +36,6 @@ function Footer() {
                     <a style={{ color:'#888', fontWeight: 'lighter', margin: 0, padding: 0, display: 'block'}}
                        href={"http://kerneltravel.net"}>Linux Kernel Travel</a>
                     <a style={{ color:'#888', fontWeight: 'lighter', margin: 0, padding: 0, display: 'block'}}
-                       href={"http://www.book-os.org/"}>BookOS</a>
-                    <a style={{ color:'#888', fontWeight: 'lighter', margin: 0, padding: 0, display: 'block'}}
                        href={"https://templeos.org/"}>RIP Terry A. Davis</a>
                 </Col>
             </Row>
