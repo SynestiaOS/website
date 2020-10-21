@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {Image} from "react-bootstrap";
 import TabPanel from "../../components/tab-panel/TabPanel";
+import GithubInfo from "../../components/github-info/GithubInfo";
 
 const boards = {
     Supported: [
@@ -156,48 +157,7 @@ class Home extends Component {
                     </a>
                 </Col>
             </Row>
-            <Row style={{background: '#f5f5f6', paddingTop: '0em',borderTop:'solid 1px #eee'}}>
-                <Col md={3}>
-                    <Row style={{background: '#fff', padding: '2em', borderRight: 'solid 1px #eee'}}>
-                        <Col md={12} style={{textAlign: 'center'}}>
-                            <h1 style={{fontWeight: 'bold'}}>961</h1>
-                        </Col>
-                        <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
-                            <h4>Commits</h4>
-                        </Col>
-                    </Row>
-                </Col>
-                <Col md={3}>
-                    <Row style={{background: '#fff', padding: '2em', borderRight: 'solid 1px #eee'}}>
-                        <Col md={12} style={{textAlign: 'center'}}>
-                            <h1 style={{fontWeight: 'bold'}}>6</h1>
-                        </Col>
-                        <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
-                            <h4>Contributors</h4>
-                        </Col>
-                    </Row>
-                </Col>
-                <Col md={3}>
-                    <Row style={{background: '#fff', padding: '2em', borderRight: 'solid 1px #eee'}}>
-                        <Col md={12} style={{textAlign: 'center'}}>
-                            <h1 style={{fontWeight: 'bold'}}>10</h1>
-                        </Col>
-                        <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
-                            <h4>Forks</h4>
-                        </Col>
-                    </Row>
-                </Col>
-                <Col md={3}>
-                    <Row style={{background: '#fff', padding: '2em'}}>
-                        <Col md={12} style={{textAlign: 'center'}}>
-                            <h1 style={{fontWeight: 'bold'}}>55</h1>
-                        </Col>
-                        <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
-                            <h4>Stars</h4>
-                        </Col>
-                    </Row>
-                </Col>
-            </Row>
+            <GithubInfo/>
             <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
                 {this.renderKernel()}
                 {this.renderComponents()}

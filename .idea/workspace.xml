@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecb05922-317c-4230-8e1f-08cf1aa4ee2b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/github-info/GithubInfo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/github-info/GithubInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/github-info/GithubInfo.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/issues-detail/GithubIssuesDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/issues-detail/GithubIssuesDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,14 +50,14 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/static/images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/pages/docs" />
       <recent name="$PROJECT_DIR$/src/pages/forum" />
-      <recent name="$PROJECT_DIR$/src/static/images" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/static/images" />
     </key>
   </component>
@@ -146,7 +149,8 @@
       <workItem from="1603211637118" duration="885000" />
       <workItem from="1603247602870" duration="463000" />
       <workItem from="1603273743693" duration="6519000" />
-      <workItem from="1603294091713" duration="57000" />
+      <workItem from="1603294091713" duration="274000" />
+      <workItem from="1603294834824" duration="1046000" />
     </task>
     <servers />
   </component>
