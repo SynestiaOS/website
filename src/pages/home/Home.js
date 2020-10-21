@@ -4,8 +4,136 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {Image} from "react-bootstrap";
+import TabPanel from "../../components/tab-panel/TabPanel";
+
+const boards = {
+    Supported: [
+        {
+            name: 'RaspberryPi 4',
+            url: 'https://www.raspberrypi.org/products/raspberry-pi-4-model-b/'
+        }
+    ],
+    Supporting: [
+        {
+            name: 'RaspberryPi 3B',
+            url: 'https://www.raspberrypi.org/products/'
+        },
+        {
+            name: 'RaspberryPi 3B+',
+            url: 'https://www.raspberrypi.org/products/'
+        },
+        {
+            name: 'RaspberryPi Zero W',
+            url: 'https://www.raspberrypi.org/products/'
+        }
+    ],
+    Planing: [
+        {
+            name: 'Hi3559A',
+            url: 'http://www.haitutech.com/proinfo/22?renqun_youhua=475742&bd_vid=7644577626235852273'
+        }
+    ]
+};
+
+const components = {
+    Works: [
+        {
+            name: 'LibC',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
+        {
+            name: 'LibGfx2D',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
+        {
+            name: 'LibGfx3D',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
+        {
+            name: 'LibGUI',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
+    ],
+    Doing: [
+        {
+            name: 'LibNet',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
+        {
+            name: 'LibGfx3D',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
+        {
+            name: 'LibMath',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
+        {
+            name: 'LibHtml',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
+    ],
+    Todo: [
+        {
+            name: 'LibJS',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        }, {
+            name: 'LibIPC',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
+    ]
+};
+
+const kernel = {
+    Done: [
+        {
+            name: 'Thread',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        }, {
+            name: 'Scheduler',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        }, {
+            name: 'VMM',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        }, {
+            name: 'Mutex',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        }, {
+            name: 'Semaphore',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
+        {
+            name: 'SysCall',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
+        {
+            name: 'Ext2',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
+        {
+            name: 'VFS',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        }
+    ],
+    Doing: [
+        {
+            name: 'SysCall',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        }
+    ],
+    Todo: [
+        {
+            name: 'HAL',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        }
+    ]
+};
 
 class Home extends Component {
+
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (<Container className="Home">
             <Row style={{textAlign: 'left', padding: '2em'}}>
@@ -19,8 +147,8 @@ class Home extends Component {
                             color: '#fff',
                             background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
                             transition: 'all .3s ease',
-                            height:'2em',
-                            width:'6em',
+                            height: '2em',
+                            width: '6em',
                             border: 'none',
                             borderRadius: '0',
                         }}>Learn More
@@ -28,50 +156,11 @@ class Home extends Component {
                     </a>
                 </Col>
             </Row>
-
-            <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
-                <Col md={4}>
-                    <h2>Kernel ></h2>
-                    <Row style={{background: '#fff', padding: '2em', borderRight: 'solid 1px #eee'}}>
-                        <Col md={4}>Thread</Col>
-                        <Col md={4}>Scheduler</Col>
-                        <Col md={4}>VMM</Col>
-                        <Col md={4}>Mutex</Col>
-                        <Col md={4}>Semaphore</Col>
-                        <Col md={4}>SysCall</Col>
-                        <Col md={4}>...</Col>
-                    </Row>
-                </Col>
-                <Col md={4}>
-                    <h2>Components ></h2>
-                    <Row style={{background: '#fff', padding: '2em', borderRight: 'solid 1px #eee'}}>
-                        <Col md={4}>libC</Col>
-                        <Col md={4}>libMath</Col>
-                        <Col md={4}>libGFX</Col>
-                        <Col md={4}>libGUI</Col>
-                        <Col md={4}>libELF</Col>
-                        <Col md={4}>libHTML</Col>
-                        <Col md={4}>libJS</Col>
-                        <Col md={4}>...</Col>
-                    </Row>
-                </Col>
-                <Col md={4}>
-                    <h2>Device ></h2>
-                    <Row style={{background: '#fff', padding: '2em'}}>
-                        <Col md={6}>RaspberryPi-2</Col>
-                        <Col md={6}>RaspberryPi-3</Col>
-                        <Col md={6}>RaspberryPi-4</Col>
-                        <Col md={6}>...</Col>
-                    </Row>
-                </Col>
-            </Row>
-
-            <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
+            <Row style={{background: '#f5f5f6', paddingTop: '0em',borderTop:'solid 1px #eee'}}>
                 <Col md={3}>
-                    <h2>GitHub ></h2>
                     <Row style={{background: '#fff', padding: '2em', borderRight: 'solid 1px #eee'}}>
                         <Col md={12} style={{textAlign: 'center'}}>
-                            <h1 style={{fontWeight: 'bold'}}>945</h1>
+                            <h1 style={{fontWeight: 'bold'}}>961</h1>
                         </Col>
                         <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
                             <h4>Commits</h4>
@@ -79,7 +168,6 @@ class Home extends Component {
                     </Row>
                 </Col>
                 <Col md={3}>
-                    <h2>&nbsp;</h2>
                     <Row style={{background: '#fff', padding: '2em', borderRight: 'solid 1px #eee'}}>
                         <Col md={12} style={{textAlign: 'center'}}>
                             <h1 style={{fontWeight: 'bold'}}>6</h1>
@@ -90,10 +178,9 @@ class Home extends Component {
                     </Row>
                 </Col>
                 <Col md={3}>
-                    <h2>&nbsp;</h2>
                     <Row style={{background: '#fff', padding: '2em', borderRight: 'solid 1px #eee'}}>
                         <Col md={12} style={{textAlign: 'center'}}>
-                            <h1 style={{fontWeight: 'bold'}}>9</h1>
+                            <h1 style={{fontWeight: 'bold'}}>10</h1>
                         </Col>
                         <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
                             <h4>Forks</h4>
@@ -101,10 +188,9 @@ class Home extends Component {
                     </Row>
                 </Col>
                 <Col md={3}>
-                    <h2>&nbsp;</h2>
                     <Row style={{background: '#fff', padding: '2em'}}>
                         <Col md={12} style={{textAlign: 'center'}}>
-                            <h1 style={{fontWeight: 'bold'}}>50</h1>
+                            <h1 style={{fontWeight: 'bold'}}>55</h1>
                         </Col>
                         <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
                             <h4>Stars</h4>
@@ -112,7 +198,11 @@ class Home extends Component {
                     </Row>
                 </Col>
             </Row>
-
+            <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
+                {this.renderKernel()}
+                {this.renderComponents()}
+                {this.renderDevices()}
+            </Row>
             <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
                 <Col md={3}>
                     <h2>Corporate ></h2>
@@ -143,6 +233,27 @@ class Home extends Component {
             </Row>
         </Container>);
     };
+
+    renderKernel() {
+        return <Col md={4}>
+            <h2>Kernel ></h2>
+            <TabPanel data={kernel}/>
+        </Col>;
+    }
+
+    renderComponents() {
+        return <Col md={4}>
+            <h2>Components ></h2>
+            <TabPanel data={components}/>
+        </Col>;
+    }
+
+    renderDevices() {
+        return <Col md={4}>
+            <h2>Device ></h2>
+            <TabPanel data={boards}/>
+        </Col>;
+    }
 }
 
 export default Home;

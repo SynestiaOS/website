@@ -21,7 +21,13 @@ class Forum extends Component {
 
     componentDidMount() {
         fetch('https://api.github.com/repos/SynestiaOS/SynestiaOS/issues')
-            .then(response => response.json())
+            .then(response => {
+                if(response.ok){
+                    return response.json();
+                }else{
+
+                }
+            })
             .then(data => {
                 console.log(data);
                 this.setState(
@@ -29,7 +35,13 @@ class Forum extends Component {
                         issues: data
                     }
                 );
-            });
+            }).catch(err => {
+            this.setState(
+                {
+                    issues: []
+                }
+            );
+        });
     }
 
     render() {
@@ -106,7 +118,7 @@ class Forum extends Component {
                 {
                     forumData[this.state.selected].length !== 0 ? forumData[this.state.selected].map((item, index) => {
                         return <Row key={index}
-                            style={{padding: '1em', borderBottom: 'solid 1px #eee'}}>
+                                    style={{padding: '1em', borderBottom: 'solid 1px #eee'}}>
                             <Col md={9}>
                                 <Row><h5><strong>&lt;{item.type}/&gt;</strong>
                                     <Link style={{color: '#000'}}
@@ -146,14 +158,14 @@ class Forum extends Component {
         } else {
             return <Fragment>
                 {
-                    this.state.issues.length !== 0 ? this.state.issues.map((item, index) => {
+                    (this.state.issues && this.state.issues.length !== 0) ? this.state.issues.map((item, index) => {
                         return <Row key={index}
-                            style={{padding: '1em', borderBottom: 'solid 1px #eee'}}>
-                            <Col md={1} style={{padding:0}}>
+                                    style={{padding: '1em', borderBottom: 'solid 1px #eee'}}>
+                            <Col md={1} style={{padding: 0}}>
                                 <Image style={{borderRadius: '2px'}} src={item.user.avatar_url}/>
                             </Col>
 
-                            <Col md={10} style={{paddingLeft:'2em'}}>
+                            <Col md={10} style={{paddingLeft: '2em'}}>
                                 <Row><h5><strong>&lt;{item.state}/&gt;</strong>
                                     <Link style={{color: '#000'}}
                                           to={'/forum-detail/github/issue/' + item.number}> {item.title}</Link>
