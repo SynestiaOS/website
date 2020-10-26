@@ -14,5 +14,13 @@ export const blogsData = [
         title:'Alpha.0.1.3: vfs and ext2',
         content:'This version implements the Virtual file system and ext2 file system, and refactored some code for virtual memory management, and add a booting screen.',
         url:'https://github.com/SynestiaOS/SynestiaOS/releases/tag/ext2'
+    },
+    {
+        image:'https://user-images.githubusercontent.com/9292449/97122555-a60bf480-1761-11eb-9a04-e06973d26624.jpg',
+        author:'Core Team',
+        time:'Mon, 26 Oct 2020 08:10:41 GMT',
+        title:'Alpha.0.1.4: refactor some code',
+        content:'This version, we just refactored some code, and removed some unused code, next version we can support raspi4 real machine.',
+        url:'https://github.com/SynestiaOS/SynestiaOS/releases/tag/ext2'
     }
 ];

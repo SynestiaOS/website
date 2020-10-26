@@ -3,7 +3,6 @@ import './Home.css';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import {Image} from "react-bootstrap";
 import TabPanel from "../../components/tab-panel/TabPanel";
 import GithubInfo from "../../components/github-info/GithubInfo";
 
@@ -137,13 +136,21 @@ class Home extends Component {
 
     render() {
         return (<Container className="Home">
-            <Row style={{textAlign: 'left', padding: '2em'}}>
+            <Row style={{
+                textAlign: 'left',
+                padding: '4em',
+                background: '#fff',
+                backgroundSize: '100%',
+                color: '#000',
+                height: '18em',
+                paddingTop: '4em',
+            }}>
                 <Col>
                     <h1>Build IOT Devices with Synestia</h1>
                     <h4>An Open Source, standards-based software platform for IOT
                         devices, including smartwatch, TVs and automotive infotainment platforms.</h4>
                     <a href={"https://github.com/SynestiaOS/SynestiaOS"}
-                       style={{fontWeight: 'normal', marginTop: '2em', marginLeft: 'auto', marginRight: 'auto'}}>
+                       style={{fontWeight: 'normal', marginTop: '4em', marginLeft: 'auto', marginRight: 'auto'}}>
                         <button style={{
                             color: '#fff',
                             background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',

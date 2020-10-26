@@ -27,12 +27,7 @@ class Blog extends Component {
                     <h1>Our Posts > </h1>
                 </Col>
                 {blogsData.map((item, index) => {
-                    let borderR = 'solid 1px #eee';
-                    if (index % 2 !== 0) {
-                        borderR = 'none';
-                    }
-
-                    return <Col key={index} md={6} style={{background: '#fff', padding: 0, borderRight: borderR}}>
+                    return <Col key={index} md={6} style={{background: '#fff', padding: 0, borderRight: 'solid 1px #eee',borderBottom:'solid 1px #eee'}}>
                         <Row>
                             <Col md={6} style={{padding: '1em'}}>
                                 <Image style={{width: '100%'}} src={item.image}/>
