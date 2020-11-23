@@ -3,13 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ecb05922-317c-4230-8e1f-08cf1aa4ee2b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blogs/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blogs/Blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blogs/blogsData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blogs/blogsData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/WechatIMG5497.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/iot.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/synestiaos.github.io" beforeDir="false" afterPath="$PROJECT_DIR$/synestiaos.github.io" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,12 +153,21 @@
       <workItem from="1603294091713" duration="274000" />
       <workItem from="1603294834824" duration="1409000" />
       <workItem from="1603340883715" duration="901000" />
-      <workItem from="1603670087544" duration="583000" />
+      <workItem from="1603670087544" duration="868000" />
+      <workItem from="1606047828803" duration="548000" />
+      <workItem from="1606126215447" duration="724000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/index.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

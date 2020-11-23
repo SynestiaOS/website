@@ -116,6 +116,14 @@ const kernel = {
     ],
     Doing: [
         {
+            name: 'Slab',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
+        {
+            name: 'Buddy',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
+        {
             name: 'SysCall',
             url: 'https://github.com/SynestiaOS/SynestiaOS'
         }
@@ -169,6 +177,25 @@ class Home extends Component {
                 {this.renderKernel()}
                 {this.renderComponents()}
                 {this.renderDevices()}
+            </Row>
+
+            <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
+                <Col md={6}>
+                    <h2>Learning & Technology Exchange ></h2>
+                    <Container style={{padding: '0'}}>
+                        <Row style={{background: '#fff', padding: '1em',borderRight: '1px solid rgb(238, 238, 238)', borderBottom: '1px solid rgb(238, 238, 238)'}}>
+                            <h5>If you have any technical problems or suggestions, you are welcome to join wechat (15122372903) to join the group and communicate with other developers</h5>
+                        </Row>
+                    </Container>
+                </Col>
+                <Col md={6}>
+                    <h2>Cooperation & Feedback ></h2>
+                    <Container style={{padding: '0'}}>
+                        <Row style={{background: '#fff', padding: '1em',borderRight: '1px solid rgb(238, 238, 238)', borderBottom: '1px solid rgb(238, 238, 238)'}}>
+                            <h5>If you have any suggestions on our products, please contact us and look forward to communicating with you.</h5>
+                        </Row>
+                    </Container>
+                </Col>
             </Row>
         </Container>);
     };
