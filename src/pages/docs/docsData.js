@@ -1,5 +1,10 @@
 export const docsData = [
     {
+        chapter:'开发环境搭建(入门版)',
+        path:'https://raw.githubusercontent.com/SynestiaOS/Documentation/master/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md',
+        url:'https://github.com/SynestiaOS/Documentation/blob/master/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md'
+    },
+    {
         chapter:'Build And Run',
         path:'https://raw.githubusercontent.com/SynestiaOS/Documentation/master/Build-And-Run.md',
         url:'https://github.com/SynestiaOS/Documentation/blob/master/Build-And-Run.md'
