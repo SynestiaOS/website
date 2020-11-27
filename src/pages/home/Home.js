@@ -232,11 +232,11 @@ class Home extends Component {
                         <Row style={{
                             background: '#fff',
                             padding: '1em',
+                            height:'7em',
                             borderRight: '1px solid rgb(238, 238, 238)',
                             borderBottom: '1px solid rgb(238, 238, 238)'
                         }}>
-                            <h5>If you have any technical problems or suggestions, you are welcome to join wechat (15122372903) to join the group and
-                                communicate with other developers</h5>
+                            <h5>If you have any technical problems or suggestions, you are welcome to join WeChat (15122372903) to join the group and communicate with other developers</h5>
                         </Row>
                     </Container>
                 </Col>
@@ -246,6 +246,7 @@ class Home extends Component {
                         <Row style={{
                             background: '#fff',
                             padding: '1em',
+                            height:'7em',
                             borderRight: '1px solid rgb(238, 238, 238)',
                             borderBottom: '1px solid rgb(238, 238, 238)'
                         }}>
