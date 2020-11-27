@@ -130,7 +130,6 @@ class GithubIssuesDetail extends Component {
                                     border: 'none',
                                     width: '8em',
                                     height: '2em',
-                                    borderRadius: '3px'
                                 }}>
                                     <a style={{color: '#fff'}}
                                        href={this.state.detail.user ? this.state.detail.user.html_url : '#'}>{this.state.detail.user ? this.state.detail.user.login : 'Loading'}</a>
@@ -143,7 +142,6 @@ class GithubIssuesDetail extends Component {
                                     border: 'none',
                                     width: '8em',
                                     height: '2em',
-                                    borderRadius: '3px'
                                 }}>
                                     <a style={{color: '#fff'}} href={this.state.detail ? this.state.detail.url : '#'}>Go To Github</a>
                                 </button>

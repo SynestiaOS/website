@@ -61,7 +61,6 @@ class TabPanel extends Component {
                                     textAlign: 'center',
                                     width: '1em',
                                     marginRight: '1em',
-                                    borderRadius: '3px',
                                 }}>{index + 1}</span> <a href={item.url}>{item.name}</a>
                             </Col>
                         }) : null

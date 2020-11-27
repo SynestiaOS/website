@@ -5,7 +5,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import TabPanel from "../../components/tab-panel/TabPanel";
 import GithubInfo from "../../components/github-info/GithubInfo";
-import Image from "react-bootstrap/Image";
 import Maintainers from "../../components/maintainers/Maintainers";
 
 const boards = {
@@ -148,44 +147,70 @@ const kernel = {
 
 const maintainers = [
     {
-        img:'https://avatars0.githubusercontent.com/u/9292449?s=60&v=4',
-        name:'NeoYang',
-        url:'https://github.com/nerososft',
-        tags:[
-            'kernel','libs','community'
+        img: 'https://avatars0.githubusercontent.com/u/9292449?s=60&v=4',
+        name: 'NeoYang',
+        url: 'https://github.com/nerososft',
+        tags: [
+            'kernel', 'libs', 'community'
         ]
     }, {
-        img:'https://avatars0.githubusercontent.com/u/8529077?s=460&u=2adc9c22600c5aec9e7fd63e6a36c3ec3bad791b&v=4',
-        name:'wooshifu',
-        url:'https://github.com/wooshifu',
-        tags:[
-            'tools','kernel'
+        img: 'https://avatars0.githubusercontent.com/u/8529077?s=460&u=2adc9c22600c5aec9e7fd63e6a36c3ec3bad791b&v=4',
+        name: 'wooshifu',
+        url: 'https://github.com/wooshifu',
+        tags: [
+            'tools', 'kernel'
         ]
     },
     {
-        img:'https://avatars0.githubusercontent.com/u/38398280?s=460&u=bc3e7916a9d8fd51cc31be0c5e009b1f917b1e67&v=4',
-        name:'Chenyu Zhao',
-        url:'https://github.com/LinkinPF',
-        tags:[
-            'kernel','community'
+        img: 'https://avatars0.githubusercontent.com/u/38398280?s=460&u=bc3e7916a9d8fd51cc31be0c5e009b1f917b1e67&v=4',
+        name: 'Chenyu Zhao',
+        url: 'https://github.com/LinkinPF',
+        tags: [
+            'kernel', 'community'
         ]
     },
     {
-        img:'https://avatars2.githubusercontent.com/u/1702340?s=460&v=4',
-        name:'Fan Jiang',
-        url:'https://github.com/tcz001',
-        tags:[
-            'kernel','device'
+        img: 'https://avatars2.githubusercontent.com/u/1702340?s=460&v=4',
+        name: 'Fan Jiang',
+        url: 'https://github.com/tcz001',
+        tags: [
+            'kernel', 'device'
         ]
     },
     {
-        img:'https://avatars0.githubusercontent.com/u/12967882?s=460&u=968d486f7e58568089a8ff1e7aedc5e6c2ce30e1&v=4',
-        name:'Hongzhi Niu',
-        url:'https://github.com/MRNIU',
-        tags:[
+        img: 'https://avatars0.githubusercontent.com/u/12967882?s=460&u=968d486f7e58568089a8ff1e7aedc5e6c2ce30e1&v=4',
+        name: 'Hongzhi Niu',
+        url: 'https://github.com/MRNIU',
+        tags: [
             'kernel'
         ]
     },
+];
+
+const communityMeeting = [
+    {
+        title: '第一次社区线上交流',
+        time: '2020-12-12 20:00 (UTC+8)',
+        status: 'Normal',
+        url: 'https://thoughtworks.zoom.com.cn/j/94774989388'
+    },
+    {
+        title: '第二次社区线上交流',
+        time: '2020-12-12 20:00 (UTC+8)',
+        status: 'Normal',
+        url: 'https://thoughtworks.zoom.com.cn/j/94774989388'
+    },
+    {
+        title: '第三次社区线上交流',
+        time: '2020-1-11 20:00 (UTC+8)',
+        status: 'Normal',
+        url: 'https://thoughtworks.zoom.com.cn/j/94774989388'
+    }, {
+        title: '第四次社区线上交流',
+        time: '2020-2-9 20:00 (UTC+8)',
+        status: 'Normal',
+        url: 'https://thoughtworks.zoom.com.cn/j/94774989388'
+    }
 ];
 
 class Home extends Component {
@@ -202,29 +227,31 @@ class Home extends Component {
                 background: '#fff',
                 backgroundSize: '100%',
                 color: '#000',
-                height: '18em',
                 paddingTop: '4em',
             }}>
-                <Col>
-                    <h1>Build IOT Devices with Synestia</h1>
-                    <h4>An Open Source, standards-based software platform for IOT
-                        devices, including smartwatch, TVs and automotive infotainment platforms.</h4>
-                    <a href={"https://github.com/SynestiaOS/SynestiaOS"}
-                       style={{fontWeight: 'normal', marginTop: '4em', marginLeft: 'auto', marginRight: 'auto'}}>
-                        <button style={{
-                            color: '#fff',
-                            background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
-                            transition: 'all .3s ease',
-                            height: '2em',
-                            width: '6em',
-                            border: 'none',
-                            borderRadius: '3px',
-                        }}>Learn More
-                        </button>
-                    </a>
+                <Col md={8} style={{textAlign: 'left'}}>
+                    <Row style={{textAlign: 'left', paddingBottom: '3em'}}>
+                        <h1>Build IOT Devices with Synestia</h1>
+                        <h4>An Open Source, standards-based software platform for IOT
+                            devices, including smartwatch, TVs and automotive infotainment platforms.</h4>
+                        <a href={"https://github.com/SynestiaOS/SynestiaOS"}
+                           style={{fontWeight: 'normal', marginTop: '1em'}}>
+                            <button style={{
+                                color: '#fff',
+                                background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
+                                transition: 'all .3s ease',
+                                height: '2em',
+                                width: '6em',
+                                border: 'none',
+                            }}>Learn More
+                            </button>
+                        </a>
+                    </Row>
+                    <GithubInfo/>
                 </Col>
+                {this.renderCommunityPlan()}
             </Row>
-            <GithubInfo/>
+
             <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
                 {this.renderKernel()}
                 {this.renderComponents()}
@@ -240,11 +267,12 @@ class Home extends Component {
                         <Row style={{
                             background: '#fff',
                             padding: '1em',
-                            height:'7em',
+                            height: '7em',
                             borderRight: '1px solid rgb(238, 238, 238)',
                             borderBottom: '1px solid rgb(238, 238, 238)'
                         }}>
-                            <h5>If you have any technical problems or suggestions, you are welcome to join WeChat (15122372903) to join the group and communicate with other developers</h5>
+                            <h5>If you have any technical problems or suggestions, you are welcome to join WeChat (15122372903) to join the group and
+                                communicate with other developers</h5>
                         </Row>
                     </Container>
                 </Col>
@@ -254,7 +282,7 @@ class Home extends Component {
                         <Row style={{
                             background: '#fff',
                             padding: '1em',
-                            height:'7em',
+                            height: '7em',
                             borderRight: '1px solid rgb(238, 238, 238)',
                             borderBottom: '1px solid rgb(238, 238, 238)'
                         }}>
@@ -265,6 +293,43 @@ class Home extends Component {
             </Row>
         </Container>);
     };
+
+    renderCommunityPlan() {
+        return <Col md={4} style={{background: 'rgb(238, 238, 238)'}}>
+            {
+                communityMeeting.map((item, index) => {
+                    return <Row style={{padding: '0.5em 0.5em 0.0em 0.5em'}}>
+                        <Col md={9} style={{background: '#fff', paddingTop: '1em'}}>
+                            <strong>{item.title}</strong>
+                            <p>{item.time}</p>
+                        </Col>
+                        <Col md={3} style={{background: '#fff', paddingTop: '1em', borderLeft: '1px solid rgb(238, 238, 238)'}}>
+                            <Row style={{padding: 0, paddingLeft: '0.5em'}}>
+                                <span style={{
+                                    color: '#000',
+                                    background: '#fff',
+                                    transition: 'all .3s ease',
+                                    height: '100%',
+                                    width: '100%',
+                                    border: 'none',
+                                }}>{item.status}</span>
+                            </Row>
+                            <Row style={{padding: 0, paddingLeft: '0.5em', borderTop: '1px solid rgb(238, 238, 238)'}}>
+                                <a href={item.url} style={{
+                                    color: '#000',
+                                    background: '#fff',
+                                    transition: 'all .3s ease',
+                                    height: '100%',
+                                    width: '100%',
+                                    border: 'none',
+                                }}>Join&nbsp;&gt;&gt;</a>
+                            </Row>
+                        </Col>
+                    </Row>
+                })
+            }
+        </Col>;
+    }
 
     renderKernel() {
         return <Col md={4}>

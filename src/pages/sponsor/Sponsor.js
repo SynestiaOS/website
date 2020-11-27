@@ -39,14 +39,6 @@ function DonateModalWithGrid(props) {
                     </Row>
                 </Container>
             </Modal.Body>
-            <Modal.Footer>
-                <Button style={{
-                    color: '#fff',
-                    background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
-                    border: 'none',
-                    borderRadius: '3px',
-                }} onClick={props.onHide}>Close</Button>
-            </Modal.Footer>
         </Modal>
     );
 }
@@ -66,7 +58,7 @@ class Sponsor extends Component {
     render() {
         const popup = function (item, gradient) {
             return (
-                <Popover style={{borderRadius: '3px', border: 'solid 9px', borderImage: gradient + '8 10 5'}} id="popover-basic">
+                <Popover style={{border: 'solid 9px', borderImage: gradient + '8 10 5'}} id="popover-basic">
                     <Popover.Title as="h3" style={{
                         borderRadius: '0',
                         background: gradient
@@ -75,7 +67,7 @@ class Sponsor extends Component {
                         <Row style={{margin: 0, padding: 0}}>
                             <Col md={4} style={{margin: 0, padding: 0}}>
                                 {item.img ? <Image style={{width: '6em', height: '6em', padding: '0.5em'}} src={item.img}/> :
-                                    <Image style={{width: '6em', height: '6em', padding: '0.5em', borderRadius: '3px'}} src={LogoRe}/>}
+                                    <Image style={{width: '6em', height: '6em', padding: '0.5em'}} src={LogoRe}/>}
                             </Col>
                             <Col md={8} style={{padding: '1em', paddingLeft: '2em', paddingRight: '1.5em'}}>
                                 {item.desc ? <Row style={{fontSize: '0.8em'}}>{item.desc}</Row> :
@@ -151,12 +143,12 @@ class Sponsor extends Component {
                             </Row>
                         </Container>
 
-                        <p style={{marginTop: '1em'}}><Button style={{
+                        <p style={{marginTop: '1em'}}><button style={{
                             color: '#fff',
+                            height:'2.5em',
                             background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
                             border: 'none',
-                            borderRadius: '3px',
-                        }} onClick={() => this.setModalShow(true)}>Be Our Personal Sponsor</Button></p>
+                        }} onClick={() => this.setModalShow(true)}>Be Our Personal Sponsor</button></p>
                     </Row>
                 </Col>
             </Row>
@@ -168,7 +160,6 @@ class Sponsor extends Component {
         return <p style={{
             padding: "0.3em",
             marginRight: '1em',
-            borderRadius: '3px',
             backgroundImage: linearGradient
         }}>{item.name}</p>;
 

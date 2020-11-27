@@ -46,7 +46,6 @@ class Faq extends Component {
                         <Col md={3} style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
                             <p style={{
                                 padding: "1em",
-                                borderRadius: '3px',
                                 backgroundImage: "linear-gradient(to right, rgb(229,199,173), rgb(182,152,124))",
                             }}>Platinum Sponsor</p>
                             <Link to={"/sponsor"}>
@@ -56,14 +55,12 @@ class Faq extends Component {
                                     border: 'none',
                                     width:'6em',
                                     height:'2em',
-                                    borderRadius: '3px',
                                 }}>Learn More</button>
                             </Link>
                         </Col>
                         <Col md={3} style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
                             <p style={{
                                 padding: "1em",
-                                borderRadius: '3px',
                                 backgroundImage: "linear-gradient(to right, rgb(239,205,109), rgb(215,159,61))",
                             }}>Gold Sponsor</p>
                             <Link to={"/sponsor"}>
@@ -73,14 +70,12 @@ class Faq extends Component {
                                     border: 'none',
                                     width:'6em',
                                     height:'2em',
-                                    borderRadius: '3px',
                                 }}>Learn More</button>
                             </Link>
                         </Col>
                         <Col md={3} style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
                             <p style={{
                                 padding: "1em",
-                                borderRadius: '3px',
                                 backgroundImage: "linear-gradient(to right, rgb(228,226,227), rgb(195,193,196))",
                             }}>Silver Sponsor</p>
                             <Link to={"/sponsor"}>
@@ -90,14 +85,12 @@ class Faq extends Component {
                                     border: 'none',
                                     width:'6em',
                                     height:'2em',
-                                    borderRadius: '3px',
                                 }}>Learn More</button>
                             </Link>
                         </Col>
                         <Col md={3} style={{background: '#fff', padding: '1em'}}>
                             <p style={{
                                 padding: "1em",
-                                borderRadius: '3px',
                                 backgroundImage: "linear-gradient(to right, rgb(166,219,246), rgb(77,164,216))",
                             }}>Normal Sponsor</p>
                             <Link to={"/sponsor"}>
@@ -107,7 +100,6 @@ class Faq extends Component {
                                     border: 'none',
                                     width:'6em',
                                     height:'2em',
-                                    borderRadius: '3px',
                                 }}>Learn More</button>
                             </Link>
                         </Col>

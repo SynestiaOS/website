@@ -80,7 +80,6 @@ class Docs extends Component {
                                     background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
                                     padding: '0.5em',
                                     color: '#fff',
-                                    borderRadius: '3px',
                                 }} href={docsData[this.state.currentDocIndex].url}>detail</a></Container>
                             </Row>
                             <ReactMarkdown
