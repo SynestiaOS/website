@@ -62,18 +62,7 @@ class TabPanel extends Component {
                                     width: '1em',
                                     marginRight: '1em',
                                     borderRadius: '3px',
-                                }}>{index + 1}</span>{item.name}
-                                <a href={item.url} style={{
-                                    float: 'right',
-                                    border: 'solid 1px #e1e9f4',
-                                    paddingLeft: '0.5em',
-                                    paddingRight: '0.5em',
-                                    borderRadius: '.25rem',
-                                    color: '#68778d',
-                                    textAlign: 'center',
-                                    transition: 'all .3s ease',
-                                    fontWeight: 'bold',
-                                }}>detail &gt;</a>
+                                }}>{index + 1}</span> <a href={item.url}>{item.name}</a>
                             </Col>
                         }) : null
                     }

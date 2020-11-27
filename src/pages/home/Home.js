@@ -91,7 +91,7 @@ const kernel = {
             name: 'Thread',
             url: 'https://github.com/SynestiaOS/SynestiaOS'
         }, {
-            name: 'Scheduler',
+            name: 'CFS',
             url: 'https://github.com/SynestiaOS/SynestiaOS'
         }, {
             name: 'VMM',
@@ -131,6 +131,14 @@ const kernel = {
         }
     ],
     Todo: [
+        {
+            name: 'SMP',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
+        {
+            name: 'EAS',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
         {
             name: 'HAL',
             url: 'https://github.com/SynestiaOS/SynestiaOS'
