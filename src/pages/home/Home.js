@@ -210,6 +210,12 @@ const communityMeeting = [
         time: '2020-2-9 20:00 (UTC+8)',
         status: 'Normal',
         url: 'https://thoughtworks.zoom.com.cn/j/94774989388'
+    },
+    {
+        title: '第五次社区线上交流',
+        time: '2020-3-8 20:00 (UTC+8)',
+        status: 'Normal',
+        url: 'https://thoughtworks.zoom.com.cn/j/94774989388'
     }
 ];
 
@@ -295,7 +301,7 @@ class Home extends Component {
     };
 
     renderCommunityPlan() {
-        return <Col md={4} style={{background: 'rgb(238, 238, 238)'}}>
+        return <Col md={4} style={{background: 'rgb(238, 238, 238)',height:'23em',overflowX:'scroll'}}>
             {
                 communityMeeting.map((item, index) => {
                     return <Row style={{padding: '0.5em 0.5em 0.0em 0.5em'}}>

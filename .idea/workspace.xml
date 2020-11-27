@@ -3,70 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ecb05922-317c-4230-8e1f-08cf1aa4ee2b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/github-info/GithubInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/github-info/GithubInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/tab-panel/TabPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/tab-panel/TabPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog-detail/BlogDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog-detail/BlogDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blogs/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blogs/Blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/docs/Docs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/docs/Docs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/faq/Faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/faq/Faq.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/issues-detail/GithubIssuesDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/issues-detail/GithubIssuesDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io" beforeDir="false" afterPath="$PROJECT_DIR$/synestiaos.github.io" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/200.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/Documentation" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/blog-detail/0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/blog-detail/1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/blog-detail/2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/blog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/developer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/docs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/faq.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/forum.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heap1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heap2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heap3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heapalloc1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heapalloc2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heapfree1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heapfree2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/KQueue/dequeue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/KQueue/enqueue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/List/example.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/List/example2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/env/clion_cmake.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/env/clion_debug.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/env/debug.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/env/external_tool.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/env/reset_cmake.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/env/run_qemu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/mem/PTE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/mem/pagetable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/stack/stackalloc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/precache-manifest.69966bb33462ab9fb6352c89182c0a08.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/service-worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/sponsor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/css/2.300c0e58.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/css/2.300c0e58.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/css/main.db9398e8.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/css/main.db9398e8.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/2.4ffa833c.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/2.4ffa833c.chunk.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/2.4ffa833c.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/main.5ba336b0.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/main.5ba336b0.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/runtime-main.bfca2edd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/runtime-main.bfca2edd.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/media/ZillaSlab-Regular.53cbc7a5.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/media/alipay.07cd3605.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/media/wepay.90df0414.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/videos.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -219,7 +156,7 @@
       <workItem from="1606126215447" duration="2514000" />
       <workItem from="1606380724279" duration="810000" />
       <workItem from="1606483566899" duration="417000" />
-      <workItem from="1606488859703" duration="6142000" />
+      <workItem from="1606488859703" duration="6684000" />
     </task>
     <servers />
   </component>
