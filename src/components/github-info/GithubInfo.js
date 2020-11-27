@@ -28,9 +28,11 @@ class GithubInfo extends Component {
             .then(data => {
                 console.log(data);
                 let all = 0;
-                data.map((item) => {
-                    all = all + item.total;
-                });
+                if(data) {
+                    data.map((item) => {
+                        all = all + item.total;
+                    });
+                }
                 this.setState(
                     {
                         commits: all
@@ -48,12 +50,14 @@ class GithubInfo extends Component {
             })
             .then(data => {
                 console.log(data);
-                this.setState(
-                    {
-                        stars: data.stargazers_count,
-                        forks: data.forks_count,
-                    }
-                );
+                if(data) {
+                    this.setState(
+                        {
+                            stars: data.stargazers_count,
+                            forks: data.forks_count,
+                        }
+                    );
+                }
             });
 
         fetch('https://api.github.com/repos/SynestiaOS/SynestiaOS/contributors')

@@ -5,6 +5,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import TabPanel from "../../components/tab-panel/TabPanel";
 import GithubInfo from "../../components/github-info/GithubInfo";
+import Image from "react-bootstrap/Image";
+import Maintainers from "../../components/maintainers/Maintainers";
 
 const boards = {
     Supported: [
@@ -136,6 +138,48 @@ const kernel = {
     ]
 };
 
+const maintainers = [
+    {
+        img:'https://avatars0.githubusercontent.com/u/9292449?s=60&v=4',
+        name:'NeoYang',
+        url:'https://github.com/nerososft',
+        tags:[
+            'kernel','libs','community'
+        ]
+    }, {
+        img:'https://avatars0.githubusercontent.com/u/8529077?s=460&u=2adc9c22600c5aec9e7fd63e6a36c3ec3bad791b&v=4',
+        name:'wooshifu',
+        url:'https://github.com/wooshifu',
+        tags:[
+            'tools','kernel'
+        ]
+    },
+    {
+        img:'https://avatars0.githubusercontent.com/u/38398280?s=460&u=bc3e7916a9d8fd51cc31be0c5e009b1f917b1e67&v=4',
+        name:'Chenyu Zhao',
+        url:'https://github.com/LinkinPF',
+        tags:[
+            'kernel','community'
+        ]
+    },
+    {
+        img:'https://avatars2.githubusercontent.com/u/1702340?s=460&v=4',
+        name:'Fan Jiang',
+        url:'https://github.com/tcz001',
+        tags:[
+            'kernel','device'
+        ]
+    },
+    {
+        img:'https://avatars0.githubusercontent.com/u/12967882?s=460&u=968d486f7e58568089a8ff1e7aedc5e6c2ce30e1&v=4',
+        name:'Hongzhi Niu',
+        url:'https://github.com/MRNIU',
+        tags:[
+            'kernel'
+        ]
+    },
+];
+
 class Home extends Component {
 
     constructor(props) {
@@ -178,6 +222,9 @@ class Home extends Component {
                 {this.renderComponents()}
                 {this.renderDevices()}
             </Row>
+
+            <Maintainers data={maintainers}/>
+
             <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
                 <Col md={6}>
                     <h2>Learning & Technology Exchange ></h2>
