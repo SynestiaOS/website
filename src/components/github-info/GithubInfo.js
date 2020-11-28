@@ -83,40 +83,40 @@ class GithubInfo extends Component {
             <Row style={{background: '#f5f5f6', paddingTop: '0em', borderTop: 'solid 1px #eee'}}>
                 <Col md={3}>
                     <Row style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
-                        <Col md={12} style={{textAlign: 'left'}}>
+                        <Col md={12} style={{textAlign: 'center'}}>
                             <h1 style={{fontWeight: 'bold'}}>{this.state.commits}</h1>
                         </Col>
-                        <Col md={12} style={{marginTop: '1em', textAlign: 'left'}}>
+                        <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
                             <h5>Commits</h5>
                         </Col>
                     </Row>
                 </Col>
                 <Col md={3}>
                     <Row style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
-                        <Col md={12} style={{textAlign: 'left'}}>
+                        <Col md={12} style={{textAlign: 'center'}}>
                             <h1 style={{fontWeight: 'bold'}}>6</h1>
                         </Col>
-                        <Col md={12} style={{marginTop: '1em', textAlign: 'left'}}>
+                        <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
                             <h5>Contributors</h5>
                         </Col>
                     </Row>
                 </Col>
                 <Col md={3}>
                     <Row style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
-                        <Col md={12} style={{textAlign: 'left'}}>
+                        <Col md={12} style={{textAlign: 'center'}}>
                             <h1 style={{fontWeight: 'bold'}}>10</h1>
                         </Col>
-                        <Col md={12} style={{marginTop: '1em', textAlign: 'left'}}>
+                        <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
                             <h5>Forks</h5>
                         </Col>
                     </Row>
                 </Col>
                 <Col md={3}>
                     <Row style={{background: '#fff', padding: '1em'}}>
-                        <Col md={12} style={{textAlign: 'left'}}>
+                        <Col md={12} style={{textAlign: 'center'}}>
                             <h1 style={{fontWeight: 'bold'}}>55</h1>
                         </Col>
-                        <Col md={12} style={{marginTop: '1em', textAlign: 'left'}}>
+                        <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
                             <h5>Stars</h5>
                         </Col>
                     </Row>

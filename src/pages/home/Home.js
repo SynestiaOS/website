@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import TabPanel from "../../components/tab-panel/TabPanel";
 import GithubInfo from "../../components/github-info/GithubInfo";
 import Maintainers from "../../components/maintainers/Maintainers";
+import {Carousel} from "react-bootstrap";
 
 const boards = {
     Supported: [
@@ -238,14 +239,15 @@ class Home extends Component {
         return (<Container className="Home">
             <Row style={{
                 textAlign: 'left',
-                padding: '4em',
                 background: '#fff',
                 backgroundSize: '100%',
                 color: '#000',
                 paddingTop: '4em',
+                paddingLeft:'4em',
+                paddingRight:'4em'
             }}>
-                <Col md={8} style={{textAlign: 'left'}}>
-                    <Row style={{textAlign: 'left', paddingBottom: '3em'}}>
+                <Col md={12} style={{textAlign: 'left'}}>
+                    <Row style={{textAlign: 'left', paddingBottom: '2em'}}>
                         <h1>Build IOT Devices with Synestia</h1>
                         <h4>An Open Source, standards-based software platform for IOT
                             devices, including smartwatch, TVs and automotive infotainment platforms.</h4>
@@ -264,17 +266,53 @@ class Home extends Component {
                     </Row>
                     <GithubInfo/>
                 </Col>
-                {this.renderCommunityPlan()}
             </Row>
 
             <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
-                {this.renderKernel()}
-                {this.renderComponents()}
-                {this.renderDevices()}
+                <Col md={8}>
+                    <h2>News ></h2>
+                    <Container style={{padding: '0'}}>
+                        <Row style={{
+                            background: '#fff',
+                            borderRight: '1px solid rgb(238, 238, 238)',
+                            borderBottom: '1px solid rgb(238, 238, 238)'
+                        }}>
+                            <Carousel>
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block w-100"
+                                        src="./imgs/WechatIMG1151.jpeg"
+                                        style={{height:'25em'}}
+                                        alt="First slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block w-100"
+                                        src="./imgs/WechatIMG1153.jpeg"
+                                        style={{height:'25em'}}
+                                        alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                            </Carousel>
+                        </Row>
+                    </Container>
+                </Col>
+                <Col md={4}>
+                    <h2>Events ></h2>
+                    <Container style={{padding: '0'}}>
+                        <Row style={{
+                            background: '#fff',
+                            padding: '1em',
+                            borderRight: '1px solid rgb(238, 238, 238)',
+                            borderBottom: '1px solid rgb(238, 238, 238)'
+                        }}>
+                            {this.renderCommunityPlan()}
+                        </Row>
+                    </Container>
+                </Col>
             </Row>
-
             <Maintainers data={maintainers}/>
-
             <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
                 <Col md={6}>
                     <h2>Learning & Technology Exchange ></h2>
@@ -310,10 +348,10 @@ class Home extends Component {
     };
 
     renderCommunityPlan() {
-        return <Col md={4} style={{background: 'rgb(238, 238, 238)',height:'23em',overflowX:'scroll'}}>
+        return <Col md={12} style={{height: '23em', overflowX: 'scroll'}}>
             {
                 communityMeeting.map((item, index) => {
-                    return <Row style={{padding: '0.5em 0.5em 0.0em 0.5em'}}>
+                    return <Row style={{padding: 0,borderBottom:'1px solid rgb(238, 238, 238)'}}>
                         <Col md={9} style={{background: '#fff', paddingTop: '1em'}}>
                             <strong>{item.title}</strong>
                             <p>{item.time}</p>
