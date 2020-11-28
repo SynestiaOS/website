@@ -28,11 +28,15 @@ class Maintainers extends Component {
                             {
                                 this.props.data.map((item, index) => {
                                     let borderRight = '1px solid rgb(238, 238, 238)';
+                                    let borderBottom = '1px solid rgb(238, 238, 238)';
                                     if ((index+1) % 4 === 0 && index !== 0) {
                                         borderRight = 'none';
                                     }
-                                    return <Col md={3} style={{textAlign: 'center', borderRight: borderRight,borderBottom: '1px solid rgb(238, 238, 238)',paddingTop: '1em', paddingBottom: '1em',}}>
-                                        <Image style={{width: '8em', height: '8em', borderRadius: '10em'}} src={item.img}/>
+                                    if(index >= (this.props.data.length - (this.props.data.length % 4))){
+                                        borderBottom = 'none';
+                                    }
+                                    return <Col md={3} style={{textAlign: 'center', borderRight: borderRight,borderBottom: borderBottom,paddingTop: '1em', paddingBottom: '1em',}}>
+                                        <Image style={{width: '5em', height: '5em', borderRadius: '10em'}} src={item.img}/>
                                         <a style={{color: '#000'}} href={item.url}><h4 style={{marginTop: '0.5em'}}>{item.name}</h4></a>
                                         <p>
                                             {item.tags.map((tag, index) => {
@@ -42,8 +46,8 @@ class Maintainers extends Component {
                                     </Col>
                                 })
                             }
-                            <Col md={3} style={{textAlign: 'center',borderRight:(this.props.data.length+1)%4===0?'none':'1px solid rgb(238, 238, 238)', borderBottom: '1px solid rgb(238, 238, 238)',paddingTop: '1em', paddingBottom: '1em',}}>
-                                <Image style={{width: '8em', height: '8em', borderRadius: '10em'}} src={'https://avatars2.githubusercontent.com/u/64075044?s=60&v=4'}/>
+                            <Col md={3} style={{textAlign: 'center',borderRight:(this.props.data.length+1)%4===0?'none':'1px solid rgb(238, 238, 238)',paddingTop: '1em', paddingBottom: '1em',}}>
+                                <Image style={{width: '5em', height: '5em', borderRadius: '10em'}} src={'https://avatars2.githubusercontent.com/u/64075044?s=60&v=4'}/>
                                 <h2 style={{marginTop:0,padding:0}}>Join Us!</h2>
                                 <h5>
                                     Let's work for our dreams!

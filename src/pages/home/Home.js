@@ -185,6 +185,7 @@ const maintainers = [
             'kernel'
         ]
     },
+
 ];
 
 const communityMeeting = [
