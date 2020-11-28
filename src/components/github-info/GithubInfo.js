@@ -94,7 +94,7 @@ class GithubInfo extends Component {
                 <Col md={3}>
                     <Row style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
                         <Col md={12} style={{textAlign: 'center'}}>
-                            <h1 style={{fontWeight: 'bold'}}>6</h1>
+                            <h1 style={{fontWeight: 'bold'}}>{this.state.contributors}</h1>
                         </Col>
                         <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
                             <h5>Contributors</h5>
@@ -104,7 +104,7 @@ class GithubInfo extends Component {
                 <Col md={3}>
                     <Row style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
                         <Col md={12} style={{textAlign: 'center'}}>
-                            <h1 style={{fontWeight: 'bold'}}>10</h1>
+                            <h1 style={{fontWeight: 'bold'}}>{this.state.forks}</h1>
                         </Col>
                         <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
                             <h5>Forks</h5>
@@ -114,7 +114,7 @@ class GithubInfo extends Component {
                 <Col md={3}>
                     <Row style={{background: '#fff', padding: '1em'}}>
                         <Col md={12} style={{textAlign: 'center'}}>
-                            <h1 style={{fontWeight: 'bold'}}>55</h1>
+                            <h1 style={{fontWeight: 'bold'}}>{this.state.stars}</h1>
                         </Col>
                         <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
                             <h5>Stars</h5>
