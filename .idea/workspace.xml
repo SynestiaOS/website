@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecb05922-317c-4230-8e1f-08cf1aa4ee2b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/Tools/Tools.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Tools/Tools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Tools/Tools.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/maintainers/Maintainers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/maintainers/Maintainers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/developer/Developer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/developer/Developer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +39,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -48,16 +51,16 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/pages/docs" />
+      <recent name="$PROJECT_DIR$/src/pages/forum" />
+      <recent name="$PROJECT_DIR$/src/static/images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/imgs" />
       <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src/static/images" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src/pages" />
-      <recent name="$PROJECT_DIR$/src/pages/docs" />
-      <recent name="$PROJECT_DIR$/src/pages/forum" />
       <recent name="$PROJECT_DIR$/src/static/images" />
     </key>
   </component>
@@ -158,7 +161,7 @@
       <workItem from="1606380724279" duration="810000" />
       <workItem from="1606483566899" duration="417000" />
       <workItem from="1606488859703" duration="7253000" />
-      <workItem from="1606536580915" duration="1514000" />
+      <workItem from="1606536580915" duration="3425000" />
     </task>
     <servers />
   </component>

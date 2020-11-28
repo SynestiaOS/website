@@ -83,18 +83,18 @@ class Developer extends Component {
                 </Col>
                 <Col md={3} style={{textAlign: 'center', background: '#fff', height: '15em', paddingTop: '2em', borderBottom: 'solid 1px #eee'}}>
                     <Link to={"/videos"} style={{color: '#000'}}>
-                    <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
-                        <img style={{width: "8em", height: "8em"}}
-                             alt="Videos"
-                             src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058072361-6BAZK6WOQVHDLIXQGNC2/ke17ZwdGBToddI8pDm48kNQeTggaIOlRX9bkwROWejF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTm60PLM3IYeVzy64Wg-koOodVAmjpaHAZD3JztAEJlWhjZAp-1gBeDTnWFwhpl6he_/video_logo.PNG?format=500w"/>
-                    </Col>
-                    <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
-                        <h4>Videos</h4>
-                    </Col>
+                        <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
+                            <img style={{width: "8em", height: "8em"}}
+                                 alt="Videos"
+                                 src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058072361-6BAZK6WOQVHDLIXQGNC2/ke17ZwdGBToddI8pDm48kNQeTggaIOlRX9bkwROWejF7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTm60PLM3IYeVzy64Wg-koOodVAmjpaHAZD3JztAEJlWhjZAp-1gBeDTnWFwhpl6he_/video_logo.PNG?format=500w"/>
+                        </Col>
+                        <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
+                            <h4>Videos</h4>
+                        </Col>
                     </Link>
                 </Col>
                 <Col md={3} style={{textAlign: 'center', background: '#fff', height: '15em', paddingTop: '2em', borderRight: 'solid 1px #eee'}}>
-                        <Link to={"/docs"} style={{color: '#000'}}>
+                    <Link to={"/docs"} style={{color: '#000'}}>
                         <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
                             <img className="thumb-image loaded"
                                  style={{width: "8em", height: "8em"}}
@@ -104,19 +104,20 @@ class Developer extends Component {
                         <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
                             <h4>Docs</h4>
                         </Col>
-                        </Link>
+                    </Link>
                 </Col>
                 <Col md={3} style={{textAlign: 'center', background: '#fff', height: '15em', paddingTop: '2em', borderRight: 'solid 1px #eee'}}>
-                    <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
-                        <img className="thumb-image loaded"
-                             style={{width: "8em", height: "8em"}}
-                             alt="Tool Share"
-                             src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058072818-ZD37NLAOA1IQ9WBXGHGR/ke17ZwdGBToddI8pDm48kLPrH-eUyRPeXq6cbt4AjsB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmC_XKz7woDqXWNVYlmJ2TM2NtZ2hEJVENtG9pTzc1jPFNws-e4TuyPzAKCUrCdvn2/wrench_logo.PNG?format=500w"/>
-                    </Col>
-                    <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
-                        <h4>Tool Share</h4>
-                        <p>(building)</p>
-                    </Col>
+                    <Link to={"/tools"} style={{color: '#000'}}>
+                        <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
+                            <img className="thumb-image loaded"
+                                 style={{width: "8em", height: "8em"}}
+                                 alt="Tool Share"
+                                 src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058072818-ZD37NLAOA1IQ9WBXGHGR/ke17ZwdGBToddI8pDm48kLPrH-eUyRPeXq6cbt4AjsB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmC_XKz7woDqXWNVYlmJ2TM2NtZ2hEJVENtG9pTzc1jPFNws-e4TuyPzAKCUrCdvn2/wrench_logo.PNG?format=500w"/>
+                        </Col>
+                        <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
+                            <h4>Tool Share</h4>
+                        </Col>
+                    </Link>
                 </Col>
                 <Col md={3} style={{textAlign: 'center', background: '#fff', height: '15em', paddingTop: '2em', borderRight: 'solid 1px #eee'}}>
                     <Link to={"/blog"} style={{color: '#000'}}>

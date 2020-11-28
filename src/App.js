@@ -17,6 +17,7 @@ import Videos from "./pages/videos/Videos";
 import Docs from "./pages/docs/Docs";
 import GithubLogin from "./pages/github-login/GithubLogin";
 import GithubIssuesDetail from "./pages/issues-detail/GithubIssuesDetail";
+import Tools from "./pages/Tools/Tools";
 
 function App() {
     return (
@@ -31,6 +32,7 @@ function App() {
                 <Route exact path="/blog" component={Blog}/>
                 <Route exact path="/blog-detail/:id" component={BlogDetail}/>
                 <Route exact path="/faq" component={Faq}/>
+                <Route exact path="/tools" component={Tools}/>
                 <Route exact path="/forum" component={Forum}/>
                 <Route exact path="/videos" component={Videos}/>
                 <Route exact path="/docs" component={Docs}/>
