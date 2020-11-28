@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecb05922-317c-4230-8e1f-08cf1aa4ee2b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/imgs/WeiJi.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/github-info/GithubInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/github-info/GithubInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -160,6 +161,8 @@
       <workItem from="1606536580915" duration="3930000" />
       <workItem from="1606546526662" duration="15000" />
       <workItem from="1606558568763" duration="1005000" />
+      <workItem from="1606567074685" duration="7000" />
+      <workItem from="1606571438239" duration="473000" />
     </task>
     <servers />
   </component>
