@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import {Button, Modal, OverlayTrigger, Popover} from "react-bootstrap";
+import {Modal, OverlayTrigger, Popover} from "react-bootstrap";
 import WePay from "../../static/images/wepay.png"
 import AliPay from "../../static/images/alipay.png"
 import LogoRe from "../../static/images/logo_re.png";
@@ -91,7 +91,7 @@ class Sponsor extends Component {
                     <h3 style={{padding: 0, marginTop: '0.5em'}}>What We Need ></h3>
                     <Row style={{background: '#fff', padding: '2em'}}>
                         <p>We need some open source hardware to test the function and performance of our operating system in different scenarios.</p>
-                        <p>The following is the hardware platform we currently need.</p>
+                        <p style={{margin: 0}}>The following is the hardware platform we currently need.</p>
                         <Container>
                             <Row><a href={"https://www.pine64.org/pinebook-pro/"}>pinebook-pro(1)</a></Row>
                             <Row><a href={"https://www.pine64.org/pinetab/"}>pinetab(1)</a></Row>
@@ -99,9 +99,16 @@ class Sponsor extends Component {
                             <Row><a href={"https://www.pine64.org/pinetime/"}>pinetime(3)</a></Row>
                         </Container>
 
+                        <p style={{margin: 0, marginTop: '1em', padding: 0}}>The following hardware platforms are what we have now</p>
+                        <Container style={{margin: 0}}>
+                            <Row><a href={"https://www.raspberrypi.org/products/"}>Raspberry B+(1)</a></Row>
+                            <Row><a href={"https://www.raspberrypi.org/products/"}>Raspberry 4(1)</a></Row>
+                            <Row><a href={"https://www.pine64.org/pinetime/"}>pinetime(3)</a></Row>
+                        </Container>
+
                     </Row>
                     <Row style={{background: '#fff', padding: 0, paddingLeft: '2em'}}>
-                        <p>If you are willing to help us, please contact us:</p>
+                        <p style={{margin:0}}>If you are willing to help us, please contact us:</p>
                     </Row>
                     <Row style={{background: '#fff', padding: 0, paddingLeft: '2em'}}>
                         <p><a href={"mailto:nerosoft@outlook.com"}>nerosoft@outlook.com</a></p>
@@ -110,45 +117,65 @@ class Sponsor extends Component {
                 <Col md={6} style={{paddingTop: '1em', paddingLeft: '1em'}}>
                     <h3 style={{padding: 0, marginTop: '0.5em'}}>Our Sponsors ></h3>
                     <Row style={{background: '#fff', padding: '2em'}}>
-                        <p>Thank the following sponsors for their support to the team, thank you very much.</p>
-                        <Container>
-                            <Row>
-                                {
-                                    sponsorsData.map((item, index) => {
-                                        let linearGradient;
-                                        switch (item.level) {
-                                            case 1:
-                                                linearGradient = "linear-gradient(to right, rgb(229,199,173), rgb(182,152,124))";
-                                                break;
-                                            case 2:
-                                                linearGradient = "linear-gradient(to right, rgb(239,205,109), rgb(215,159,61))";
-                                                break;
-                                            case 3:
-                                                linearGradient = "linear-gradient(to right, rgb(228,226,227), rgb(195,193,196))";
-                                                break;
-                                            case 4:
-                                                linearGradient = "linear-gradient(to right, rgb(166,219,246), rgb(77,164,216))";
-                                                break;
-                                            default:
-                                                linearGradient = "linear-gradient(to right, rgb(166,219,246), rgb(77,164,216))";
-                                                break;
-
-                                        }
-                                        return <OverlayTrigger key={index} trigger="click" placement="right" overlay={popup(item, linearGradient)}>
-                                            {this.renderSponsor(item, linearGradient)}
-                                        </OverlayTrigger>
-                                    })
-                                }
-
+                        <Col md={12} style={{padding: 0}}>
+                            <Row style={{padding: 0, margin: 0}}>
+                                <Col md={6} style={{padding: 0}}>
+                                    <strong>Total fund:</strong> ¥202.00
+                                </Col>
+                                <Col md={6} style={{padding: 0}}>
+                                    <strong>Fund balance:</strong> ¥0
+                                </Col>
                             </Row>
-                        </Container>
+                            <Row style={{padding: 0, margin: 0}}>
+                                <p>* All funds will be used for the purchase of development boards, publicly notified community activities and bounties
+                                    for community developers to add features and modify bugs.</p>
+                            </Row>
+                        </Col>
+                        <Col md={12} style={{padding: 0, marginTop: '1em'}}>
+                            <p>Thank the following sponsors for their support to the team, thank you very much.</p>
+                            <Container>
+                                <Row>
+                                    {
+                                        sponsorsData.map((item, index) => {
+                                            let linearGradient;
+                                            switch (item.level) {
+                                                case 1:
+                                                    linearGradient = "linear-gradient(to right, rgb(229,199,173), rgb(182,152,124))";
+                                                    break;
+                                                case 2:
+                                                    linearGradient = "linear-gradient(to right, rgb(239,205,109), rgb(215,159,61))";
+                                                    break;
+                                                case 3:
+                                                    linearGradient = "linear-gradient(to right, rgb(228,226,227), rgb(195,193,196))";
+                                                    break;
+                                                case 4:
+                                                    linearGradient = "linear-gradient(to right, rgb(166,219,246), rgb(77,164,216))";
+                                                    break;
+                                                default:
+                                                    linearGradient = "linear-gradient(to right, rgb(166,219,246), rgb(77,164,216))";
+                                                    break;
 
-                        <p style={{marginTop: '1em'}}><button style={{
-                            color: '#fff',
-                            height:'2.5em',
-                            background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
-                            border: 'none',
-                        }} onClick={() => this.setModalShow(true)}>Be Our Personal Sponsor</button></p>
+                                            }
+                                            return <OverlayTrigger key={index} trigger="click" placement="right"
+                                                                   overlay={popup(item, linearGradient)}>
+                                                {this.renderSponsor(item, linearGradient)}
+                                            </OverlayTrigger>
+                                        })
+                                    }
+
+                                </Row>
+                            </Container>
+
+                            <p style={{marginTop: '1em'}}>
+                                <button style={{
+                                    color: '#fff',
+                                    height: '2.5em',
+                                    background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
+                                    border: 'none',
+                                }} onClick={() => this.setModalShow(true)}>Be Our Personal Sponsor
+                                </button>
+                            </p>
+                        </Col>
                     </Row>
                 </Col>
             </Row>

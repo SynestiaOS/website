@@ -34,8 +34,8 @@ class Faq extends Component {
                     <Container style={{marginTop: '1em'}}>
                         <Row>
                             <h5 style={{lineHeight: '1.2em'}}>This is a completely free source code, you can use it to do anything, including
-                                modification, sale and earn profit or use it in some commercial products, without providing us with anything. If you
-                                can, you can buy us a cup of coffee.
+                                modification, sale and earn profit or use it in some commercial products, without providing us with anything. <strike>If you
+                                can, you can buy us a cup of coffee.</strike>
                             </h5>
                         </Row>
                     </Container>
