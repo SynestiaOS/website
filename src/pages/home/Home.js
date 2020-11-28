@@ -178,6 +178,14 @@ const maintainers = [
         ]
     },
     {
+        img: 'https://avatars3.githubusercontent.com/u/16302926?s=460&u=72a3f27f8dfa9423fd4ec4c847a397090fc28e4a&v=4',
+        name: 'Tao Liu',
+        url: 'https://github.com/liutgnu',
+        tags: [
+            'kernel', 'device'
+        ]
+    },
+    {
         img: 'https://avatars0.githubusercontent.com/u/12967882?s=460&u=968d486f7e58568089a8ff1e7aedc5e6c2ce30e1&v=4',
         name: 'Hongzhi Niu',
         url: 'https://github.com/MRNIU',
