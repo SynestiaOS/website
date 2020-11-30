@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import TabPanel from "../../components/tab-panel/TabPanel";
 import GithubInfo from "../../components/github-info/GithubInfo";
 import Maintainers from "../../components/maintainers/Maintainers";
-import {Carousel} from "react-bootstrap";
+import {Carousel, Image} from "react-bootstrap";
 
 const boards = {
     Supported: [
@@ -251,8 +251,8 @@ class Home extends Component {
                 backgroundSize: '100%',
                 color: '#000',
                 paddingTop: '4em',
-                paddingLeft:'4em',
-                paddingRight:'4em'
+                paddingLeft: '4em',
+                paddingRight: '4em'
             }}>
                 <Col md={12} style={{textAlign: 'left'}}>
                     <Row style={{textAlign: 'left', paddingBottom: '2em'}}>
@@ -290,7 +290,7 @@ class Home extends Component {
                                     <img
                                         className="d-block w-100"
                                         src="./imgs/WechatIMG1151.jpeg"
-                                        style={{height:'25em'}}
+                                        style={{height: '25em'}}
                                         alt="First slide"
                                     />
                                 </Carousel.Item>
@@ -298,7 +298,7 @@ class Home extends Component {
                                     <img
                                         className="d-block w-100"
                                         src="./imgs/WechatIMG1153.jpeg"
-                                        style={{height:'25em'}}
+                                        style={{height: '25em'}}
                                         alt="Third slide"
                                     />
                                 </Carousel.Item>
@@ -321,6 +321,28 @@ class Home extends Component {
                 </Col>
             </Row>
             <Maintainers data={maintainers}/>
+            <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
+                <Col md={12}>
+                    <h2>Partner ></h2>
+                    <Container style={{padding: '0'}}>
+                        <Row style={{
+                            background: '#fff',
+                            padding: '1em',
+                            borderBottom: '1px solid rgb(238, 238, 238)'
+                        }}>
+                            <Col md={2}>
+                                <Image style={{width: '8em',padding:'0.5em'}} src={'https://scriptiot.github.io/evm_doc/zh-cn/image/logo.png'}/>
+                            </Col>
+                            <Col md={10}>
+                                <h4>EVM (Embedded Virtual Machine)</h4>
+                                <p>The full name of EVM is Embedded Virtual Machine, which is essentially a general-purpose and streamlined embedded virtual machine. It is composed of a front-end framework for syntax analysis and a back-end bytecode operation. It can run on a single-chip with limited resources.</p>
+                                <a href={'https://scriptiot.github.io/evm_doc/#/zh-cn/evm_what'}>Go to detail ></a>
+                            </Col>
+                        </Row>
+                    </Container>
+                </Col>
+            </Row>
+
             <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
                 <Col md={6}>
                     <h2>Learning & Technology Exchange ></h2>
@@ -359,7 +381,7 @@ class Home extends Component {
         return <Col md={12} style={{height: '23em', overflowX: 'scroll'}}>
             {
                 communityMeeting.map((item, index) => {
-                    return <Row style={{padding: 0,borderBottom:'1px solid rgb(238, 238, 238)'}}>
+                    return <Row style={{padding: 0, borderBottom: '1px solid rgb(238, 238, 238)'}}>
                         <Col md={9} style={{background: '#fff', paddingTop: '1em'}}>
                             <strong>{item.title}</strong>
                             <p>{item.time}</p>
