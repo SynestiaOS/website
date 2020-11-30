@@ -8,11 +8,11 @@ function Footer() {
     return (
         <Container className="Footer">
             <Row>
-                <Col md={3} style={{paddingLeft: '3em', paddingRight: '8em'}}>
+                <Col md={2} style={{paddingLeft: '3em', paddingRight: '8em'}}>
                     <Image src={'./imgs/WeiJi.png'}/>
                 </Col>
-                <Col md={9} style={{paddingLeft: '3em', paddingRight: '8em'}}>
-                    <Row style={{padding:0}}>
+                <Col md={10} style={{paddingLeft: '3em', paddingRight: '8em'}}>
+                    <Row>
                         <Col md={3}>
                             <h5 style={{marginBottom: '0.5em'}}>About</h5>
                             <a style={{color: '#888', fontWeight: 'lighter', margin: 0, padding: 0, display: 'block'}}

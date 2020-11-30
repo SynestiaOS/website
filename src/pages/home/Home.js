@@ -187,6 +187,14 @@ const maintainers = [
         ]
     },
     {
+        img: 'https://avatars2.githubusercontent.com/u/22252972?s=460&u=07652db53c67f224919bde52d64b8d47b06a5d6a&v=4',
+        name: 'HuBing Liu',
+        url: 'https://github.com/liuhubing',
+        tags: [
+            'kernel', 'device'
+        ]
+    },
+    {
         img: 'https://avatars0.githubusercontent.com/u/12967882?s=460&u=968d486f7e58568089a8ff1e7aedc5e6c2ce30e1&v=4',
         name: 'Hongzhi Niu',
         url: 'https://github.com/MRNIU',
