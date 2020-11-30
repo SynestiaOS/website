@@ -8,7 +8,7 @@ function Footer() {
     return (
         <Container className="Footer">
             <Row>
-                <Col md={2} style={{paddingLeft: '0em', paddingRight: '10em'}}>
+                <Col md={2} style={{paddingLeft: '2em', paddingRight: '2em'}}>
                     <Image src={'./imgs/WeiJi.png'}/>
                 </Col>
                 <Col md={10} style={{paddingLeft: '3em', paddingRight: '8em'}}>
