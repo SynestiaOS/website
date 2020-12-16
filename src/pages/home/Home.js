@@ -286,26 +286,25 @@ class Home extends Component {
             </Row>
 
             <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
-                <Col md={8}>
+                <Col md={8} style={{padding:0,margin:0,}}>
                     <h2>Events ></h2>
-                    <Container style={{padding: '0',overflow:'hidden',width:'100%'}}>
-                        <div
+                    <Container style={{padding: '0',overflow:'hidden',background:'#fff'}}>
+                        <Row
                             style={{
                                 background: '#fff',
                                 height: '25em',
                                 padding: '1em',
-                                width:'100%',
+                                margin:0,
                                 position: 'relative',
                                 zIndex:10,
                             }}>
-                        </div>
-                        <div className={'wave_base'}/>
-                        <div className={'wave'}/>
+                        </Row>
+                        <Row className={'wave_base'}/>
+                        <Row className={'wave'}/>
                         <Row style={{
                             height: '25em',
                             padding: '1em',
                             position: 'relative',
-                            borderRight: '1px solid rgb(238, 238, 238)',
                             borderBottom: '1px solid rgb(238, 238, 238)',
                             zIndex:12,
                             marginTop:'-30em',
@@ -347,6 +346,7 @@ class Home extends Component {
                             background: '#fff',
                             padding: '1em',
                             height: '25em',
+                            borderLeft: '1px solid rgb(238, 238, 238)',
                             borderRight: '1px solid rgb(238, 238, 238)',
                             borderBottom: '1px solid rgb(238, 238, 238)'
                         }}>
