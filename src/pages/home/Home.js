@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 import TabPanel from "../../components/tab-panel/TabPanel";
 import GithubInfo from "../../components/github-info/GithubInfo";
 import Maintainers from "../../components/maintainers/Maintainers";
-import {Carousel, Image} from "react-bootstrap";
+import {Image} from "react-bootstrap";
 
 const boards = {
     Supported: [
@@ -207,30 +207,28 @@ const maintainers = [
 
 const communityMeeting = [
     {
-        title: '第一次社区线上交流',
-        time: '2020-12-12 20:00 (UTC+8)',
-        status: 'Normal',
-        url: 'https://thoughtworks.zoom.com.cn/j/94774989388'
-    },
-    {
         title: '第二次社区线上交流',
+        content: '因为时间关系，被迫取消',
         time: '2020-12-12 20:00 (UTC+8)',
-        status: 'Normal',
+        status: 'Canceled',
         url: 'https://thoughtworks.zoom.com.cn/j/94774989388'
     },
     {
         title: '第三次社区线上交流',
+        content: '项目进度未来计划与项目运作方式介绍, 参与指南',
         time: '2020-1-11 20:00 (UTC+8)',
         status: 'Normal',
         url: 'https://thoughtworks.zoom.com.cn/j/94774989388'
     }, {
         title: '第四次社区线上交流',
+        content: '第四次社区线上交流内容待定',
         time: '2020-2-9 20:00 (UTC+8)',
         status: 'Normal',
         url: 'https://thoughtworks.zoom.com.cn/j/94774989388'
     },
     {
         title: '第五次社区线上交流',
+        content: '第五次社区线上交流内容待定',
         time: '2020-3-8 20:00 (UTC+8)',
         status: 'Normal',
         url: 'https://thoughtworks.zoom.com.cn/j/94774989388'
@@ -241,6 +239,10 @@ class Home extends Component {
 
     constructor(props) {
         super(props);
+
+        this.state = {
+            selectMeetingIndex: 1,
+        };
     }
 
     render() {
@@ -282,27 +284,37 @@ class Home extends Component {
                     <Container style={{padding: '0'}}>
                         <Row style={{
                             background: '#fff',
+                            height: '25em',
+                            padding: '1em',
                             borderRight: '1px solid rgb(238, 238, 238)',
                             borderBottom: '1px solid rgb(238, 238, 238)'
                         }}>
-                            <Carousel>
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block w-100"
-                                        src="./imgs/WechatIMG1151.jpeg"
-                                        style={{height: '25em'}}
-                                        alt="First slide"
-                                    />
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                    <img
-                                        className="d-block w-100"
-                                        src="./imgs/WechatIMG1153.jpeg"
-                                        style={{height: '25em'}}
-                                        alt="Third slide"
-                                    />
-                                </Carousel.Item>
-                            </Carousel>
+                            <Col md={12}>
+                                <h1> <span style={{
+                                    width: '1em',
+                                    height: '1em',
+                                    background: communityMeeting[this.state.selectMeetingIndex].status === 'Canceled' ? 'red' : 'green',
+                                    borderRadius: '2px'
+                                }}>&nbsp;</span>&nbsp;&nbsp;{communityMeeting[this.state.selectMeetingIndex].title}</h1>
+                                <p>{communityMeeting[this.state.selectMeetingIndex].time}</p>
+                            </Col>
+                            <Col md={12}>
+                                <h3>{communityMeeting[this.state.selectMeetingIndex].content}</h3>
+                            </Col>
+                            <Col md={12}>
+                                <a href={communityMeeting[this.state.selectMeetingIndex].url}
+                                   style={{fontWeight: 'normal', marginTop: '1em'}}>
+                                    <button disabled={communityMeeting[this.state.selectMeetingIndex].status === 'Canceled' ? 'disabled' : ''}
+                                            style={{
+                                                color: '#fff',
+                                                background: communityMeeting[this.state.selectMeetingIndex].status === 'Canceled' ? 'linear-gradient(to right, #333 0%, #aaa 100%)' : 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
+                                                transition: 'all .3s ease',
+                                                height: '2em',
+                                                border: 'none',
+                                            }}>Join Meeting
+                                    </button>
+                                </a>
+                            </Col>
                         </Row>
                     </Container>
                 </Col>
@@ -312,6 +324,7 @@ class Home extends Component {
                         <Row style={{
                             background: '#fff',
                             padding: '1em',
+                            height: '25em',
                             borderRight: '1px solid rgb(238, 238, 238)',
                             borderBottom: '1px solid rgb(238, 238, 238)'
                         }}>
@@ -328,14 +341,17 @@ class Home extends Component {
                         <Row style={{
                             background: '#fff',
                             padding: '1em',
-                            borderBottom: '1px solid rgb(238, 238, 238)'
+                            borderBottom: '1px solid rgb(238, 238, 238)',
+                            borderRight: '1px solid rgb(238, 238, 238)'
                         }}>
                             <Col md={2}>
-                                <Image style={{width: '8em',padding:'0.5em'}} src={'https://scriptiot.github.io/evm_doc/zh-cn/image/logo.png'}/>
+                                <Image style={{width: '8em', padding: '0.5em'}} src={'https://scriptiot.github.io/evm_doc/zh-cn/image/logo.png'}/>
                             </Col>
                             <Col md={10}>
                                 <h4>EVM (Embedded Virtual Machine)</h4>
-                                <p>The full name of EVM is Embedded Virtual Machine, which is essentially a general-purpose and streamlined embedded virtual machine. It is composed of a front-end framework for syntax analysis and a back-end bytecode operation. It can run on a single-chip with limited resources.</p>
+                                <p>The full name of EVM is Embedded Virtual Machine, which is essentially a general-purpose and streamlined embedded
+                                    virtual machine. It is composed of a front-end framework for syntax analysis and a back-end bytecode operation. It
+                                    can run on a single-chip with limited resources.</p>
                                 <a href={'https://scriptiot.github.io/evm_doc/#/zh-cn/evm_what'}>Go to detail ></a>
                             </Col>
                         </Row>
@@ -377,13 +393,24 @@ class Home extends Component {
         </Container>);
     };
 
+    selectCommunity(index) {
+        this.setState({
+            selectMeetingIndex: index,
+        });
+    }
+
     renderCommunityPlan() {
         return <Col md={12} style={{height: '23em', overflowX: 'scroll'}}>
             {
                 communityMeeting.map((item, index) => {
                     return <Row style={{padding: 0, borderBottom: '1px solid rgb(238, 238, 238)'}}>
-                        <Col md={9} style={{background: '#fff', paddingTop: '1em'}}>
-                            <strong>{item.title}</strong>
+                        <Col md={9} style={{background: '#fff', paddingTop: '1em'}} onClick={this.selectCommunity.bind(this, index)}>
+                            <span style={{
+                                width: '1em',
+                                height: '1em',
+                                background: item.status === 'Canceled' ? 'red' : 'green',
+                                borderRadius: '2px'
+                            }}>&nbsp;</span>&nbsp;&nbsp;<strong>{item.title}</strong>
                             <p>{item.time}</p>
                         </Col>
                         <Col md={3} style={{background: '#fff', paddingTop: '1em', borderLeft: '1px solid rgb(238, 238, 238)'}}>
@@ -397,6 +424,7 @@ class Home extends Component {
                                     border: 'none',
                                 }}>{item.status}</span>
                             </Row>
+                            {item.status !== 'Canceled' &&
                             <Row style={{padding: 0, paddingLeft: '0.5em', borderTop: '1px solid rgb(238, 238, 238)'}}>
                                 <a href={item.url} style={{
                                     color: '#000',
@@ -407,6 +435,7 @@ class Home extends Component {
                                     border: 'none',
                                 }}>Join&nbsp;&gt;&gt;</a>
                             </Row>
+                            }
                         </Col>
                     </Row>
                 })
