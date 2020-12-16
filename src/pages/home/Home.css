@@ -40,48 +40,40 @@
 }
 
 .wave_base {
-    background: rgb(0, 160, 233);
-    height: 30em;
+    background: #df669f;
+    height: 40em;
+    width: 40em;
     padding: 1em;
-    width: 150%;
-    top: -10em;
-    left: -13em;
-    margin-top: -25em;
-    border-radius: 50%;
+    left:-35em;
+    margin-top: -30em;
+    border-radius: 43%;
     opacity: 0.5;
     position: relative;
     z-index: 11;
+    transform: translate(50%, 50%) rotate(0);
+    animation: rotate 9s linear infinite;
 }
 
 .wave {
     background: rgb(0, 160, 233);
-    height: 25em;
+    height: 50em;
+    width: 50em;
     padding: 1em;
-    width: 130%;
-    top: -15em;
-    left: -13em;
-    margin-top: -25em;
+    margin-top: -55em;
     border-radius: 40%;
+    left:-10em;
     opacity: 0.4;
     position: relative;
     z-index: 11;
-}
-
-.wave_base:before {
-    transform: translate(-50%, -70%) rotate(0);
-    animation: rotate 6s linear infinite;
-}
-
-.wave_base:after {
-    transform: translate(-50%, -70%) rotate(0);
-    animation: rotate 10s linear -5s infinite;
+    transform: translate(50%, 50%) rotate(0);
+    animation: rotate 15s linear -5s infinite;
 }
 
 @keyframes rotate {
     50% {
-        transform: translate(-50%, -73%) rotate(180deg);
+        transform: translate(50%, 50%) rotate(180deg);
     }
     100% {
-        transform: translate(-50%, -70%) rotate(360deg);
+        transform: translate(50%, 50%) rotate(360deg);
     }
 }

@@ -64,7 +64,7 @@ class Docs extends Component {
                                     paddingTop: '0.5em',
                                     paddingBottom: '0.5em',
                                     paddingLeft: '2em',
-                                    fontSize: '1.5em',
+                                    fontSize: '1.3em',
                                     background: index === this.state.currentDocIndex ? '#fff' : '#eee'
                                 }}>{item.chapter}</Row>
                             })}

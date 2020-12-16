@@ -288,7 +288,7 @@ class Home extends Component {
             <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
                 <Col md={8} style={{padding:0,margin:0,}}>
                     <h2>Events ></h2>
-                    <Container style={{padding: '0',overflow:'hidden',background:'#fff'}}>
+                    <Container style={{padding: '0',overflow:'hidden',background:'#fff',height:'25em'}}>
                         <Row
                             style={{
                                 background: '#fff',
