@@ -232,6 +232,13 @@ const communityMeeting = [
         time: '2020-3-8 20:00 (UTC+8)',
         status: 'Normal',
         url: 'https://thoughtworks.zoom.com.cn/j/94774989388'
+    },
+    {
+        title: '第六次社区线上交流',
+        content: '第六次社区线上交流内容待定',
+        time: '2020-4-7 20:00 (UTC+8)',
+        status: 'Normal',
+        url: 'https://thoughtworks.zoom.com.cn/j/94774989388'
     }
 ];
 
@@ -281,38 +288,53 @@ class Home extends Component {
             <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
                 <Col md={8}>
                     <h2>Events ></h2>
-                    <Container style={{padding: '0'}}>
+                    <Container style={{padding: '0',overflow:'hidden',width:'100%'}}>
+                        <div
+                            style={{
+                                background: '#fff',
+                                height: '25em',
+                                padding: '1em',
+                                width:'100%',
+                                position: 'relative',
+                                zIndex:10,
+                            }}>
+                        </div>
+                        <div className={'wave_base'}/>
+                        <div className={'wave'}/>
                         <Row style={{
-                            background: '#fff',
                             height: '25em',
                             padding: '1em',
+                            position: 'relative',
                             borderRight: '1px solid rgb(238, 238, 238)',
-                            borderBottom: '1px solid rgb(238, 238, 238)'
+                            borderBottom: '1px solid rgb(238, 238, 238)',
+                            zIndex:12,
+                            marginTop:'-30em',
                         }}>
-                            <Col md={12}>
+                            <Col md={12} style={{paddingTop:'1em'}}>
                                 <h1> <span style={{
                                     width: '1em',
                                     height: '1em',
                                     background: communityMeeting[this.state.selectMeetingIndex].status === 'Canceled' ? 'red' : 'green',
-                                    borderRadius: '2px'
+                                    borderRadius: '2px',
+                                    zIndex:'11',
                                 }}>&nbsp;</span>&nbsp;&nbsp;{communityMeeting[this.state.selectMeetingIndex].title}</h1>
                                 <p>{communityMeeting[this.state.selectMeetingIndex].time}</p>
                             </Col>
-                            <Col md={12}>
+                            <Col md={12} style={{marginTop:'-5em'}}>
                                 <h3>{communityMeeting[this.state.selectMeetingIndex].content}</h3>
                             </Col>
                             <Col md={12}>
                                 <a href={communityMeeting[this.state.selectMeetingIndex].url}
                                    style={{fontWeight: 'normal', marginTop: '1em'}}>
-                                    <button disabled={communityMeeting[this.state.selectMeetingIndex].status === 'Canceled' ? 'disabled' : ''}
+                                    <h4 disabled={communityMeeting[this.state.selectMeetingIndex].status === 'Canceled' ? 'disabled' : ''}
                                             style={{
-                                                color: '#fff',
-                                                background: communityMeeting[this.state.selectMeetingIndex].status === 'Canceled' ? 'linear-gradient(to right, #333 0%, #aaa 100%)' : 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
+                                                color: '#000',
                                                 transition: 'all .3s ease',
                                                 height: '2em',
+                                                marginTop:'-4em',
                                                 border: 'none',
-                                            }}>Join Meeting
-                                    </button>
+                                            }}>Join Meeting >
+                                    </h4>
                                 </a>
                             </Col>
                         </Row>

@@ -38,3 +38,50 @@
     height: 1em;
     padding: 1px;
 }
+
+.wave_base {
+    background: rgb(0, 160, 233);
+    height: 30em;
+    padding: 1em;
+    width: 150%;
+    top: -10em;
+    left: -13em;
+    margin-top: -25em;
+    border-radius: 50%;
+    opacity: 0.5;
+    position: relative;
+    z-index: 11;
+}
+
+.wave {
+    background: rgb(0, 160, 233);
+    height: 25em;
+    padding: 1em;
+    width: 130%;
+    top: -15em;
+    left: -13em;
+    margin-top: -25em;
+    border-radius: 40%;
+    opacity: 0.4;
+    position: relative;
+    z-index: 11;
+}
+
+.wave_base:before {
+    transform: translate(-50%, -70%) rotate(0);
+    animation: rotate 6s linear infinite;
+}
+
+.wave_base:after {
+    transform: translate(-50%, -70%) rotate(0);
+    animation: rotate 10s linear -5s infinite;
+}
+
+@keyframes rotate {
+    50% {
+        transform: translate(-50%, -73%) rotate(180deg);
+    }
+    100% {
+        transform: translate(-50%, -70%) rotate(360deg);
+    }
+}
