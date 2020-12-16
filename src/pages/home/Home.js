@@ -280,7 +280,7 @@ class Home extends Component {
 
             <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
                 <Col md={8}>
-                    <h2>News ></h2>
+                    <h2>Events ></h2>
                     <Container style={{padding: '0'}}>
                         <Row style={{
                             background: '#fff',
@@ -319,7 +319,7 @@ class Home extends Component {
                     </Container>
                 </Col>
                 <Col md={4}>
-                    <h2>Events ></h2>
+                    <h2>&nbsp;</h2>
                     <Container style={{padding: '0'}}>
                         <Row style={{
                             background: '#fff',
