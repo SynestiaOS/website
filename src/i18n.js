@@ -22,4 +22,6 @@ i18n.use(LanguageDetector) //嗅探当前浏览器语言
         },
     });
 
+i18n.changeLanguage('en');
+
 export default i18n;

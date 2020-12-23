@@ -8,6 +8,7 @@ import Nav from "react-bootstrap/Nav";
 import {forumData} from "./forumData";
 import {Link} from "react-router-dom";
 import Image from "react-bootstrap/Image";
+import {withTranslation} from "react-i18next";
 
 class Forum extends Component {
 
@@ -48,7 +49,7 @@ class Forum extends Component {
         return (<Container className="Forum">
             <Row style={{textAlign: 'left', padding: '2em'}}>
                 <Col>
-                    <h1>Community</h1>
+                    <h1>{this.props.t("Community")}</h1>
                     <h4>Sharing and cooperation make us better!</h4>
                 </Col>
             </Row>
@@ -209,4 +210,4 @@ class Forum extends Component {
     }
 }
 
-export default Forum;
+export default withTranslation()(Forum);
