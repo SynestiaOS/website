@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './GithubInfo.css';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import {withTranslation} from "react-i18next";
 
 class GithubInfo extends Component {
 
@@ -87,7 +88,7 @@ class GithubInfo extends Component {
                             <h1 style={{fontWeight: 'bold'}}>{this.state.commits}</h1>
                         </Col>
                         <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
-                            <h5>Commits</h5>
+                            <h5>{this.props.t("Commits")}</h5>
                         </Col>
                     </Row>
                 </Col>
@@ -97,7 +98,7 @@ class GithubInfo extends Component {
                             <h1 style={{fontWeight: 'bold'}}>{this.state.contributors}</h1>
                         </Col>
                         <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
-                            <h5>Contributors</h5>
+                            <h5>{this.props.t("Contributors")}</h5>
                         </Col>
                     </Row>
                 </Col>
@@ -107,7 +108,7 @@ class GithubInfo extends Component {
                             <h1 style={{fontWeight: 'bold'}}>{this.state.forks}</h1>
                         </Col>
                         <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
-                            <h5>Forks</h5>
+                            <h5>{this.props.t("Forks")}</h5>
                         </Col>
                     </Row>
                 </Col>
@@ -117,7 +118,7 @@ class GithubInfo extends Component {
                             <h1 style={{fontWeight: 'bold'}}>{this.state.stars}</h1>
                         </Col>
                         <Col md={12} style={{marginTop: '1em', textAlign: 'center'}}>
-                            <h5>Stars</h5>
+                            <h5>{this.props.t("Stars")}</h5>
                         </Col>
                     </Row>
                 </Col>
@@ -126,4 +127,4 @@ class GithubInfo extends Component {
     }
 }
 
-export default GithubInfo;
+export default withTranslation()(GithubInfo);

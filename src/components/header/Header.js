@@ -8,6 +8,8 @@ import Image from "react-bootstrap/Image";
 import LogoRe from "../../static/images/logo_re.png";
 import Dropdown from "react-bootstrap/Dropdown";
 
+import {withTranslation} from 'react-i18next'
+
 const headers = [
     {
         title: 'Developer',
@@ -17,7 +19,7 @@ const headers = [
         title: 'Community',
         url: '/forum'
     }, {
-        title: 'News & Events',
+        title: 'News',
         url: '/blog'
     }, {
         title: 'Sponsor',
@@ -26,7 +28,6 @@ const headers = [
 ];
 
 class Header extends Component {
-
     constructor(props) {
         super(props);
 
@@ -38,7 +39,7 @@ class Header extends Component {
     }
 
     changeLanguage(lan) {
-        alert("not support");
+        this.props.i18n.changeLanguage(lan);
     }
 
     render() {
@@ -46,12 +47,12 @@ class Header extends Component {
             <Row style={{padding: 0, height: '2em', background: "rgb(245,245,245)"}}>
                 <Dropdown style={{flex: 1, textAlign: "right"}}>
                     <Dropdown.Toggle variant="none" id="dropdown-basic">
-                        English
+                        {this.props.t('Language')}
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu>
-                        <Dropdown.Item onClick={this.changeLanguage.bind(this, 'en')} href="#/action-1">English</Dropdown.Item>
-                        <Dropdown.Item onClick={this.changeLanguage.bind(this, 'zh')} href="#/action-2">Chinese</Dropdown.Item>
+                        <Dropdown.Item onClick={this.changeLanguage.bind(this, 'en')} href="#/action-1"> {this.props.t('English')}</Dropdown.Item>
+                        <Dropdown.Item onClick={this.changeLanguage.bind(this, 'zh')} href="#/action-2"> {this.props.t('Chinese')}</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
             </Row>
@@ -71,7 +72,7 @@ class Header extends Component {
                                                  display: 'flex',
                                                  alignItems: 'center',
                                                  justifyContent: 'center',
-                                             }}>{item.title}</Nav.Link>
+                                             }}>{this.props.t(item.title)}</Nav.Link>
                         })
                     }
                     {/*<Nav.Link style={{float: 'right', flex: 1, textAlign: "right"}}>*/}
@@ -91,8 +92,8 @@ class Header extends Component {
         </Container>
     }
 
-    loginWithGithub(){
-        window.location.href="https://github.com/login/oauth/authorize?client_id=651845ca2b8026fa6b47&redirect_uri=http://localhost:3000/github/callback";
+    loginWithGithub() {
+        window.location.href = "https://github.com/login/oauth/authorize?client_id=651845ca2b8026fa6b47&redirect_uri=http://localhost:3000/github/callback";
     }
 
     selectHeaderMenu(index) {
@@ -102,4 +103,4 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default withTranslation()(Header);

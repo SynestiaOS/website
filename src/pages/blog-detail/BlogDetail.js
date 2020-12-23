@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {blogsData} from "../blogs/blogsData";
 import {Image} from "react-bootstrap";
+import {withTranslation} from "react-i18next";
 
 class BlogDetail extends Component {
 
@@ -23,14 +24,14 @@ class BlogDetail extends Component {
         return (<Container className="BlogDetail">
             <Row style={{textAlign: 'left', padding: '2em'}}>
                 <Col>
-                    <h1>Blog & Event Detail</h1>
+                    <h1>{this.props.t("News")} {this.props.t("Detail")}</h1>
                     <h4>{detail.title}</h4>
                 </Col>
             </Row>
 
             <Row style={{background: '#f5f5f6', padding: 0}}>
                 <Col md={12} style={{marginTop: "1em"}}>
-                    <h1>Detail > </h1>
+                    <h1>{this.props.t("Detail")} > </h1>
                 </Col>
                 <Col md={12} style={{background: '#fff', padding: '0', paddingLeft: '2em'}}>
                     <Row>
@@ -52,7 +53,7 @@ class BlogDetail extends Component {
                                         border: 'none',
                                         width:'6em',
                                         height:'2em',
-                                    }}>Learn More
+                                    }}>{this.props.t("LearnMore")}
                                     </button>
                                 </a>
                             </Row>
@@ -64,4 +65,4 @@ class BlogDetail extends Component {
     };
 }
 
-export default BlogDetail;
+export default withTranslation()(BlogDetail);

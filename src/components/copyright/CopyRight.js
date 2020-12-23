@@ -1,14 +1,17 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './CopyRight.css';
 import Container from "react-bootstrap/Container";
+import {withTranslation} from "react-i18next";
 
-function CopyRight() {
-    return (
-        <Container className="CopyRight">
-            <span>SynestiaOS  · All Rights Reserved ©2020</span>
-            <span style={{float:"right"}}>current version: Lyra</span>
-        </Container>
-    );
+class CopyRight extends Component{
+    render() {
+        return (
+            <Container className="CopyRight">
+                <span>{this.props.t("CopyRight")}</span>
+                <span style={{float: "right"}}>{this.props.t("CurrentVersion")}</span>
+            </Container>
+        );
+    }
 }
 
-export default CopyRight;
+export default withTranslation()(CopyRight);

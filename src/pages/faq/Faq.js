@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {Link} from "react-router-dom";
+import {withTranslation} from "react-i18next";
 
 class Faq extends Component {
 
@@ -15,7 +16,7 @@ class Faq extends Component {
         return (<Container className="Faq">
             <Row style={{textAlign: 'left', padding: '2em'}}>
                 <Col>
-                    <h1>FAQ</h1>
+                    <h1>{this.props.t("FAQ")}</h1>
                     <h4>Something you want to know</h4>
                 </Col>
             </Row>
@@ -55,7 +56,7 @@ class Faq extends Component {
                                     border: 'none',
                                     width:'6em',
                                     height:'2em',
-                                }}>Learn More</button>
+                                }}>{this.props.t("LearnMore")}</button>
                             </Link>
                         </Col>
                         <Col md={3} style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
@@ -70,7 +71,7 @@ class Faq extends Component {
                                     border: 'none',
                                     width:'6em',
                                     height:'2em',
-                                }}>Learn More</button>
+                                }}>{this.props.t("LearnMore")}</button>
                             </Link>
                         </Col>
                         <Col md={3} style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
@@ -85,7 +86,7 @@ class Faq extends Component {
                                     border: 'none',
                                     width:'6em',
                                     height:'2em',
-                                }}>Learn More</button>
+                                }}>{this.props.t("LearnMore")}</button>
                             </Link>
                         </Col>
                         <Col md={3} style={{background: '#fff', padding: '1em'}}>
@@ -100,7 +101,7 @@ class Faq extends Component {
                                     border: 'none',
                                     width:'6em',
                                     height:'2em',
-                                }}>Learn More</button>
+                                }}>{this.props.t("LearnMore")}</button>
                             </Link>
                         </Col>
                     </Row>
@@ -110,4 +111,4 @@ class Faq extends Component {
     };
 }
 
-export default Faq;
+export default withTranslation()(Faq);

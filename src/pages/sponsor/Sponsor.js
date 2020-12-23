@@ -9,6 +9,7 @@ import WePay from "../../static/images/wepay.png"
 import AliPay from "../../static/images/alipay.png"
 import LogoRe from "../../static/images/logo_re.png";
 import {sponsorsData} from "./sponsorsData";
+import {withTranslation} from "react-i18next";
 
 function DonateModalWithGrid(props) {
     return (
@@ -82,13 +83,13 @@ class Sponsor extends Component {
         return (<Container className="Sponsor">
             <Row style={{textAlign: 'left', padding: '2em'}}>
                 <Col>
-                    <h1>Sponsors</h1>
+                    <h1>{this.props.t("Sponsor")}</h1>
                     <h4>Help us do better</h4>
                 </Col>
             </Row>
             <Row style={{background: '#f5f5f6', padding: 0}}>
                 <Col md={6} style={{paddingTop: '1em', paddingRight: '1em'}}>
-                    <h3 style={{padding: 0, marginTop: '0.5em'}}>What We Need ></h3>
+                    <h3 style={{padding: 0, marginTop: '0.5em'}}>{this.props.t("WhatWeNeed")} ></h3>
                     <Row style={{background: '#fff', padding: '2em'}}>
                         <p>We need some open source hardware to test the function and performance of our operating system in different scenarios.</p>
                         <p style={{margin: 0}}>The following is the hardware platform we currently need.</p>
@@ -115,7 +116,7 @@ class Sponsor extends Component {
                     </Row>
                 </Col>
                 <Col md={6} style={{paddingTop: '1em', paddingLeft: '1em'}}>
-                    <h3 style={{padding: 0, marginTop: '0.5em'}}>Our Sponsors ></h3>
+                    <h3 style={{padding: 0, marginTop: '0.5em'}}>{this.props.t("OurSponsor")} ></h3>
                     <Row style={{background: '#fff', padding: '2em'}}>
                         <Col md={12} style={{padding: 0}}>
                             <Row style={{padding: 0, margin: 0}}>
@@ -172,7 +173,7 @@ class Sponsor extends Component {
                                     height: '2.5em',
                                     background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
                                     border: 'none',
-                                }} onClick={() => this.setModalShow(true)}>Be Our Personal Sponsor
+                                }} onClick={() => this.setModalShow(true)}>{this.props.t("BeSponsor")}
                                 </button>
                             </p>
                         </Col>
@@ -199,4 +200,4 @@ class Sponsor extends Component {
     }
 }
 
-export default Sponsor;
+export default withTranslation()(Sponsor);

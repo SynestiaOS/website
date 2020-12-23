@@ -7,6 +7,7 @@ import 'video-react/dist/video-react.css';
 import {docsData} from "./docsData";
 import ReactMarkdown from "react-markdown";
 import CodeBlock from "./CodeBlock";
+import {withTranslation} from "react-i18next";
 
 
 async function getDoc(url) {
@@ -47,14 +48,14 @@ class Docs extends Component {
         return (<Container className="Videos">
             <Row style={{textAlign: 'left', padding: '2em'}}>
                 <Col>
-                    <h1>Documents </h1>
+                    <h1>{this.props.t("Docs")} </h1>
                     <h4>Our documents for kernel or components.</h4>
                 </Col>
             </Row>
 
             <Row style={{background: '#f5f5f6', padding: 0}}>
                 <Col md={12} style={{marginTop: "1em"}}>
-                    <h1>Kernel Documents > </h1>
+                    <h1>{this.props.t("KernelDocs")} > </h1>
                 </Col>
                 <Col md={12} style={{padding: 0}}>
                     <Row style={{paddingLeft: '1em', paddingRight: '1em'}}>
@@ -80,7 +81,7 @@ class Docs extends Component {
                                     background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
                                     padding: '0.5em',
                                     color: '#fff',
-                                }} href={docsData[this.state.currentDocIndex].url}>detail</a></Container>
+                                }} href={docsData[this.state.currentDocIndex].url}>{this.props.t("Detail")}</a></Container>
                             </Row>
                             <ReactMarkdown
                                 className={"markdown"}
@@ -98,4 +99,4 @@ class Docs extends Component {
     };
 }
 
-export default Docs;
+export default withTranslation()(Docs);

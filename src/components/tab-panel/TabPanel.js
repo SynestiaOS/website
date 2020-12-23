@@ -5,6 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import "./TabPanel.css"
+import {withTranslation} from "react-i18next";
 
 class TabPanel extends Component {
     constructor(props) {
@@ -43,7 +44,7 @@ class TabPanel extends Component {
                                     fontWeight = 'bold';
                                 }
                                 return <Nav.Link key={index} onClick={this.selectTab.bind(this, item)}
-                                                 style={{color, background, fontWeight}}>{item}</Nav.Link>
+                                                 style={{color, background, fontWeight}}>{this.props.t(item)}</Nav.Link>
                             })
                         }
                     </Navbar>
@@ -71,4 +72,4 @@ class TabPanel extends Component {
     }
 }
 
-export default TabPanel;
+export default withTranslation()(TabPanel);

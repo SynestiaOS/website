@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
+import {withTranslation} from "react-i18next";
 
 class Maintainers extends Component {
 
@@ -15,7 +16,7 @@ class Maintainers extends Component {
         return (
             <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
                 <Col md={12}>
-                    <h2>Maintainers ></h2>
+                    <h2>{this.props.t("Maintainers")}></h2>
                     <Container style={{padding: '0'}}>
                         <Row style={{
                             background: '#fff',
@@ -61,4 +62,4 @@ class Maintainers extends Component {
     }
 }
 
-export default Maintainers;
+export default withTranslation()(Maintainers);

@@ -7,6 +7,7 @@ import TabPanel from "../../components/tab-panel/TabPanel";
 import GithubInfo from "../../components/github-info/GithubInfo";
 import Maintainers from "../../components/maintainers/Maintainers";
 import {Image} from "react-bootstrap";
+import {withTranslation} from "react-i18next";
 
 const boards = {
     Supported: [
@@ -266,8 +267,8 @@ class Home extends Component {
                 <Col md={12} style={{textAlign: 'left'}}>
                     <Row style={{textAlign: 'left', paddingBottom: '2em'}}>
                         <h1>Build IOT Devices with Synestia</h1>
-                        <h4>An Open Source, standards-based software platform for IOT
-                            devices, including smartwatch, TVs and automotive infotainment platforms.</h4>
+                        <h4>A free Open Source and standards-based software platform for IoT devices, including Smart wear, TVs, and automotive
+                            infotainment platforms.</h4>
                         <a href={"https://github.com/SynestiaOS/SynestiaOS"}
                            style={{fontWeight: 'normal', marginTop: '1em'}}>
                             <button style={{
@@ -277,7 +278,7 @@ class Home extends Component {
                                 height: '2em',
                                 width: '6em',
                                 border: 'none',
-                            }}>Learn More
+                            }}>{this.props.t("LearnMore")}
                             </button>
                         </a>
                     </Row>
@@ -286,17 +287,17 @@ class Home extends Component {
             </Row>
 
             <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
-                <Col md={8} style={{padding:0,margin:0,}}>
-                    <h2>Events ></h2>
-                    <Container style={{padding: '0',overflow:'hidden',background:'#fff',height:'25em'}}>
+                <Col md={8} style={{padding: 0, margin: 0,}}>
+                    <h2>{this.props.t("Events")} ></h2>
+                    <Container style={{padding: '0', overflow: 'hidden', background: '#fff', height: '25em'}}>
                         <Row
                             style={{
                                 background: '#fff',
                                 height: '25em',
                                 padding: '1em',
-                                margin:0,
+                                margin: 0,
                                 position: 'relative',
-                                zIndex:10,
+                                zIndex: 10,
                             }}>
                         </Row>
                         <Row className={'wave_base'}/>
@@ -306,33 +307,33 @@ class Home extends Component {
                             padding: '1em',
                             position: 'relative',
                             borderBottom: '1px solid rgb(238, 238, 238)',
-                            zIndex:12,
-                            marginTop:'-30em',
+                            zIndex: 12,
+                            marginTop: '-30em',
                         }}>
-                            <Col md={12} style={{paddingTop:'1em'}}>
+                            <Col md={12} style={{paddingTop: '1em'}}>
                                 <h1> <span style={{
                                     width: '1em',
                                     height: '1em',
                                     background: communityMeeting[this.state.selectMeetingIndex].status === 'Canceled' ? 'red' : 'green',
                                     borderRadius: '2px',
-                                    zIndex:'11',
+                                    zIndex: '11',
                                 }}>&nbsp;</span>&nbsp;&nbsp;{communityMeeting[this.state.selectMeetingIndex].title}</h1>
                                 <p>{communityMeeting[this.state.selectMeetingIndex].time}</p>
                             </Col>
-                            <Col md={12} style={{marginTop:'-5em'}}>
+                            <Col md={12} style={{marginTop: '-5em'}}>
                                 <h3>{communityMeeting[this.state.selectMeetingIndex].content}</h3>
                             </Col>
                             <Col md={12}>
                                 <a href={communityMeeting[this.state.selectMeetingIndex].url}
                                    style={{fontWeight: 'normal', marginTop: '1em'}}>
                                     <h4 disabled={communityMeeting[this.state.selectMeetingIndex].status === 'Canceled' ? 'disabled' : ''}
-                                            style={{
-                                                color: '#000',
-                                                transition: 'all .3s ease',
-                                                height: '2em',
-                                                marginTop:'-4em',
-                                                border: 'none',
-                                            }}>Join Meeting >
+                                        style={{
+                                            color: '#000',
+                                            transition: 'all .3s ease',
+                                            height: '2em',
+                                            marginTop: '-4em',
+                                            border: 'none',
+                                        }}>{this.props.t("JoinMeeting")} >
                                     </h4>
                                 </a>
                             </Col>
@@ -357,19 +358,32 @@ class Home extends Component {
             </Row>
             <Maintainers data={maintainers}/>
             <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
+                <Col md={4}>
+                    <h2>{this.props.t("Progress")} ></h2>
+                    <TabPanel data={kernel}/>
+                </Col>
+                <Col md={4}>
+                    <h2>&nbsp;</h2>
+                    <TabPanel data={components}/>
+                </Col>
+                <Col md={4}>
+                    <h2>&nbsp;</h2>
+                    <TabPanel data={boards}/>
+                </Col>
+            </Row>
+            <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
                 <Col md={12}>
-                    <h2>Partner ></h2>
+                    <h2>{this.props.t("Partner")} ></h2>
                     <Container style={{padding: '0'}}>
                         <Row style={{
                             background: '#fff',
-                            padding: '1em',
                             borderBottom: '1px solid rgb(238, 238, 238)',
                             borderRight: '1px solid rgb(238, 238, 238)'
                         }}>
-                            <Col md={2}>
+                            <Col md={2} style={{borderRight: '1px solid rgb(238, 238, 238)', padding: '1em'}}>
                                 <Image style={{width: '8em', padding: '0.5em'}} src={'https://scriptiot.github.io/evm_doc/zh-cn/image/logo.png'}/>
                             </Col>
-                            <Col md={10}>
+                            <Col md={10} style={{padding: '1em'}}>
                                 <h4>EVM (Embedded Virtual Machine)</h4>
                                 <p>The full name of EVM is Embedded Virtual Machine, which is essentially a general-purpose and streamlined embedded
                                     virtual machine. It is composed of a front-end framework for syntax analysis and a back-end bytecode operation. It
@@ -383,7 +397,7 @@ class Home extends Component {
 
             <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
                 <Col md={6}>
-                    <h2>Learning & Technology Exchange ></h2>
+                    <h2>{this.props.t("TechExchange")} ></h2>
                     <Container style={{padding: '0'}}>
                         <Row style={{
                             background: '#fff',
@@ -398,7 +412,7 @@ class Home extends Component {
                     </Container>
                 </Col>
                 <Col md={6}>
-                    <h2>Cooperation & Feedback ></h2>
+                    <h2>{this.props.t("Cooperation")} ></h2>
                     <Container style={{padding: '0'}}>
                         <Row style={{
                             background: '#fff',
@@ -487,4 +501,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default withTranslation()(Home);

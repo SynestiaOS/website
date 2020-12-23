@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import {blogsData} from './blogsData';
 import {Link} from "react-router-dom";
+import {withTranslation} from "react-i18next";
 
 class Blog extends Component {
 
@@ -17,14 +18,14 @@ class Blog extends Component {
         return (<Container className="Sponsor">
             <Row style={{textAlign: 'left', padding: '2em'}}>
                 <Col>
-                    <h1>News & Events</h1>
+                    <h1>{this.props.t("News")}</h1>
                     <h4>Our new and status updates</h4>
                 </Col>
             </Row>
 
             <Row style={{background: '#f5f5f6', padding: 0}}>
                 <Col md={12} style={{marginTop: "1em"}}>
-                    <h1>Our Posts > </h1>
+                    <h1>{this.props.t("Posts")} > </h1>
                 </Col>
                 {blogsData.map((item, index) => {
                     return <Col key={index} md={6} style={{background: '#fff', padding: 0, borderRight: 'solid 1px #eee',borderBottom:'solid 1px #eee'}}>
@@ -43,7 +44,7 @@ class Blog extends Component {
                                         border: 'none',
                                         width:'6em',
                                         height:'2em',
-                                    }}>Learn More
+                                    }}>{this.props.t("LearnMore")}
                                     </button>
                                 </Link>
                             </Col>
@@ -55,4 +56,4 @@ class Blog extends Component {
     };
 }
 
-export default Blog;
+export default withTranslation()(Blog);
