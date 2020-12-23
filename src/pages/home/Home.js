@@ -458,7 +458,7 @@ class Home extends Component {
                                     height: '100%',
                                     width: '100%',
                                     border: 'none',
-                                }}>{item.status}</span>
+                                }}>{this.props.t(item.status)}</span>
                             </Row>
                             {item.status !== 'Canceled' &&
                             <Row style={{padding: 0, paddingLeft: '0.5em', borderTop: '1px solid rgb(238, 238, 238)'}}>
@@ -469,7 +469,7 @@ class Home extends Component {
                                     height: '100%',
                                     width: '100%',
                                     border: 'none',
-                                }}>Join&nbsp;&gt;&gt;</a>
+                                }}>{this.props.t("Join")}&nbsp;&gt;&gt;</a>
                             </Row>
                             }
                         </Col>
