@@ -3,8 +3,66 @@
   <component name="ChangeListManager">
     <list default="true" id="ecb05922-317c-4230-8e1f-08cf1aa4ee2b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18n.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/forum/Forum.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/forum/Forum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Tools/Tools.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Tools/Tools.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io" beforeDir="false" afterPath="$PROJECT_DIR$/synestiaos.github.io" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/200.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/Documentation" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/blog-detail/0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/blog-detail/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/blog-detail/2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/developer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/docs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/forum.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heap1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heap2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heap3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heapalloc1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heapalloc2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heapfree1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heapfree2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/KQueue/dequeue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/KQueue/enqueue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/List/example.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/List/example2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/WechatIMG1151.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/WechatIMG1153.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/WeiJi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/env/clion_cmake.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/env/clion_debug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/env/debug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/env/external_tool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/env/reset_cmake.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/env/run_qemu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/mem/PTE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/mem/pagetable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/stack/stackalloc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/precache-manifest.c870492fb1e7daedb5eead1973d12267.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/sponsor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/css/2.300c0e58.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/css/2.300c0e58.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/css/main.96ece3ac.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/css/main.96ece3ac.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/2.cd91efbb.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/2.cd91efbb.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/2.cd91efbb.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/main.aed22906.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/main.aed22906.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/runtime-main.bfca2edd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/runtime-main.bfca2edd.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/media/ZillaSlab-Regular.53cbc7a5.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/media/alipay.07cd3605.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/media/wepay.90df0414.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/tools.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/videos.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +231,8 @@
       <workItem from="1608123359664" duration="4844000" />
       <workItem from="1608355344351" duration="589000" />
       <workItem from="1608699077390" duration="4934000" />
-      <workItem from="1608704350443" duration="123000" />
+      <workItem from="1608704350443" duration="420000" />
+      <workItem from="1608782533956" duration="826000" />
     </task>
     <servers />
   </component>
@@ -181,6 +240,9 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/index.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
+        <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />
         <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/index.d.js" />
         <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/toBeInRangeMatcher.d.js" />
         <option value="$PROJECT_DIR$/node_modules/wait-for-expect/lib/waitForExpect.spec.d.js" />

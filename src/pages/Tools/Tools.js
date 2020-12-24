@@ -3,7 +3,6 @@ import './Tools.css';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import {Link} from "react-router-dom";
 
 class Tools extends Component {
 
@@ -20,21 +19,54 @@ class Tools extends Component {
                 </Col>
             </Row>
             <Row style={{background: '#f5f5f6', padding: 0, paddingTop: '2em', paddingBottom: '0em'}}>
-                <h1>Tools ></h1>
-                <Col md={12} style={{padding: '2em', background: '#fff'}}>
+                <Col md={12}><h1>Tools ></h1></Col>
+                <Col md={6} style={{
+                    padding: '2em',
+                    background: '#fff',
+                    borderRight: '1px solid rgb(238, 238, 238)',
+                    borderBottom: '1px solid rgb(238, 238, 238)'
+                }}>
                     <Container style={{marginBottom: 0}}>
                         <Row>
                             <h4>ARM GCC</h4>
                         </Row>
                         <Row>
-                            <p>The GNU Arm Embedded Toolchain is a ready-to-use, open-source suite of tools for C, C++ and assembly programming. The GNU Arm Embedded Toolchain targets the 32-bit Arm Cortex-A, Arm Cortex-M, and Arm Cortex-R processor families. The GNU Arm Embedded Toolchain includes the GNU Compiler (GCC) and is available free of charge directly from Arm for embedded software development on Windows, Linux, and Mac OS X operating systems.</p>
+                            <p>The GNU Arm Embedded Toolchain is a ready-to-use, open-source suite of tools for C, C++ and assembly programming. The
+                                GNU Arm Embedded Toolchain targets the 32-bit Arm Cortex-A, Arm Cortex-M, and Arm Cortex-R processor families. The GNU
+                                Arm Embedded Toolchain includes the GNU Compiler (GCC) and is available free of charge directly from Arm for embedded
+                                software development on Windows, Linux, and Mac OS X operating systems.</p>
                         </Row>
                         <Row>
-                            <a href={"https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads"}>Goto Download Page</a>
+                            <a href={"https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads"}>Goto
+                                Download Page</a>
                         </Row>
                     </Container>
                 </Col>
-                <Col md={12} style={{padding: '2em', background: '#fff',borderTop:'1px solid rgb(238, 238, 238)'}}>
+                <Col md={6} style={{
+                    padding: '2em',
+                    background: '#fff',
+                    borderRight: '1px solid rgb(238, 238, 238)',
+                    borderBottom: '1px solid rgb(238, 238, 238)'
+                }}>
+                    <Container style={{marginBottom: 0}}>
+                        <Row>
+                            <h4>SynestiaOS Serial & Debug Tool</h4>
+                        </Row>
+                        <Row>
+                            <p>A SynestiaOS debugging tool with a universal serial port tool for serial port debugging, image download, and OS running
+                                analysis.</p>
+                        </Row>
+                        <Row>
+                            <a href={"https://github.com/SynestiaOS/SynestiaTool"}>Goto Download Page</a>
+                        </Row>
+                    </Container>
+                </Col>
+                <Col md={6} style={{
+                    padding: '2em',
+                    background: '#fff',
+                    borderRight: '1px solid rgb(238, 238, 238)',
+                    borderBottom: '1px solid rgb(238, 238, 238)'
+                }}>
                     <Container style={{marginBottom: 0}}>
                         <Row>
                             <h4>CLion</h4>
@@ -47,7 +79,12 @@ class Tools extends Component {
                         </Row>
                     </Container>
                 </Col>
-                <Col md={12} style={{padding: '2em', background: '#fff',borderTop:'1px solid rgb(238, 238, 238)'}}>
+                <Col md={6} style={{
+                    padding: '2em',
+                    background: '#fff',
+                    borderRight: '1px solid rgb(238, 238, 238)',
+                    borderBottom: '1px solid rgb(238, 238, 238)'
+                }}>
                     <Container style={{marginBottom: 0}}>
                         <Row>
                             <h4>Visual Studio Code</h4>
@@ -60,7 +97,12 @@ class Tools extends Component {
                         </Row>
                     </Container>
                 </Col>
-                <Col md={12} style={{padding: '2em', background: '#fff',borderTop:'1px solid rgb(238, 238, 238)'}}>
+                <Col md={6} style={{
+                    padding: '2em',
+                    background: '#fff',
+                    borderRight: '1px solid rgb(238, 238, 238)',
+                    borderBottom: '1px solid rgb(238, 238, 238)'
+                }}>
                     <Container style={{marginBottom: 0}}>
                         <Row>
                             <h4>Docker Desktop</h4>
