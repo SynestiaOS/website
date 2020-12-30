@@ -22,5 +22,13 @@ export const blogsData = [
         title:'Alpha.0.1.4: refactor some code',
         content:'This version, we just refactored some code, and removed some unused code, next version we can support raspi4 real machine.',
         url:'https://github.com/SynestiaOS/SynestiaOS/releases/tag/ext2'
+    },
+    {
+        image:'https://user-images.githubusercontent.com/9292449/103344602-06a11000-4aca-11eb-9583-59f528772366.png',
+        author:'Core Team',
+        time:'Wed, 30 Dec 2020 08:13:41 GMT',
+        title:'Alpha.0.1.5: refactor switch context',
+        content:'In this version, we refactored the context switch. Well, this should be correct. At the same time, we have new partners (Gao Cheng and Du Ming) to join our team. This will make this project develop in a better direction.',
+        url:'https://github.com/SynestiaOS/SynestiaOS/releases/tag/V0.1.5'
     }
 ];
