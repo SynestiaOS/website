@@ -18,6 +18,10 @@ import Docs from "./pages/docs/Docs";
 import GithubLogin from "./pages/github-login/GithubLogin";
 import GithubIssuesDetail from "./pages/issues-detail/GithubIssuesDetail";
 import Tools from "./pages/Tools/Tools";
+import Kanban from "./pages/kanban/Kanban";
+import Login from "./pages/login/Login";
+import Me from "./pages/me/Me";
+import SignUp from "./pages/sign-up/SignUp";
 
 function App() {
     return (
@@ -28,6 +32,7 @@ function App() {
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/home" component={Home}/>
                 <Route exact path="/sponsor" component={Sponsor}/>
+                <Route exact path="/kanban" component={Kanban}/>
                 <Route exact path="/developer" component={Developer}/>
                 <Route exact path="/blog" component={Blog}/>
                 <Route exact path="/blog-detail/:id" component={BlogDetail}/>
@@ -39,6 +44,9 @@ function App() {
                 <Route exact path="/github/callback" component={GithubLogin}/>
                 <Route exact path="/forum-detail/:type/:id" component={ForumDetail}/>
                 <Route exact path="/forum-detail/github/issue/:id" component={GithubIssuesDetail}/>
+                <Route exact path="/login" component={Login}/>
+                <Route exact path="/sign-up" component={SignUp}/>
+                <Route exact path="/me" component={Me}/>
             </Switch>
 
             <Footer/>

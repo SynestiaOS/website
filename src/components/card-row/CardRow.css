@@ -1,0 +1,10 @@
+.CardRow {
+    margin: 0;
+    padding: 1em 0;
+    text-align: left;
+}
+
+
+.CardRow:hover {
+    background: #eee;
+}

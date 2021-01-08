@@ -1,0 +1,25 @@
+.Card {
+    margin: 0;
+    padding: 1em 0;
+    text-align: left;
+}
+
+
+.Card:hover {
+    background: #eee;
+}
+
+.modal-70w {
+    max-width: 640px;
+}
+
+.modal-70w > .modal-content {
+    border: none;
+    border-radius: 1em;
+}
+
+.modal-70w > .modal-content > .modal-header {
+    border: none;
+}
+
+

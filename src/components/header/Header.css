@@ -11,6 +11,23 @@
     font-weight: bolder;
 }
 
+.logo-img {
+    width: 5em;
+    height: 5em;
+    margin: 0;
+    background: #000;
+}
+
+.logo-user {
+    border-radius: 10em;
+    width: 3em;
+    background: #000;
+}
+
+.logo-user:hover {
+    border: solid 2px #000;
+}
+
 .right-menu-icon > button {
     margin-bottom: 1em;
     border: none;

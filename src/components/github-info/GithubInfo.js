@@ -29,7 +29,7 @@ class GithubInfo extends Component {
             .then(data => {
                 console.log(data);
                 let all = 0;
-                if(data) {
+                if (data) {
                     data.map((item) => {
                         all = all + item.total;
                     });
@@ -51,7 +51,7 @@ class GithubInfo extends Component {
             })
             .then(data => {
                 console.log(data);
-                if(data) {
+                if (data) {
                     this.setState(
                         {
                             stars: data.stargazers_count,
@@ -73,7 +73,7 @@ class GithubInfo extends Component {
                 console.log(data);
                 this.setState(
                     {
-                        contributors: data.length
+                        contributors: data ? data.length : 0
                     }
                 );
             });

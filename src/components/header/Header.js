@@ -9,6 +9,10 @@ import LogoRe from "../../static/images/logo_re.png";
 import Dropdown from "react-bootstrap/Dropdown";
 
 import {withTranslation} from 'react-i18next'
+import * as cookie from "react-cookies";
+import {faUser} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {Link} from "react-router-dom";
 
 const headers = [
     {
@@ -21,6 +25,9 @@ const headers = [
     }, {
         title: 'News',
         url: '/blog'
+    }, {
+        title: 'Kanban',
+        url: '/kanban'
     }, {
         title: 'Sponsor',
         url: '/sponsor'
@@ -75,21 +82,36 @@ class Header extends Component {
                                              }}>{this.props.t(item.title)}</Nav.Link>
                         })
                     }
-                    {/*<Nav.Link style={{float: 'right', flex: 1, textAlign: "right"}}>*/}
-                    {/*    <button onClick={this.loginWithGithub.bind(this)} style={{*/}
-                    {/*        background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',*/}
-                    {/*        border: 'none',*/}
-                    {/*        textAlign: 'center',*/}
-                    {/*        lineHeight: '2em',*/}
-                    {/*        width: '10em',*/}
-                    {/*        float: 'right',*/}
-                    {/*        height: '2em',*/}
-                    {/*        color: '#fff'*/}
-                    {/*    }}>Login with Github</button>*/}
-                    {/*</Nav.Link>*/}
+
+                    {this.renderUserInfo()}
                 </Navbar>
             </Row>
         </Container>
+    }
+
+    renderUserInfo() {
+        if (cookie.load('userId') && cookie.load('userId') !== '') {
+            return <Container style={{
+                width: '4em',
+                height: '3em',
+                position: 'absolute',
+                right: '0',
+                textAlign: 'center'
+            }}><Link to={'/me'}><Image src={LogoRe}
+                                       className="logo-user"/></Link></Container>;
+        } else {
+            return <Container style={{
+                width: '4em',
+                height: '3em',
+                position: 'absolute',
+                right: '2em',
+                textAlign: 'center'
+            }}><FontAwesomeIcon
+                icon={faUser}/>
+                &nbsp;<Link style={{padding: 0, margin: 0, color: '#000'}} to={'/login'}>{this.props.t("Login")}</Link>
+            </Container>
+
+        }
     }
 
     loginWithGithub() {

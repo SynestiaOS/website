@@ -49,5 +49,9 @@
   "Progress": "Progress",
   "Canceled": "Canceled",
   "Normal": "Normal",
-  "Join": "Join"
+  "Join": "Join",
+  "Kanban": "Kanban",
+  "Login": "Login",
+  "SignUp": "SignUp",
+  "Logging": "Logging"
 }

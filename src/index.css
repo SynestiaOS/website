@@ -6,7 +6,13 @@
     font-family: zilla-slab;
     src: url("./static/zilla-slab/otf/ZillaSlab-Regular.otf");
 }
-*{
+
+* {
     font-family: zilla-slab, serif;
 }
+
+* {
+    outline: none;
+}
+
 

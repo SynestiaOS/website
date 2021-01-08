@@ -49,5 +49,9 @@
   "Progress": "进度",
   "Canceled": "取消",
   "Normal": "正常",
-  "Join": "加入"
+  "Join": "加入",
+  "Kanban": "看板",
+  "Login": "登录",
+  "SignUp": "注册",
+  "Logging": "登录中..."
 }
