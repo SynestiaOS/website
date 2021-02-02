@@ -196,6 +196,27 @@ const maintainers = [
         ]
     },
     {
+        img: 'https://avatars.githubusercontent.com/u/56289312?s=460&u=5032dee2af0a7a8570beb79065c0952adb53625d&v=4',
+        name: 'Cheng Gao',
+        url: 'https://github.com/lycmtz',
+        tags: [
+            'kernel', 'device'
+        ]
+    }, {
+        img: 'https://avatars.githubusercontent.com/u/76421034?s=460&v=4',
+        name: 'DuMing Zhu',
+        url: 'https://github.com/zhuduming',
+        tags: [
+            'device', 'Tools'
+        ]
+    }, {
+        img: 'https://avatars.githubusercontent.com/u/57512577?s=460&v=4',
+        name: 'YuXia Gao',
+        url: 'https://github.com/yuxia-gao',
+        tags: [
+            'kernel', 'Tools'
+        ]
+    }, {
         img: 'https://avatars0.githubusercontent.com/u/12967882?s=460&u=968d486f7e58568089a8ff1e7aedc5e6c2ce30e1&v=4',
         name: 'Hongzhi Niu',
         url: 'https://github.com/MRNIU',

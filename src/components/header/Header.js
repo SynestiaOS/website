@@ -25,10 +25,12 @@ const headers = [
     }, {
         title: 'News',
         url: '/blog'
-    }, {
-        title: 'Kanban',
-        url: '/kanban'
-    }, {
+    },
+    // {
+    // title: 'Kanban',
+    // url: '/kanban'
+    // },
+    {
         title: 'Sponsor',
         url: '/sponsor'
     }
@@ -83,7 +85,7 @@ class Header extends Component {
                         })
                     }
 
-                    {this.renderUserInfo()}
+                    {/*{this.renderUserInfo()}*/}
                 </Navbar>
             </Row>
         </Container>

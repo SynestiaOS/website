@@ -15,7 +15,7 @@ class Blog extends Component {
     }
 
     render() {
-        return (<Container className="Sponsor">
+        return (<Container className="Blog">
             <Row style={{textAlign: 'left', padding: '2em'}}>
                 <Col>
                     <h1>{this.props.t("News")}</h1>
