@@ -452,7 +452,6 @@ class Home extends Component {
                             background: '#fff',
                             padding: '1em',
                             height: '7em',
-                            borderRight: '1px solid rgb(238, 238, 238)',
                             borderBottom: '1px solid rgb(238, 238, 238)'
                         }}>
                             <h5>If you have any suggestions on our products, please contact us and look forward to communicating with you.</h5>
