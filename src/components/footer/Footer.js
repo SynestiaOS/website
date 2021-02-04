@@ -11,8 +11,8 @@ class Footer extends Component{
             <Container className="Footer">
                 <Row>
                     <Col md={1}/>
-                    <Col md={2} style={{paddingLeft: '2em', paddingRight: '2em'}}>
-                        <Image src={'./imgs/WeiJi.png'}/>
+                    <Col md={2} style={{paddingLeft: '4em', paddingRight: '4em'}}>
+                        <Image src={'./imgs/WeiJi.png'} style={{opacity:0.1}}/>
                     </Col>
                     <Col md={8} style={{paddingLeft: '3em', paddingRight: '8em'}}>
                         <Row>

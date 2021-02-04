@@ -73,7 +73,7 @@ class Header extends Component {
                 <Col md={1}/>
                 <Col md={10}>
                     <Navbar bg="#fff" variant="light" style={{padding: 0, width: '100%', height: '5em'}}>
-                        {/*<Image src={LogoRe} className="logo-img"/>*/}
+                        <Image src={LogoRe} className="logo-img"/>
                         <Nav.Link href="/home"
                                   style={{color: '#000', fontSize: '1.5em'}}>SynestiaOS</Nav.Link>
 
