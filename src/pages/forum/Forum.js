@@ -23,9 +23,9 @@ class Forum extends Component {
     componentDidMount() {
         fetch('https://api.github.com/repos/SynestiaOS/SynestiaOS/issues')
             .then(response => {
-                if(response.ok){
+                if (response.ok) {
                     return response.json();
-                }else{
+                } else {
 
                 }
             })
@@ -47,14 +47,16 @@ class Forum extends Component {
 
     render() {
         return (<Container className="Forum">
-            <Row style={{textAlign: 'left', padding: '2em'}}>
-                <Col>
+            <Row style={{textAlign: 'left', padding: 0, paddingTop: '2em', paddingBottom: '2em'}}>
+                <Col md={1}/>
+                <Col md={10}>
                     <h1>{this.props.t("Community")}</h1>
                     <h4>Sharing and cooperation make us better!</h4>
                 </Col>
             </Row>
-            <Row style={{background: '#f5f5f6', padding: 0, paddingTop: '1em'}}>
-                <Col md={9} style={{
+            <Row style={{background: '#f5f5f6', padding: 0, paddingTop: '2em',paddingBottom:'2em'}}>
+                <Col md={1}/>
+                <Col md={8} style={{
                     borderRight: 'solid 1px #eee',
                 }}>
                     <Row style={{padding: 0}}>
@@ -93,7 +95,7 @@ class Forum extends Component {
                         </Navbar>
                     </Row>
                 </Col>
-                <Col md={3} style={{
+                <Col md={2} style={{
                     textAlign: 'center',
                     background: '#fff',
                     paddingTop: '2em',

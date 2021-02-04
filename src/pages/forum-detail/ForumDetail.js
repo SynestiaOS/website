@@ -23,16 +23,20 @@ class ForumDetail extends Component {
 
         return (<Container className="ForumDetail">
             <Row style={{textAlign: 'left', padding: '2em'}}>
-                <Col>
+                <Col md={1}/>
+                <Col md={10}>
                     <h1>Forum Detail</h1>
                     <h4>&lt;{type}/&gt;</h4>
                 </Col>
             </Row>
 
-            <Row style={{background: '#f5f5f6', padding: 0}}>
-                <Col md={12} style={{marginTop: "1em"}}>
+            <Row style={{background: '#f5f5f6', padding: 0, paddingBottom: '2em', paddingLeft: '2em', paddingRight: '2em'}}>
+                <Col md={1}/>
+                <Col md={10} style={{marginTop: "1em"}}>
                 </Col>
-                <Col md={12} style={{background: '#fff', padding: '0'}}>
+                <Col md={1}/>
+                <Col md={1}/>
+                <Col md={10} style={{background: '#fff', padding: '0'}}>
                     <Row style={{margin: 0, padding: 0}}>
                         <Col md={9} style={{padding: 0, borderRight: 'solid 1px #eee'}}>
                             <Row style={{margin: 0, padding: 0}}>
@@ -56,7 +60,10 @@ class ForumDetail extends Component {
                                 <Col md={12} style={{padding: 0}}>
                                     <Container style={{padding: 0}}>
                                         {detail.comments.length === 0 ?
-                                            <Container style={{padding: '1em',borderTop:'solid 1px #eee'}}>Empty</Container> : detail.comments.map((comment, index) => {
+                                            <Container style={{
+                                                padding: '1em',
+                                                borderTop: 'solid 1px #eee'
+                                            }}>Empty</Container> : detail.comments.map((comment, index) => {
                                                 return <Row key={index} style={{padding: 0, margin: 0}}>
                                                     <Col md={1} style={{background: '#eee', textAlign: 'center', padding: '1em'}}><h1>{index + 1}</h1>
                                                     </Col>

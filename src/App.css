@@ -1,10 +1,9 @@
 .App {
-    background: #F5F5F6;
+    background: #fff;
+    padding: 0;
+    margin: 0;
 }
 
-#root{
-    background: #F5F5F6;
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: none !important;
 }
-/*.container, .container-lg, .container-md, .container-sm, .container-xl {*/
-/*    max-width: none !important;*/
-/*}*/

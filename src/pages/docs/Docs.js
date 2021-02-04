@@ -47,18 +47,22 @@ class Docs extends Component {
     render() {
         return (<Container className="Videos">
             <Row style={{textAlign: 'left', padding: '2em'}}>
-                <Col>
+                <Col md={1}/>
+                <Col md={10} style={{margin:0}}>
                     <h1>{this.props.t("Docs")} </h1>
                     <h4>Our documents for kernel or components.</h4>
                 </Col>
             </Row>
 
-            <Row style={{background: '#f5f5f6', padding: 0}}>
-                <Col md={12} style={{marginTop: "1em"}}>
+            <Row style={{background: '#f5f5f6', paddingBottom: '2em',padding:'1em'}}>
+                <Col md={1}/>
+                <Col md={10} style={{marginTop: "1em"}}>
                     <h1>{this.props.t("KernelDocs")} > </h1>
                 </Col>
-                <Col md={12} style={{padding: 0}}>
-                    <Row style={{paddingLeft: '1em', paddingRight: '1em'}}>
+                <Col md={1}/>
+                <Col md={1}/>
+                <Col md={10} style={{padding: 0}}>
+                    <Row style={{paddingLeft: '2em', paddingRight: '2em'}}>
                         <Col md={3} style={{paddingLeft: '1em', borderRight: 'solid 1px #eee', background: '#eee'}}>
                             {docsData.map((item, index) => {
                                 return <Row onClick={this.changeDoc.bind(this, index)} style={{

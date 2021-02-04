@@ -23,17 +23,21 @@ class BlogDetail extends Component {
 
         return (<Container className="BlogDetail">
             <Row style={{textAlign: 'left', padding: '2em'}}>
-                <Col>
+                <Col md={1}/>
+                <Col md={10}>
                     <h1>{this.props.t("News")} {this.props.t("Detail")}</h1>
                     <h4>{detail.title}</h4>
                 </Col>
             </Row>
 
-            <Row style={{background: '#f5f5f6', padding: 0}}>
-                <Col md={12} style={{marginTop: "1em"}}>
+            <Row style={{background: '#f5f5f6', padding: 0, paddingBottom: '2em', paddingLeft: '2em', paddingRight: '2em'}}>
+                <Col md={1}/>
+                <Col md={10} style={{marginTop: "1em"}}>
                     <h1>{this.props.t("Detail")} > </h1>
                 </Col>
-                <Col md={12} style={{background: '#fff', padding: '0', paddingLeft: '2em'}}>
+                <Col md={1}/>
+                <Col md={1}/>
+                <Col md={10} style={{background: '#fff', padding: '0', paddingLeft: '2em'}}>
                     <Row>
                         <Col md={8} style={{padding: '2em', borderRight: 'solid 1px #eee'}}>
                             <h3>{detail.content}</h3>
@@ -51,8 +55,8 @@ class BlogDetail extends Component {
                                         color: '#fff',
                                         background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
                                         border: 'none',
-                                        width:'6em',
-                                        height:'2em',
+                                        width: '6em',
+                                        height: '2em',
                                     }}>{this.props.t("LearnMore")}
                                     </button>
                                 </a>

@@ -14,7 +14,7 @@ class Maintainers extends Component {
 
     render() {
         return (
-            <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
+            <Row style={{paddingTop: '0em'}}>
                 <Col md={12}>
                     <h2>{this.props.t("Maintainers")}></h2>
                     <Container style={{padding: '0'}}>
@@ -51,7 +51,7 @@ class Maintainers extends Component {
                                 <Image style={{width: '5em', height: '5em', borderRadius: '10em'}} src={'https://avatars2.githubusercontent.com/u/64075044?s=60&v=4'}/>
                                 <h2 style={{marginTop:0,padding:0}}>Join Us!</h2>
                                 <h5>
-                                    Let's work for our dreams!
+                                    Let's do something cool!
                                 </h5>
                             </Col>
                         </Row>
@@ -60,6 +60,6 @@ class Maintainers extends Component {
             </Row>
         );
     }
-}
+};
 
 export default withTranslation()(Maintainers);

@@ -82,13 +82,15 @@ class Sponsor extends Component {
         };
         return (<Container className="Sponsor">
             <Row style={{textAlign: 'left', padding: '2em'}}>
-                <Col>
+                <Col md={1}/>
+                <Col md={10}>
                     <h1>{this.props.t("Sponsor")}</h1>
                     <h4>Help us do better</h4>
                 </Col>
             </Row>
-            <Row style={{background: '#f5f5f6', padding: 0}}>
-                <Col md={6} style={{paddingTop: '1em', paddingRight: '1em'}}>
+            <Row style={{background: '#f5f5f6', padding: 0, paddingLeft: '2em', paddingRight: '2em', paddingBottom: '2em'}}>
+                <Col md={1}/>
+                <Col md={5} style={{paddingTop: '1em', paddingRight: '1em'}}>
                     <h3 style={{padding: 0, marginTop: '0.5em'}}>{this.props.t("WhatWeNeed")} ></h3>
                     <Row style={{background: '#fff', padding: '2em'}}>
                         <p>We need some open source hardware to test the function and performance of our operating system in different scenarios.</p>
@@ -109,13 +111,13 @@ class Sponsor extends Component {
 
                     </Row>
                     <Row style={{background: '#fff', padding: 0, paddingLeft: '2em'}}>
-                        <p style={{margin:0}}>If you are willing to help us, please contact us:</p>
+                        <p style={{margin: 0}}>If you are willing to help us, please contact us:</p>
                     </Row>
                     <Row style={{background: '#fff', padding: 0, paddingLeft: '2em'}}>
                         <p><a href={"mailto:nerosoft@outlook.com"}>nerosoft@outlook.com</a></p>
                     </Row>
                 </Col>
-                <Col md={6} style={{paddingTop: '1em', paddingLeft: '1em'}}>
+                <Col md={5} style={{paddingTop: '1em', paddingLeft: '1em'}}>
                     <h3 style={{padding: 0, marginTop: '0.5em'}}>{this.props.t("OurSponsor")} ></h3>
                     <Row style={{background: '#fff', padding: '2em'}}>
                         <Col md={12} style={{padding: 0}}>
@@ -128,7 +130,8 @@ class Sponsor extends Component {
                                 </Col>
                             </Row>
                             <Row style={{padding: 0, margin: 0}}>
-                                <p>* All funds will be used for the purchase of development boards, publicly notified community activities and bounties
+                                <p>* All funds will be used for the purchase of development boards, publicly notified community activities and
+                                    bounties
                                     for community developers to add features and modify bugs.</p>
                             </Row>
                         </Col>

@@ -17,40 +17,49 @@ class Blog extends Component {
     render() {
         return (<Container className="Blog">
             <Row style={{textAlign: 'left', padding: '2em'}}>
-                <Col>
+                <Col md={1}/>
+                <Col md={10} style={{padding: 0, margin: 0}}>
                     <h1>{this.props.t("News")}</h1>
                     <h4>Our new and status updates</h4>
                 </Col>
             </Row>
 
-            <Row style={{background: '#f5f5f6', padding: 0}}>
-                <Col md={12} style={{marginTop: "1em"}}>
+            <Row style={{background: '#f5f5f6', padding: 0, paddingBottom: '2em'}}>
+                <Col md={1}/>
+                <Col md={10} style={{marginTop: "1em"}}>
                     <h1>{this.props.t("Posts")} > </h1>
                 </Col>
-                {blogsData.map((item, index) => {
-                    return <Col key={index} md={6} style={{background: '#fff', padding: 0, borderRight: 'solid 1px #eee',borderBottom:'solid 1px #eee'}}>
-                        <Row>
-                            <Col md={6} style={{padding: '1em'}}>
-                                <Image style={{width: '100%'}} src={item.image}/>
+                <Col md={1}/>
+                <Col md={1}/>
+                <Col md={10} style={{marginTop: "1em", paddingLeft: '2em', paddingRight: '2em'}}>
+                    <Row>
+                        {blogsData.map((item, index) => {
+                            return <Col key={index} md={6}
+                                        style={{background: '#fff', padding: 0, borderRight: 'solid 1px #eee', borderBottom: 'solid 1px #eee'}}>
+                                <Row>
+                                    <Col md={6} style={{padding: '1em'}}>
+                                        <Image style={{width: '100%'}} src={item.image}/>
+                                    </Col>
+                                    <Col md={6} style={{paddingTop: '2em', paddingLeft: '0'}}>
+                                        <h4>{item.title}</h4>
+                                        <p>{item.time}</p>
+                                        <Link to={'/blog-detail/' + index}
+                                              style={{fontWeight: 'normal', marginTop: '2em', marginLeft: 'auto', marginRight: 'auto'}}>
+                                            <button style={{
+                                                color: '#fff',
+                                                background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
+                                                border: 'none',
+                                                width: '6em',
+                                                height: '2em',
+                                            }}>{this.props.t("LearnMore")}
+                                            </button>
+                                        </Link>
+                                    </Col>
+                                </Row>
                             </Col>
-                            <Col md={6} style={{paddingTop: '2em', paddingLeft: '0'}}>
-                                <h4>{item.title}</h4>
-                                <p>{item.time}</p>
-                                <Link to={'/blog-detail/' + index}
-                                      style={{fontWeight: 'normal', marginTop: '2em', marginLeft: 'auto', marginRight: 'auto'}}>
-                                    <button style={{
-                                        color: '#fff',
-                                        background: 'linear-gradient(to right, #0d318f 0%, #00a0e9 100%)',
-                                        border: 'none',
-                                        width:'6em',
-                                        height:'2em',
-                                    }}>{this.props.t("LearnMore")}
-                                    </button>
-                                </Link>
-                            </Col>
-                        </Row>
-                    </Col>
-                })}
+                        })}
+                    </Row>
+                </Col>
             </Row>
         </Container>);
     };

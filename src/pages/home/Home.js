@@ -282,10 +282,11 @@ class Home extends Component {
                 backgroundSize: '100%',
                 color: '#000',
                 paddingTop: '4em',
-                paddingLeft: '4em',
+                paddingLeft: '2em',
                 paddingRight: '4em'
             }}>
-                <Col md={12} style={{textAlign: 'left'}}>
+                <Col md={1}/>
+                <Col md={10} style={{textAlign: 'left'}}>
                     <Row style={{textAlign: 'left', paddingBottom: '2em'}}>
                         <h1>Build IOT Devices with Synestia</h1>
                         <h4>A free Open Source and standards-based software platform for IoT devices, including Smart wear, TVs, and automotive
@@ -307,8 +308,9 @@ class Home extends Component {
                 </Col>
             </Row>
 
-            <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
-                <Col md={8} style={{padding: 0, margin: 0,}}>
+            <Row style={{background: '#f5f5f6', paddingTop: '2em', paddingBottom: '2em'}}>
+                <Col md={1}/>
+                <Col md={7} style={{padding: 0, margin: 0,}}>
                     <h2>{this.props.t("Events")} ></h2>
                     <Container style={{padding: '0', overflow: 'hidden', background: '#fff', height: '25em'}}>
                         <Row
@@ -361,7 +363,7 @@ class Home extends Component {
                         </Row>
                     </Container>
                 </Col>
-                <Col md={4}>
+                <Col md={3}>
                     <h2>&nbsp;</h2>
                     <Container style={{padding: '0'}}>
                         <Row style={{
@@ -377,28 +379,38 @@ class Home extends Component {
                     </Container>
                 </Col>
             </Row>
-            <Maintainers data={maintainers}/>
-            <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
-                <Col md={4}>
-                    <h2>{this.props.t("Progress")} ></h2>
-                    <TabPanel data={kernel}/>
-                </Col>
-                <Col md={4}>
-                    <h2>&nbsp;</h2>
-                    <TabPanel data={components}/>
-                </Col>
-                <Col md={4}>
-                    <h2>&nbsp;</h2>
-                    <TabPanel data={boards}/>
+            <Row style={{background: '#f5f5f6', paddingTop: '2em', paddingBottom: '2em'}}>
+                <Col md={1}/>
+                <Col md={10}>
+                    <Maintainers data={maintainers}/>
                 </Col>
             </Row>
-            <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
-                <Col md={12}>
+            <Row style={{background: '#f5f5f6', paddingTop: '2em', paddingBottom: '2em'}}>
+                <Col md={1}/>
+                <Col md={10}>
+                    <Row>
+                        <Col md={4}>
+                            <h2>{this.props.t("Progress")} ></h2>
+                            <TabPanel data={kernel}/>
+                        </Col>
+                        <Col md={4}>
+                            <h2>&nbsp;</h2>
+                            <TabPanel data={components}/>
+                        </Col>
+                        <Col md={4}>
+                            <h2>&nbsp;</h2>
+                            <TabPanel data={boards}/>
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
+            <Row style={{background: '#f5f5f6', paddingTop: '2em', paddingBottom: '2em'}}>
+                <Col md={1}/>
+                <Col md={10}>
                     <h2>{this.props.t("Partner")} ></h2>
                     <Container style={{padding: '0'}}>
                         <Row style={{
                             background: '#fff',
-                            borderBottom: '1px solid rgb(238, 238, 238)',
                             borderRight: '1px solid rgb(238, 238, 238)'
                         }}>
                             <Col md={2} style={{borderRight: '1px solid rgb(238, 238, 238)', padding: '1em'}}>
@@ -416,8 +428,9 @@ class Home extends Component {
                 </Col>
             </Row>
 
-            <Row style={{background: '#f5f5f6', paddingTop: '2em'}}>
-                <Col md={6}>
+            <Row style={{background: '#fff', paddingTop: '2em', marginTop: '2em'}}>
+                <Col md={1}/>
+                <Col md={5}>
                     <h2>{this.props.t("TechExchange")} ></h2>
                     <Container style={{padding: '0'}}>
                         <Row style={{
@@ -432,7 +445,7 @@ class Home extends Component {
                         </Row>
                     </Container>
                 </Col>
-                <Col md={6}>
+                <Col md={5}>
                     <h2>{this.props.t("Cooperation")} ></h2>
                     <Container style={{padding: '0'}}>
                         <Row style={{

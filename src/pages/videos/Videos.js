@@ -15,31 +15,39 @@ class Videos extends Component {
     render() {
         return (<Container className="Videos">
             <Row style={{textAlign: 'left', padding: '2em'}}>
-                <Col>
+                <Col md={1}/>
+                <Col md={10}>
                     <h1>Videos </h1>
                     <h4>Our videos info or tutorial updates</h4>
                 </Col>
             </Row>
 
-            <Row style={{background: '#f5f5f6', padding: 0}}>
-                <Col md={12} style={{marginTop: "1em"}}>
+            <Row style={{background: '#f5f5f6', padding: 0, paddingBottom: '2em'}}>
+                <Col md={1}/>
+                <Col md={10} style={{marginTop: "1em"}}>
                     <h1>Dev Log > </h1>
                 </Col>
-                {videosData.map((item, index) => {
-                    return <Col md={12} key={index} style={{background: '#fff', padding: 0}}>
-                        <Row>
-                            <Col md={8} style={{paddingLeft: '1em'}}>
-                                <iframe width={'100%'} height={'400px'} src={item.url} frameBorder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowFullScreen/>
+                <Col md={1}/>
+                <Col md={1}/>
+                <Col md={10} style={{paddingLeft: '2em', paddingRight: '2em'}}>
+                    <Row>
+                        {videosData.map((item, index) => {
+                            return <Col md={12} key={index} style={{background: '#fff', padding: 0}}>
+                                <Row>
+                                    <Col md={8} style={{paddingLeft: '1em'}}>
+                                        <iframe width={'100%'} height={'400px'} src={item.url} frameBorder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowFullScreen/>
+                                    </Col>
+                                    <Col md={4} style={{paddingTop: '2em', paddingLeft: '0'}}>
+                                        <h3>{item.title}</h3>
+                                        <p>{item.time}</p>
+                                    </Col>
+                                </Row>
                             </Col>
-                            <Col md={4} style={{paddingTop: '2em', paddingLeft: '0'}}>
-                                <h3>{item.title}</h3>
-                                <p>{item.time}</p>
-                            </Col>
-                        </Row>
-                    </Col>
-                })}
+                        })}
+                    </Row>
+                </Col>
             </Row>
         </Container>);
     };

@@ -25,7 +25,7 @@ import SignUp from "./pages/sign-up/SignUp";
 
 function App() {
     return (
-        <Container className="App">
+        <Container className="App" style={{padding:0}}>
             <Header/>
 
             <Switch>
@@ -50,7 +50,7 @@ function App() {
             </Switch>
 
             <Footer/>
-            <CopyRight/>
+            {/*<CopyRight/>*/}
         </Container>
     );
 }

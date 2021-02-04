@@ -13,6 +13,7 @@ import * as cookie from "react-cookies";
 import {faUser} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Link} from "react-router-dom";
+import {Col} from "react-bootstrap";
 
 const headers = [
     {
@@ -54,39 +55,45 @@ class Header extends Component {
     render() {
         return <Container className="Header">
             <Row style={{padding: 0, height: '2em', background: "rgb(245,245,245)"}}>
-                <Dropdown style={{flex: 1, textAlign: "right"}}>
-                    <Dropdown.Toggle variant="none" id="dropdown-basic">
-                        {this.props.t('Language')}
-                    </Dropdown.Toggle>
+                <Col md={1}/>
+                <Col md={10}>
+                    <Dropdown style={{flex: 1, textAlign: "right"}}>
+                        <Dropdown.Toggle variant="none" id="dropdown-basic">
+                            {this.props.t('Language')}
+                        </Dropdown.Toggle>
 
-                    <Dropdown.Menu>
-                        <Dropdown.Item onClick={this.changeLanguage.bind(this, 'en')} href="#/action-1"> {this.props.t('English')}</Dropdown.Item>
-                        <Dropdown.Item onClick={this.changeLanguage.bind(this, 'zh')} href="#/action-2"> {this.props.t('Chinese')}</Dropdown.Item>
-                    </Dropdown.Menu>
-                </Dropdown>
+                        <Dropdown.Menu>
+                            <Dropdown.Item onClick={this.changeLanguage.bind(this, 'en')} href="#/action-1"> {this.props.t('English')}</Dropdown.Item>
+                            <Dropdown.Item onClick={this.changeLanguage.bind(this, 'zh')} href="#/action-2"> {this.props.t('Chinese')}</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
+                </Col>
             </Row>
             <Row style={{padding: 0, borderBottom: "1px solid #eee", backgroundColor: " #fff", color: "#000", display: "flex"}}>
-                <Navbar bg="#fff" variant="light" style={{padding: 0, width: '100%'}}>
-                    <Image src={LogoRe} className="logo-img"/>
-                    <Nav.Link href="/home"
-                              style={{color: '#000', fontSize: '1.5em'}}>SynestiaOS</Nav.Link>
+                <Col md={1}/>
+                <Col md={10}>
+                    <Navbar bg="#fff" variant="light" style={{padding: 0, width: '100%', height: '5em'}}>
+                        {/*<Image src={LogoRe} className="logo-img"/>*/}
+                        <Nav.Link href="/home"
+                                  style={{color: '#000', fontSize: '1.5em'}}>SynestiaOS</Nav.Link>
 
-                    {
-                        headers.map((item, index) => {
-                            return <Nav.Link key={index} href={item.url}
-                                             onClick={this.selectHeaderMenu.bind(this, index)}
-                                             style={{
-                                                 color: '#000',
-                                                 height: '100%',
-                                                 display: 'flex',
-                                                 alignItems: 'center',
-                                                 justifyContent: 'center',
-                                             }}>{this.props.t(item.title)}</Nav.Link>
-                        })
-                    }
+                        {
+                            headers.map((item, index) => {
+                                return <Nav.Link key={index} href={item.url}
+                                                 onClick={this.selectHeaderMenu.bind(this, index)}
+                                                 style={{
+                                                     color: '#000',
+                                                     height: '100%',
+                                                     display: 'flex',
+                                                     alignItems: 'center',
+                                                     justifyContent: 'center',
+                                                 }}>{this.props.t(item.title)}</Nav.Link>
+                            })
+                        }
 
-                    {/*{this.renderUserInfo()}*/}
-                </Navbar>
+                        {/*{this.renderUserInfo()}*/}
+                    </Navbar>
+                </Col>
             </Row>
         </Container>
     }
