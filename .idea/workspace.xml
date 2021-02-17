@@ -3,23 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ecb05922-317c-4230-8e1f-08cf1aa4ee2b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/maintainers/Maintainers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/maintainers/Maintainers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Tools/Tools.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Tools/Tools.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog-detail/BlogDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog-detail/BlogDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blogs/Blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blogs/Blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/developer/Developer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/developer/Developer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/docs/Docs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/docs/Docs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/faq/Faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/faq/Faq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/forum-detail/ForumDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/forum-detail/ForumDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/forum/Forum.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/forum/Forum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/github-info/GithubInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/github-info/GithubInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/videos/Videos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/videos/Videos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/synestiaos.github.io" beforeDir="false" afterPath="$PROJECT_DIR$/synestiaos.github.io" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -196,7 +182,11 @@
       <workItem from="1611131230543" duration="183000" />
       <workItem from="1611841421484" duration="1448000" />
       <workItem from="1612248080737" duration="1177000" />
-      <workItem from="1612420795170" duration="3105000" />
+      <workItem from="1612420795170" duration="3522000" />
+      <workItem from="1612434689177" duration="543000" />
+      <workItem from="1612512396405" duration="388000" />
+      <workItem from="1613033043409" duration="476000" />
+      <workItem from="1613576869832" duration="6000" />
     </task>
     <servers />
   </component>

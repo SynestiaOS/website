@@ -1,6 +1,9 @@
 .Home {
     margin-top: 0;
     background: #fff;
+    /*background: url(https://edu-wenku.bdimg.com/v1/pc/viewThem/niunianxianding.png) no-repeat;*/
+    background-size: 100% 24%;
+    background-position-y: -38px;
 }
 
 .logo-lg {
@@ -9,7 +12,6 @@
 }
 
 .ribbon {
-    font-size: 23.104px;
     font-size: 1.444rem;
     font-weight: 700;
     width: 320px;

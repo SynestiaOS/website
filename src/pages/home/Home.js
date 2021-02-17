@@ -278,8 +278,8 @@ class Home extends Component {
         return (<Container className="Home">
             <Row style={{
                 textAlign: 'left',
-                background: '#fff',
-                backgroundSize: '100%',
+                background: "url('https://hellosean1025.github.io/ydoc/examples/init/ydoc/images/dogbg@2x.png')",
+                backgroundSize: '100% 100%',
                 color: '#000',
                 paddingTop: '4em',
                 paddingLeft: '2em',

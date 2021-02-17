@@ -81,9 +81,9 @@ class GithubInfo extends Component {
 
     render() {
         return (
-            <Row style={{background: '#f5f5f6', paddingTop: '0em', borderTop: 'solid 1px #eee'}}>
+            <Row style={{paddingTop: '0em', borderTop: 'solid 1px #eee'}}>
                 <Col md={3}>
-                    <Row style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
+                    <Row style={{padding: '1em', borderRight: 'solid 1px #eee'}}>
                         <Col md={12} style={{textAlign: 'center'}}>
                             <h1 style={{fontWeight: 'bold'}}>{this.state.commits}</h1>
                         </Col>
@@ -93,7 +93,7 @@ class GithubInfo extends Component {
                     </Row>
                 </Col>
                 <Col md={3}>
-                    <Row style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
+                    <Row style={{padding: '1em', borderRight: 'solid 1px #eee'}}>
                         <Col md={12} style={{textAlign: 'center'}}>
                             <h1 style={{fontWeight: 'bold'}}>{this.state.contributors}</h1>
                         </Col>
@@ -103,7 +103,7 @@ class GithubInfo extends Component {
                     </Row>
                 </Col>
                 <Col md={3}>
-                    <Row style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
+                    <Row style={{padding: '1em', borderRight: 'solid 1px #eee'}}>
                         <Col md={12} style={{textAlign: 'center'}}>
                             <h1 style={{fontWeight: 'bold'}}>{this.state.forks}</h1>
                         </Col>
@@ -113,7 +113,7 @@ class GithubInfo extends Component {
                     </Row>
                 </Col>
                 <Col md={3}>
-                    <Row style={{background: '#fff', padding: '1em'}}>
+                    <Row style={{padding: '1em'}}>
                         <Col md={12} style={{textAlign: 'center'}}>
                             <h1 style={{fontWeight: 'bold'}}>{this.state.stars}</h1>
                         </Col>
