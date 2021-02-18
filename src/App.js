@@ -9,7 +9,6 @@ import Developer from "./pages/developer/Developer";
 import Sponsor from "./pages/sponsor/Sponsor";
 import Blog from "./pages/blogs/Blog";
 import Faq from "./pages/faq/Faq";
-import CopyRight from "./components/copyright/CopyRight";
 import BlogDetail from "./pages/blog-detail/BlogDetail";
 import Forum from "./pages/forum/Forum";
 import ForumDetail from "./pages/forum-detail/ForumDetail";
@@ -22,6 +21,7 @@ import Kanban from "./pages/kanban/Kanban";
 import Login from "./pages/login/Login";
 import Me from "./pages/me/Me";
 import SignUp from "./pages/sign-up/SignUp";
+import Resources from "./pages/resources/Resources";
 
 function App() {
     return (
@@ -47,6 +47,8 @@ function App() {
                 <Route exact path="/login" component={Login}/>
                 <Route exact path="/sign-up" component={SignUp}/>
                 <Route exact path="/me" component={Me}/>
+                <Route exact path="/resources" component={Resources}/>
+
             </Switch>
 
             <Footer/>

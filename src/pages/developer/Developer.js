@@ -142,6 +142,20 @@ class Developer extends Component {
                                 </Col>
                             </Link>
                         </Col>
+                        <Col md={3}
+                             style={{textAlign: 'center', background: '#fff', height: '15em', paddingTop: '2em', borderRight: 'solid 1px #eee'}}>
+                            <Link to={"/resources"} style={{color: '#000'}}>
+                                <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
+                                    <img className="thumb-image loaded"
+                                         style={{width: "8em", height: "8em"}}
+                                         alt="Docs"
+                                         src="https://images.squarespace-cdn.com/content/v1/5c16b5974eddec882174ca75/1582058073215-RO2ROZ4YCCQWMV91CD75/ke17ZwdGBToddI8pDm48kNTz3eyGtDo4QTeoVbk60fl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTm77b3aMoxlc0duZREiKix3qw0PFOrX67-8pWa41WR2KUYBcYeBpnicIz0xxzN7tvP/documentation_logo.PNG?format=500w"/>
+                                </Col>
+                                <Col md={12} style={{marginLeft: 'auto', marginRight: 'auto'}}>
+                                    <h4>{this.props.t("Resources")}</h4>
+                                </Col>
+                            </Link>
+                        </Col>
                     </Row>
                 </Col>
             </Row>

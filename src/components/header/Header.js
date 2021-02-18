@@ -5,7 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
-import LogoRe from "../../static/images/logo_re.png";
+import LogoRe from "../../static/images/lo.png";
 import Dropdown from "react-bootstrap/Dropdown";
 
 import {withTranslation} from 'react-i18next'
@@ -74,9 +74,6 @@ class Header extends Component {
                 <Col md={10}>
                     <Navbar bg="#fff" variant="light" style={{padding: 0, width: '100%', height: '5em'}}>
                         <Image src={LogoRe} className="logo-img"/>
-                        <Nav.Link href="/home"
-                                  style={{color: '#000', fontSize: '1.5em'}}>SynestiaOS</Nav.Link>
-
                         {
                             headers.map((item, index) => {
                                 return <Nav.Link key={index} href={item.url}

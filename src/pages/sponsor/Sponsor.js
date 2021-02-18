@@ -7,7 +7,7 @@ import Image from "react-bootstrap/Image";
 import {Modal, OverlayTrigger, Popover} from "react-bootstrap";
 import WePay from "../../static/images/wepay.png"
 import AliPay from "../../static/images/alipay.png"
-import LogoRe from "../../static/images/logo_re.png";
+import LogoRe from "../../static/images/logo/头像专用图.png";
 import {sponsorsData} from "./sponsorsData";
 import {withTranslation} from "react-i18next";
 

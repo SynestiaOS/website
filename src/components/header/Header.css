@@ -12,11 +12,10 @@
 }
 
 .logo-img {
-    width: 5em;
+    width: 14em;
     height: 5em;
     margin: 0;
-    filter: invert();
-    /*background: #000;*/
+    padding: -1em;
 }
 
 .logo-user {
