@@ -73,7 +73,7 @@ class Header extends Component {
                 <Col md={1}/>
                 <Col md={10}>
                     <Navbar bg="#fff" variant="light" style={{padding: 0, width: '100%', height: '5em'}}>
-                        <Image src={LogoRe} className="logo-img"/>
+                        <Link to={'/'}><Image src={LogoRe} className="logo-img"/></Link>
                         {
                             headers.map((item, index) => {
                                 return <Nav.Link key={index} href={item.url}
