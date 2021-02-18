@@ -32,7 +32,7 @@ class ForumDetail extends Component {
 
             <Row style={{background: '#f5f5f6', padding: 0, paddingBottom: '2em', paddingLeft: '2em', paddingRight: '2em'}}>
                 <Col md={1}/>
-                <Col md={10} style={{marginTop: "1em"}}>
+                <Col md={10} style={{marginTop: "2em"}}>
                 </Col>
                 <Col md={1}/>
                 <Col md={1}/>

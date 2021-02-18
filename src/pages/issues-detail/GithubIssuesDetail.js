@@ -45,16 +45,20 @@ class GithubIssuesDetail extends Component {
     render() {
         return (<Container className="GithubIssuesDetail">
             <Row style={{textAlign: 'left', padding: '2em'}}>
-                <Col>
+                <Col md={1}/>
+                <Col md={10}>
                     <h1>Forum Detail</h1>
                     <h4>&lt;Issue/&gt;</h4>
                 </Col>
             </Row>
 
-            <Row style={{background: '#f5f5f6', padding: 0}}>
-                <Col md={12} style={{marginTop: "1em"}}>
+            <Row style={{background: '#f5f5f6', padding: 0, paddingBottom: '2em', paddingLeft: '2em', paddingRight: '2em'}}>
+                <Col md={1}/>
+                <Col md={10} style={{marginTop: "2em"}}>
                 </Col>
-                <Col md={12} style={{background: '#fff', padding: '0'}}>
+                <Col md={1}/>
+                <Col md={1}/>
+                <Col md={10} style={{background: '#fff', padding: '0'}}>
                     <Row style={{margin: 0, padding: 0}}>
                         <Col md={9} style={{padding: 0, borderRight: 'solid 1px #eee'}}>
                             <Row style={{margin: 0, padding: 0}}>
@@ -71,7 +75,8 @@ class GithubIssuesDetail extends Component {
                                                 }}>{label.name}</span>
                                             }) : null
                                         }
-                                        <p><strong>{this.state.detail.user ? this.state.detail.user.login : 'loading'}</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <p>
+                                            <strong>{this.state.detail.user ? this.state.detail.user.login : 'loading'}</strong>&nbsp;&nbsp;&nbsp;&nbsp;
                                             <span>{this.state.detail.created_at ? this.state.detail.created_at : 'loading'}</span></p>
                                     </Container>
                                     <Container style={{marginTop: '2em'}}><p>
@@ -117,7 +122,7 @@ class GithubIssuesDetail extends Component {
                                 </Col>
                             </Row>
                         </Col>
-                        <Col md={3} style={{padding: 0, paddingTop: '2em', textAlign: 'center'}}>
+                        <Col md={3} style={{padding: 0, paddingTop: '2em', paddingBottom: '2em', textAlign: 'center'}}>
                             <Col md={12}>
                                 <img style={{width: "8em", height: "8em", borderRadius: '100em'}}
                                      alt="Forum"
