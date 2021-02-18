@@ -2,104 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecb05922-317c-4230-8e1f-08cf1aa4ee2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/logo/SynestiaOS-logo源文件-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo/SynestiaOS-logo源文件-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo/优享包说明书.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo/商标注册专用图.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo/商标注册专用图.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo/头像专用图.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo/高清Logo/logo配色图-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo/高清Logo/白底反黑图-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo/高清Logo/透明底logo-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo/高清Logo/透明底反黑图-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo/高清Logo/黑色底白色字-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/resources/Resources.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/resources/Resources.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/resources/Resources.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/lo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/logo/SynestiaOS-logo源文件-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/logo/SynestiaOS-logo源文件-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/logo/优享包说明书.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/logo/商标注册专用图.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/logo/商标注册专用图.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/logo/头像专用图.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/logo/高清Logo/logo配色图-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/logo/高清Logo/白底反黑图-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/logo/高清Logo/透明底logo-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/logo/高清Logo/透明底反黑图-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/logo/高清Logo/黑色底白色字-2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locales/en-us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/en-us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/locales/zh-cn.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/locales/zh-cn.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/developer/Developer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/developer/Developer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sponsor/Sponsor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/static/images/logo_re.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io" beforeDir="false" afterPath="$PROJECT_DIR$/synestiaos.github.io" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/200.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/Documentation" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/blog-detail/0.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/blog-detail/1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/blog-detail/2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/blog-detail/3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/blog-detail/4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/blog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/developer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/docs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/faq.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/forum.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heap1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heap2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heap3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heapalloc1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heapalloc2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heapfree1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/Heap/heapfree2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/KQueue/dequeue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/KQueue/enqueue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/List/example.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/List/example2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/WechatIMG1151.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/WechatIMG1153.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/WeiJi.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/env/clion_cmake.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/env/clion_debug.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/env/debug.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/env/external_tool.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/env/reset_cmake.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/env/run_qemu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/mem/PTE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/mem/pagetable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/imgs/stack/stackalloc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/precache-manifest.25184d51a162c1a1648e0282ae5d920a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/service-worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/sponsor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/css/2.300c0e58.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/css/2.300c0e58.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/css/main.792f96bd.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/css/main.792f96bd.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/2.1acc81b7.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/2.1acc81b7.chunk.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/2.1acc81b7.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/main.84999820.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/main.84999820.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/runtime-main.bfca2edd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/js/runtime-main.bfca2edd.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/media/ZillaSlab-Regular.53cbc7a5.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/media/alipay.07cd3605.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/static/media/wepay.90df0414.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/tools.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/synestiaos.github.io/videos.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,7 +185,8 @@
       <workItem from="1612512396405" duration="388000" />
       <workItem from="1613033043409" duration="476000" />
       <workItem from="1613576869832" duration="408000" />
-      <workItem from="1613621152168" duration="1602000" />
+      <workItem from="1613621152168" duration="2284000" />
+      <workItem from="1613633026436" duration="133000" />
     </task>
     <servers />
   </component>

@@ -4,15 +4,15 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import {Col, Image} from "react-bootstrap";
 import {withTranslation} from 'react-i18next'
-
+import LogoRe from "../../static/images/lo.png";
 class Footer extends Component{
     render() {
         return (
             <Container className="Footer">
                 <Row>
                     <Col md={1}/>
-                    <Col md={2} style={{paddingLeft: '4em', paddingRight: '4em'}}>
-                        <Image src={'./imgs/WeiJi.png'} style={{opacity:0.1}}/>
+                    <Col md={2} style={{paddingLeft: '0em', paddingRight: '4em'}}>
+                        <Image src={LogoRe} style={{opacity:0.1}}/>
                     </Col>
                     <Col md={8} style={{paddingLeft: '3em', paddingRight: '8em'}}>
                         <Row>

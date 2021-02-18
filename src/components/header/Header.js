@@ -5,7 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
-import LogoRe from "../../static/images/lo.png";
+import LogoRe from "../../static/images/loo.png";
 import Dropdown from "react-bootstrap/Dropdown";
 
 import {withTranslation} from 'react-i18next'
