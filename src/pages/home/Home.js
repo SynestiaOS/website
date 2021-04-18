@@ -97,6 +97,9 @@ const kernel = {
         }, {
             name: 'VMM',
             url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },{
+            name: 'SpinLock',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
         }, {
             name: 'Mutex',
             url: 'https://github.com/SynestiaOS/SynestiaOS'
@@ -115,9 +118,17 @@ const kernel = {
         {
             name: 'VFS',
             url: 'https://github.com/SynestiaOS/SynestiaOS'
-        }
+        },
+        {
+            name: 'Module',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
     ],
     Doing: [
+        {
+            name: 'Capability',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
         {
             name: 'Slab',
             url: 'https://github.com/SynestiaOS/SynestiaOS'
@@ -133,6 +144,18 @@ const kernel = {
     ],
     Todo: [
         {
+            name: 'Time Wheel',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
+        {
+            name: 'KASLR',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
+        {
+            name: 'IPC',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
+        {
             name: 'SMP',
             url: 'https://github.com/SynestiaOS/SynestiaOS'
         },
@@ -143,7 +166,11 @@ const kernel = {
         {
             name: 'HAL',
             url: 'https://github.com/SynestiaOS/SynestiaOS'
-        }
+        },
+        {
+            name: 'HyperVisor',
+            url: 'https://github.com/SynestiaOS/SynestiaOS'
+        },
     ]
 };
 
@@ -309,7 +336,7 @@ class Home extends Component {
                 </Col>
             </Row>
 
-            <Row style={{background: '#f5f5f6', paddingTop: '2em', paddingBottom: '2em'}}>
+            {/* <Row style={{background: '#f5f5f6', paddingTop: '2em', paddingBottom: '2em'}}>
                 <Col md={1}/>
                 <Col md={7} style={{padding: 0, margin: 0,}}>
                     <h2>{this.props.t("Events")} ></h2>
@@ -379,7 +406,7 @@ class Home extends Component {
                         </Row>
                     </Container>
                 </Col>
-            </Row>
+            </Row> */}
             <Row style={{background: '#f5f5f6', paddingTop: '2em', paddingBottom: '2em'}}>
                 <Col md={1}/>
                 <Col md={10}>
