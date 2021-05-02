@@ -35,12 +35,12 @@ class TabPanel extends Component {
                     <Navbar variant="light" style={{textAlign: 'left', padding: 0, borderBottom: 'solid 1px #eee'}}>
                         {
                             Object.keys(this.props.data).map((item, index) => {
-                                let background = '#eee';
+                                let background = '#f5f6f7';
                                 let color = '#007bff';
                                 let fontWeight = 'light';
                                 if (this.state.selectedTab === item) {
                                     color = '#000';
-                                    background = '#fff';
+                                    background = '#eee';
                                     fontWeight = 'bold';
                                 }
                                 return <Nav.Link key={index} onClick={this.selectTab.bind(this, item)}
