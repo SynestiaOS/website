@@ -15,7 +15,7 @@ class Forum extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            selected: 'issues',
+            selected: 'hot',
             issues: [],
         };
     }

@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import LogoRe from "../../static/images/loo.png";
 import Dropdown from "react-bootstrap/Dropdown";
+import DropdownButton from "react-bootstrap/DropdownButton";
 
 import {withTranslation} from 'react-i18next'
 import * as cookie from "react-cookies";
@@ -17,23 +18,45 @@ import {Col} from "react-bootstrap";
 
 const headers = [
     {
+        title: 'Home',
+        url: '/',
+        child: []
+    }, 
+    {
         title: 'Developer',
-        url: '/developer'
+        url: '/developer',
+        child: [
+            {title:'Get Started', url:'/developer'},
+            {title:'Docs', url:'/docs'},
+            {title:'Tools', url:'/tools'}
+        ]
     },
     {
-        title: 'Community',
-        url: '/forum'
-    }, {
         title: 'News',
-        url: '/blog'
+        url: '/blog',
+        child: [
+            {title:'News', url:'/blog'},
+            {title:'Videos', url:'/videos'},
+        ]
     },
     {
         title: 'Kanban',
-        url: '/kanban'
+        url: '/kanban',
+        child: []
     },
     {
+        title: 'Community',
+        url: '/forum',
+        child: [
+            {title:'Faq', url:'/faq'},
+            {title:'Forum', url:'/forum'},
+            {title:'Github', url:'https://github.com/SynestiaOS/SynestiaOS'}
+        ]
+    }, 
+    {
         title: 'Sponsor',
-        url: '/sponsor'
+        url: '/sponsor',
+        child: []
     }
 ];
 
@@ -69,14 +92,14 @@ class Header extends Component {
                     </Dropdown>
                 </Col>
             </Row>
-            <Row style={{padding: 0, borderBottom: "1px solid #eee", backgroundColor: " #fff", color: "#000", display: "flex"}}>
+            <Row style={{padding: 0, borderBottom: "1px solid #eee", backgroundColor: "#fff", color: "#000", display: "flex"}}>
                 <Col md={1}/>
                 <Col md={10}>
                     <Navbar bg="#fff" variant="light" style={{padding: 0, width: '100%', height: '5em'}}>
                         <Link to={'/'}><Image src={LogoRe} className="logo-img"/></Link>
                         {
                             headers.map((item, index) => {
-                                return <Nav.Link key={index} href={item.url}
+                                return <Nav.Link key={index}
                                                  onClick={this.selectHeaderMenu.bind(this, index)}
                                                  style={{
                                                      color: '#000',
@@ -84,7 +107,17 @@ class Header extends Component {
                                                      display: 'flex',
                                                      alignItems: 'center',
                                                      justifyContent: 'center',
-                                                 }}>{this.props.t(item.title)}</Nav.Link>
+                                                 }}>
+                                                {
+                                                    item.child.length==0?<Link to={item.url}>{this.props.t(item.title)}</Link>: <DropdownButton id="dropdown-basic-button" variant="light" title={this.props.t(item.title)}>
+                                                    {
+                                                        item.child.map((child, id) => {
+                                                            return <Link to={child.url}><Dropdown.Item href="#/action-1">{child.title}</Dropdown.Item></Link>
+                                                        })
+                                                    }
+                                                 </DropdownButton>
+                                                }
+                                                 </Nav.Link>
                             })
                         }
 
