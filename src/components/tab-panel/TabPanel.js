@@ -49,7 +49,7 @@ class TabPanel extends Component {
                         }
                     </Navbar>
                 </Row>
-                <Row style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee', borderBottom: 'solid 1px #eee'}}>
+                <Row style={{background: '#fff', padding: '1em', borderRight: 'solid 1px #eee'}}>
                     {
                         this.props.data[this.state.selectedTab] ? this.props.data[this.state.selectedTab].map((item, index) => {
                             return <Col md={12} style={{marginTop: '0.5em'}} key={index}>

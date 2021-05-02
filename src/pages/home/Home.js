@@ -413,7 +413,7 @@ class Home extends Component {
                     <Maintainers data={maintainers}/>
                 </Col>
             </Row>
-            <Row style={{background: '#f5f5f6', paddingTop: '2em', paddingBottom: '2em'}}>
+            <Row style={{background: '#fff', paddingTop: '2em', paddingBottom: '2em'}}>
                 <Col md={1}/>
                 <Col md={10}>
                     <Row>

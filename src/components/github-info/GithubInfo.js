@@ -81,7 +81,7 @@ class GithubInfo extends Component {
 
     render() {
         return (
-            <Row style={{paddingTop: '0em', borderTop: 'solid 1px #eee'}}>
+            <Row style={{paddingTop: '0em',paddingBottom:'1em'}}>
                 <Col md={3}>
                     <Row style={{padding: '1em', borderRight: 'solid 1px #eee'}}>
                         <Col md={12} style={{textAlign: 'center'}}>

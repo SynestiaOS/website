@@ -27,7 +27,7 @@ class CardRow extends Component {
                         return <Card data={item} cardRowTitle={this.props.title}/>
                     })}
                     {this.renderNewCardInput(this.state.showNewCard)}
-                    <Container style={{
+                    {/* <Container style={{
                         paddingTop: '0.8em',
                         paddingBottom: '0.8em',
                         paddingLeft: '0.8em',
@@ -40,7 +40,7 @@ class CardRow extends Component {
                         <Row style={{padding: 0, margin: 0, textAlign: 'center'}} onClick={this.showNewCard.bind(this)}>
                             <span style={{padding: 0, margin: 0, float: 'center'}}> + 添加卡片</span>
                         </Row>
-                    </Container>
+                    </Container> */}
                 </Row>
             </Col>
         );

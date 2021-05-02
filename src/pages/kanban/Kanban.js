@@ -51,17 +51,25 @@ class Kanban extends Component {
 
     render() {
         return (<Container className="Kanban">
-            <Row style={{textAlign: 'left', padding: '2em'}}>
-                <Col>
+             <Row style={{textAlign: 'left', padding: 0, paddingTop: '2em', paddingBottom: '2em'}}>
+                <Col md={1}/>
+                <Col md={10}>
                     <h1>{this.props.t("Kanban")}</h1>
                     <h4>Join the SynestiaOS Kanban and take a task!</h4>
                 </Col>
+                <Col md={1}/>
             </Row>
             <Row style={{background: '#f5f5f6', padding: 0}}>
-                <CardRow data={todo} title={'Todo'}/>
-                <CardRow title={'Doing'}/>
-                <CardRow title={'Done'}/>
-                <CardRow title={'Others'}/>
+                <Col md={1}/>
+                <Col md={10}>
+                    <Row>
+                        <CardRow data={todo} title={'Todo'}/>
+                        <CardRow title={'Doing'}/>
+                        <CardRow title={'Done'}/>
+                        <CardRow title={'Others'}/>
+                    </Row>
+                </Col>
+                <Col md={1}/>
             </Row>
         </Container>);
     };

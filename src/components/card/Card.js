@@ -13,7 +13,7 @@ function Tag(props) {
         <span {...props} style={{
             color: '#fff',
             background: props.background,
-            borderRadius: '3px',
+            borderRadius: '2px',
             paddingLeft: '0.3em',
             paddingRight: '0.3em',
             paddingTop: '0.1em',
@@ -218,7 +218,7 @@ class Card extends Component {
                 paddingLeft: '0.8em',
                 paddingRight: '0.8em',
                 margin: '0',
-                borderRadius: '0.5em',
+                borderRadius: '0.1em',
                 marginBottom: '0.5em',
                 background: '#fff',
                 boxShadow: '4px 4px 10px 2px #ececec'
