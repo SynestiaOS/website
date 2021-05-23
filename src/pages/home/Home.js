@@ -307,6 +307,7 @@ class Home extends Component {
             <Row style={{
                 textAlign: 'left',
                 background: "url('https://hellosean1025.github.io/ydoc/examples/init/ydoc/images/dogbg@2x.png')",
+                // background:"linear-gradient(to right,#430905,#0f020a)"
                 backgroundSize: '100% 100%',
                 color: '#000',
                 paddingTop: '4em',

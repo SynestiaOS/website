@@ -5,7 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
-import LogoRe from "../../static/images/loo.png";
+import LogoRe from "../../static/images/logo/logo-s.svg";
 import Dropdown from "react-bootstrap/Dropdown";
 import DropdownButton from "react-bootstrap/DropdownButton";
 
@@ -96,7 +96,7 @@ class Header extends Component {
                 <Col md={1}/>
                 <Col md={10}>
                     <Navbar bg="#fff" variant="light" style={{padding: 0, width: '100%', height: '5em'}}>
-                        <Link to={'/'}><Image src={LogoRe} className="logo-img"/></Link>
+                        <Link to={'/'}><Image src={LogoRe} className="logo-img"/></Link><h2>SynestiaOS</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         {
                             headers.map((item, index) => {
                                 return <Nav.Link key={index}
@@ -124,6 +124,20 @@ class Header extends Component {
                         {/* {this.renderUserInfo()} */}
                     </Navbar>
                 </Col>
+            </Row>
+            <Row style={{padding: 0, borderBottom: "1px solid #eee",display:'none', backgroundColor: "#fff", color: "#000",position:'absolute',zIndex:99,width:'100%'}}>
+                        <Col md={2}>
+                        </Col>
+                        <Col md={8} style={{padding:'2em'}}>
+                            <Row>
+                                <Col md={7}>
+                                    <h1>xxx</h1>
+                                </Col>
+                                <Col md={5} style={{borderLeft:'1px solid #eee'}}>
+                                    <Link>Get Start</Link>
+                                </Col>
+                            </Row>
+                        </Col>
             </Row>
         </Container>
     }
