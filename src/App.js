@@ -22,6 +22,8 @@ import Login from "./pages/login/Login";
 import Me from "./pages/me/Me";
 import SignUp from "./pages/sign-up/SignUp";
 import Resources from "./pages/resources/Resources";
+import Cpu from './pages/cpu/Cpu';
+import Board from './pages/board/Board';
 
 function App() {
     return (
@@ -41,6 +43,8 @@ function App() {
                 <Route exact path="/forum" component={Forum}/>
                 <Route exact path="/videos" component={Videos}/>
                 <Route exact path="/docs" component={Docs}/>
+                <Route exact path="/cpus" component={Cpu}/>
+                <Route exact path="/boards" component={Board}/>
                 <Route exact path="/github/callback" component={GithubLogin}/>
                 <Route exact path="/forum-detail/:type/:id" component={ForumDetail}/>
                 <Route exact path="/forum-detail/github/issue/:id" component={GithubIssuesDetail}/>
