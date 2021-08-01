@@ -21,7 +21,7 @@ const headers = [
         title: 'Home',
         url: '/',
         child: []
-    }, 
+    },
     {
         title: 'Developer',
         url: '/developer',
@@ -37,12 +37,16 @@ const headers = [
         child: [
             {title:'News', url:'/blog'},
             {title:'Videos', url:'/videos'},
+            {title: 'Kanban', url: '/kanban'},
         ]
     },
     {
-        title: 'Kanban',
-        url: '/kanban',
-        child: []
+        title: 'Hardwares',
+        url: '/hardwares',
+        child: [
+            {title:'CPUs', url:'/cpus'},
+            {title:'Boards', url:'/boards'},
+        ]
     },
     {
         title: 'Community',
@@ -50,13 +54,9 @@ const headers = [
         child: [
             {title:'Faq', url:'/faq'},
             {title:'Forum', url:'/forum'},
+            {title:'Sponsor', url:'/sponsor'},
             {title:'Github', url:'https://github.com/SynestiaOS/SynestiaOS'}
         ]
-    }, 
-    {
-        title: 'Sponsor',
-        url: '/sponsor',
-        child: []
     }
 ];
 
